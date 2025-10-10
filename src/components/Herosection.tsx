@@ -36,7 +36,7 @@ const Herosection = () => {
           <img src={Logo} height={200} width={200}/>
         </div>
         <div className="flex items-center gap-4 text-white">
-          <span className="hidden md:inline tracking-widest">MENU</span>
+          <span className="hidden font-newsreader md:inline tracking-widest">MENU</span>
           <svg width="28" height="20" viewBox="0 0 24 24" className="text-white">
             <path d="M3 6h18M3 12h18M3 18h18" stroke="white" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round" />
           </svg>
