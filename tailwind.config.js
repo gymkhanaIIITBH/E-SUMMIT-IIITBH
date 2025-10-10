@@ -9,6 +9,7 @@ export default {
       fontFamily: {
         // Use the CSS variable we added in src/index.css; fallback to serif
         newsreader: ["var(--font-newsreader)", 'serif'],
+        montserrat: ["var(--font-montserrat)", 'sans-serif'],
       },
     },
   },
