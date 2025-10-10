@@ -38,7 +38,7 @@ const Herosection = () => {
       {/* Main content */}
       <div className="relative z-10 flex  justify-center h-full px-6" >
         <div className="text-center relative top-24 ">
-          <div className='h-32 w-full ' style={{backgroundImage: `url(${heroContent})`, backgroundSize: 'fit', backgroundRepeat: 'no-repeat' }}/>
+          <div className='h-32 w-full ' style={{backgroundImage: `url(${heroContent})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }}/>
           <div className="mt-10 w-80 ">
             <button className="px-8 mx-2 rounded-full py-3 border border-white text-white tracking-wider hover:bg-white/10 transition">EXPLORE</button>
              <button className="px-8 py-3  rounded-full border border-white text-white tracking-wider hover:bg-white/10 transition">REGISTER</button>
