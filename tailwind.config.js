@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        // Use the CSS variable we added in src/index.css; fallback to serif
+        newsreader: ["var(--font-newsreader)", 'serif'],
+      },
+    },
   },
   plugins: [],
 }
