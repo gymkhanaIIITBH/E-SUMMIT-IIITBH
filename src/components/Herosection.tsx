@@ -8,6 +8,14 @@ const SocialIcon = ({ children, label }: { children: React.ReactNode; label: str
 )
 
 const Herosection = () => {
+
+  const handleScroll = () => {
+    window.scrollBy({
+      top: 500,   // No vertical scroll
+      left: 0, // Scrolls 500px to the right
+      behavior: 'smooth', // Smooth scrolling
+    });
+  };
   return (
     <section className="relative h-screen w-full overflow-hidden">
       {/* Background image with orange overlay */}
@@ -37,10 +45,10 @@ const Herosection = () => {
 
       {/* Main content */}
       <div className="relative z-10 flex  justify-center h-full px-6" >
-        <div className="text-center relative top-24 ">
-          <div className='h-32 w-full ' style={{backgroundImage: `url(${heroContent})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }}/>
-          <div className="mt-10 w-80 ">
-            <button className="px-8 mx-2 rounded-full py-3 border border-white text-white tracking-wider hover:bg-white/10 transition">EXPLORE</button>
+        <div className="text-center  relative top-24 ">
+          <div className='h-56 w-full bg-center ' style={{backgroundImage: `url(${heroContent})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }}/>
+          <div className="mt-10 w-screen ">
+            <button className="px-8 mx-2  rounded-full py-3 border border-white text-white tracking-wider hover:bg-white/10 transition" onClick={()=>handleScroll()}>EXPLORE</button>
              <button className="px-8 py-3  rounded-full border border-white text-white tracking-wider hover:bg-white/10 transition">REGISTER</button>
 
           </div>
@@ -62,10 +70,10 @@ const Herosection = () => {
       </div>
 
       {/* Right vertical scroll indicator */}
-      <div className='scrolldown absolute right-6 top-1/2'>
-      <div className=" absolute right-0 top-1/2  scroll-icon  z-10 flex space-x-2  items-center text-white ">
-        <span className="tracking-widest text-nowrap text-sm">SCROLL DOWN</span>
-        <svg className='h-8 w-8 text-white' viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M2 12.0701H22" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M16 5L21.16 10C21.4324 10.2571 21.6494 10.567 21.7977 10.9109C21.946 11.2548 22.0226 11.6255 22.0226 12C22.0226 12.3745 21.946 12.7452 21.7977 13.0891C21.6494 13.433 21.4324 13.7429 21.16 14L16 19" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>      </div>
+      <div className='scrolldown absolute right-6 top-[80%]'>
+      <div className=" absolute right-0 top-1/2  scroll-icon  z-10 flex   items-center text-white ">
+        <span className="tracking-widest inline text-nowrap text-sm">SCROLL DOWN</span>
+        <svg className='h-8 w-8 mx-2 inline text-white' viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M2 12.0701H22" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M16 5L21.16 10C21.4324 10.2571 21.6494 10.567 21.7977 10.9109C21.946 11.2548 22.0226 11.6255 22.0226 12C22.0226 12.3745 21.946 12.7452 21.7977 13.0891C21.6494 13.433 21.4324 13.7429 21.16 14L16 19" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>      </div>
       </div>
     </section>
   )

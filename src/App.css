@@ -39,7 +39,7 @@ html[data-useragent*="MSIE 10.0"] .scrolldown,
 }
 
 .scroll-icon {
-  display: inline-block;
+  
   font-family: "montserrat-bold", sans-serif;
   font-size: 1.4rem;
   text-transform: uppercase;
