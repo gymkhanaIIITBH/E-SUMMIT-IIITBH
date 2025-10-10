@@ -1,0 +1,16 @@
+/* Custom styles for the hero/parallax effect */
+.parallax {
+	/* ensures the image covers the element */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* fixed attachment creates the basic parallax effect on desktop */
+	background-attachment: fixed;
+}
+
+/* Mobile browsers often ignore background-attachment: fixed; provide a fallback */
+@media (max-width: 768px) {
+	.parallax {
+		background-attachment: scroll;
+	}
+}
