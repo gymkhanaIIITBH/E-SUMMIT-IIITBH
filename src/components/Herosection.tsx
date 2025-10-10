@@ -44,8 +44,8 @@ const Herosection = () => {
       </header>
 
       {/* Main content */}
-      <div className="relative z-10 flex  justify-center h-full px-6" >
-        <div className="text-center  relative top-24 ">
+      <div className="relative z-10 flex   justify-center h-full px-6" >
+        <div className="text-center  relative top-0 ">
           <div className='h-56 w-full bg-center ' style={{backgroundImage: `url(${heroContent})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }}/>
           <div className="mt-10 w-screen ">
             <button className="px-8 mx-2  rounded-full py-3 border border-white text-white tracking-wider hover:bg-white/10 transition" onClick={()=>handleScroll()}>EXPLORE</button>
