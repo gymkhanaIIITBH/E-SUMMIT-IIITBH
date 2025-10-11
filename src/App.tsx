@@ -1,5 +1,3 @@
-import { useState } from 'react'
-
 import './App.css'
 import Herosection from './components/Herosection'
 import AboutSection from './components/AboutSection'
@@ -8,7 +6,7 @@ import Footer from './components/Footer'
 import GoldSponsors from './components/Sponsors'
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <>

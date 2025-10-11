@@ -1,5 +1,4 @@
 import heroImg from '../../public/hero-bg.svg'
-import Logo  from '../assets/eSummitLogo.png'
 import heroContent from '../../public/hero content.png'
 import { InteractiveHoverButton } from './InteractiveHoverButton ';
 const SocialIcon = ({ children, label }: { children: React.ReactNode; label: string }) => (
