@@ -1,6 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@keyframes marquee-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee-left {
+  display: flex;
+  width: 200%; /* doubles list for seamless loop */
+  animation: marquee-left 25s linear infinite;
+}
+
+
 
 :root {
 	--font-newsreader: 'Newsreader', serif;
