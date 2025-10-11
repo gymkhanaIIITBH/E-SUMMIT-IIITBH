@@ -28,11 +28,7 @@ const Herosection = () => {
 
       {/* Top bar: logo left, menu right */}
       <header className="relative z-10 flex items-center justify-between p-8">
-        <div className="w-20 h-20">
-          {/* simple triangular logo
-          <svg viewBox="0 0 100 100" className="w-full h-full text-white">
-            <polygon points="50,5 95,95 5,95" fill="white" opacity="0.95" />
-          </svg> */}
+        {/* <div className="w-20 h-20">
           <img src={Logo} height={200} width={200}/>
         </div>
         <div className="flex items-center gap-4 text-white">
@@ -40,17 +36,16 @@ const Herosection = () => {
           <svg width="28" height="20" viewBox="0 0 24 24" className="text-white">
             <path d="M3 6h18M3 12h18M3 18h18" stroke="white" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round" />
           </svg>
-        </div>
+        </div> */}
       </header>
 
       {/* Main content */}
-      <div className="relative z-10 flex   justify-center h-full px-6" >
-        <div className="text-center  relative top-0 ">
-          <div className='h-56 w-full bg-center ' style={{backgroundImage: `url(${heroContent})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }}/>
-          <div className="mt-10 w-screen ">
-            <button className="px-8 mx-2  rounded-full py-3 border border-white text-white tracking-wider hover:bg-white/10 transition" onClick={()=>handleScroll()}>EXPLORE</button>
-             <button className="px-8 py-3  rounded-full border border-white text-white tracking-wider hover:bg-white/10 transition">REGISTER</button>
-
+      <div className="relative z-10 flex items-center justify-center h-full px-6">
+        <div className="flex flex-col items-center justify-center w-full h-full">
+          <div className='h-56 w-full bg-center' style={{backgroundImage: `url(${heroContent})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat'}} />
+          <div className="mt-10 flex flex-row items-center justify-center gap-6">
+            <button className="px-8 rounded-full py-3 border border-white text-white tracking-wider hover:bg-white/10 transition" onClick={handleScroll}>EXPLORE</button>
+            <button className="px-8 py-3 rounded-full border border-white text-white tracking-wider hover:bg-white/10 transition">REGISTER</button>
           </div>
         </div>
       </div>
