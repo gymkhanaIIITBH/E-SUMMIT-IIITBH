@@ -1,6 +1,8 @@
 import heroImg from '../../public/hero-bg.svg'
 import heroContent from '../../public/hero content.png'
 import { InteractiveHoverButton } from './InteractiveHoverButton ';
+import { motion, useInView } from 'framer-motion';
+import { useRef } from 'react';
 const SocialIcon = ({ children, label }: { children: React.ReactNode; label: string }) => (
   <div className="w-10 h-10 flex items-center justify-center bg-white/10 rounded-md mb-3 hover:bg-white/20 transition" aria-label={label}>
     {children}
@@ -8,7 +10,8 @@ const SocialIcon = ({ children, label }: { children: React.ReactNode; label: str
 )
 
 const Herosection = () => {
-
+  const ref = useRef(null)
+const inView = useInView(ref, {once:true})
   const handleScroll = () => {
     window.scrollBy({
       top: 500,   // No vertical scroll
@@ -40,23 +43,53 @@ const Herosection = () => {
       </header>
 
       {/* Main content */}
-      <div className="relative z-10 flex items-center justify-center h-full px-6">
+      <div 
+
+      
+      className="relative  z-10  flex items-center justify-center h-full px-6">
         <div className="flex flex-col items-center justify-center w-full h-full">
-          <div className='h-56 w-full bg-center' style={{backgroundImage: `url(${heroContent})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat'}} />
-          <div className="mt-10 flex flex-row items-center justify-center gap-6">
+          <motion.div 
+            ref={ref} 
+          
+            initial={{ opacity: 0, y: 100 }} 
+            animate={{
+              opacity: inView ? 1 : 0,
+              y: inView ? 0 : 100,     
+            }}
+            transition={{
+              duration: 0.5,
+              ease: 'easeOut',
+              
+            }}
+            //  i made two separate motion.divs for the delay between them
+          className='h-56  relative top-[-25%] sm:top-0 w-full bg-center' style={{backgroundImage: `url(${heroContent})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat'}} />
+          <motion.div
+            ref={ref} 
+          
+            initial={{ opacity: 0, y: 40 }} 
+            animate={{
+              opacity: inView ? 1 : 0,
+              y: inView ? 0 : 100,     
+            }}
+            transition={{
+              duration: 0.5,
+              
+              delay:0.2
+            }}
+          className="sm:mt-10 mt-6  relative top-[-30%] sm:top-0 flex flex-row items-center justify-center gap-6">
             <InteractiveHoverButton onClick={handleScroll}>EXPLORE</InteractiveHoverButton>
              <button
             className="px-6 py-2 rounded-3xl bg-white text-black dark:bg-black dark:text-white border font-semibold transition-colors duration-300 hover:bg-zinc-200 dark:hover:bg-zinc-700"
           >
              REGISTER
           </button> 
-          </div>
+          </motion.div>
         </div>
       </div>
 
       {/* Left vertical social icons */}
-      <div className="absolute left-8 top-[70%] transform -translate-y-1/2 z-10 flex flex-col items-center">
-        <div className="h-24 w-px bg-white/30 mb-6" />
+      <div className="absolute top-[80%] fade-in left-8 md:top-[70%] transform -translate-y-1/2 z-10 flex flex-col items-center">
+        <div className="sm:hidden md:block hidden h-24 w-px bg-white/30 mb-6" />
         <SocialIcon label="facebook">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M22 12a10 10 0 10-11.5 9.9v-7h-2.2v-2.9h2.2V9.4c0-2.2 1.3-3.4 3.3-3.4.95 0 1.95.17 1.95.17v2.1h-1.08c-1.06 0-1.39.66-1.39 1.34v1.6h2.36l-.38 2.9h-1.98v7A10 10 0 0022 12z"/></svg>
         </SocialIcon>
@@ -69,7 +102,7 @@ const Herosection = () => {
       </div>
 
       {/* Right vertical scroll indicator */}
-      <div className='scrolldown absolute right-6 top-[80%]'>
+      <div className='top-[100%] block scrolldown absolute fade-in right-6 md:top-[80%]'>
       <div className=" absolute right-0 top-1/2  scroll-icon  z-10 flex   items-center text-white ">
         <span className="tracking-widest inline text-nowrap text-sm">SCROLL DOWN</span>
         <svg className='h-8 w-8 mx-2 inline text-white' viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M2 12.0701H22" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M16 5L21.16 10C21.4324 10.2571 21.6494 10.567 21.7977 10.9109C21.946 11.2548 22.0226 11.6255 22.0226 12C22.0226 12.3745 21.946 12.7452 21.7977 13.0891C21.6494 13.433 21.4324 13.7429 21.16 14L16 19" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>      </div>
