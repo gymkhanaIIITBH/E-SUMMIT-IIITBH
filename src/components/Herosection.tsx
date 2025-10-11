@@ -1,6 +1,7 @@
 import heroImg from '../../public/hero-bg.svg'
 import Logo  from '../assets/eSummitLogo.png'
 import heroContent from '../../public/hero content.png'
+import { InteractiveHoverButton } from './InteractiveHoverButton ';
 const SocialIcon = ({ children, label }: { children: React.ReactNode; label: string }) => (
   <div className="w-10 h-10 flex items-center justify-center bg-white/10 rounded-md mb-3 hover:bg-white/20 transition" aria-label={label}>
     {children}
@@ -44,8 +45,12 @@ const Herosection = () => {
         <div className="flex flex-col items-center justify-center w-full h-full">
           <div className='h-56 w-full bg-center' style={{backgroundImage: `url(${heroContent})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat'}} />
           <div className="mt-10 flex flex-row items-center justify-center gap-6">
-            <button className="px-8 rounded-full py-3 border border-white text-white tracking-wider hover:bg-white/10 transition" onClick={handleScroll}>EXPLORE</button>
-            <button className="px-8 py-3 rounded-full border border-white text-white tracking-wider hover:bg-white/10 transition">REGISTER</button>
+            <InteractiveHoverButton onClick={handleScroll}>EXPLORE</InteractiveHoverButton>
+             <button
+            className="px-6 py-2 rounded-3xl bg-white text-black dark:bg-black dark:text-white border font-semibold transition-colors duration-300 hover:bg-zinc-200 dark:hover:bg-zinc-700"
+          >
+             REGISTER
+          </button> 
           </div>
         </div>
       </div>

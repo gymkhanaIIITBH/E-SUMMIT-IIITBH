@@ -4,6 +4,7 @@ import './App.css'
 import Herosection from './components/Herosection'
 import AboutSection from './components/AboutSection'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,6 +15,7 @@ function App() {
       <Herosection/>
       {/* <div className='h-96  w-full '> about</div> */}
       <AboutSection/>
+      <Footer />
     </>
   )
 }
