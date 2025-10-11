@@ -76,7 +76,7 @@ const inView = useInView(ref, {once:true})
               
               delay:0.2
             }}
-          className="sm:mt-10 mt-6  relative top-[-30%] sm:top-0 flex flex-row items-center justify-center gap-6">
+          className="sm:mt-10 mt-6  relative top-[-30%] sm:top-0 flex flex-row items-center justify-center gap-2 sm:gap-6">
             <InteractiveHoverButton onClick={handleScroll}>EXPLORE</InteractiveHoverButton>
              <button
             className="px-6 py-2 rounded-3xl bg-white text-black dark:bg-black dark:text-white border font-semibold transition-colors duration-300 hover:bg-zinc-200 dark:hover:bg-zinc-700"
