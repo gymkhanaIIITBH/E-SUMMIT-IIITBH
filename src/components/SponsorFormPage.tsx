@@ -1,6 +1,6 @@
 import heroImg from '../../public/hero-bg.svg'
 import { Check } from 'lucide-react'
-import { InteractiveHoverButton } from './InteractiveHoverButton ';
+import { InteractiveHoverButton } from './InteractiveHoverButton';
 import { useEffect } from 'react';
 const tiers = [
   "Poster Mention",

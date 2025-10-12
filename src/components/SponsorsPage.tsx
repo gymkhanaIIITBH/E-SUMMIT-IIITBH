@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import heroImg from '../../public/hero-bg.svg';
 import { sponsorData } from './Sponsordata';
 import { useNavigate } from 'react-router-dom';
-import { InteractiveHoverButton } from './InteractiveHoverButton ';
+import { InteractiveHoverButton } from './InteractiveHoverButton';
 
 const SponsorsPage = () => {
   const navigate = useNavigate();

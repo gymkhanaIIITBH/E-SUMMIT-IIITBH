@@ -1,6 +1,6 @@
 import heroImg from '../../public/hero-bg.svg'
 import heroContent from '../../public/hero content.png'
-import { InteractiveHoverButton } from './InteractiveHoverButton ';
+import { InteractiveHoverButton } from './InteractiveHoverButton';
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 const SocialIcon = ({ children, label, link }: { children: React.ReactNode; label: string, link:string }) => (
