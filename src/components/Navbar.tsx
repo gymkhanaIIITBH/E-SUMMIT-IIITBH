@@ -7,7 +7,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="w-full flex fade-in items-center justify-between px-6 py-4 bg-transparent absolute top-0 left-0 z-30">
+      <nav className="w-full flex fade-in items-center justify-between px-6 py-4 bg-transparen absolute top-0 left-0 z-30">
         {/* Logo */}
         <div className="flex items-center">
           <img src={Logo} alt="Logo" className="h-14 w-14 md:h-16 md:w-16 object-contain" />
@@ -30,9 +30,9 @@ const Navbar = () => {
           onClick={() => setOpen(true)}
           aria-label="Open menu"
         >
-          <span className="block w-full h-[2px] bg-white rounded"></span>
-          <span className="block w-full h-[2px] bg-white rounded"></span>
-          <span className="block w-full h-[2px] bg-white rounded"></span>
+          <span className="block w-full h-[2px] bg-gray-600/100 rounded"></span>
+          <span className="block w-full h-[2px] bg-gray-600/100  rounded"></span>
+          <span className="block w-full h-[2px] bg-gray-600/100  rounded"></span>
         </button>
       </nav>
 
