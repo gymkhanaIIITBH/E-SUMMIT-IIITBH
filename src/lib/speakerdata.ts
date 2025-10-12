@@ -7,38 +7,45 @@ export interface SpeakerData {
 
 export const speakers: SpeakerData[] = [
   {
-    name: 'Manas Vyas',
-    company: 'Team MyPerro',
-    image: '/images/speakers/manas-vyas.jpg',
-    description:
-      'The mentor sessions we had with our mentor were great; they helped us shape our business model. We had a lot to learn, they gave us a lot of suggestions on how to build our business, we also got to connect a lot, and most of all, we had a great experience here!',
+    name: 'Dr Tanu Jain',
+    company: 'IIITBH',
+    image: '/Dr-Tanu-jain.jpeg',
+    description: 'Dr Tanu Jain — short bio/quote goes here.',
   },
   {
-    name: 'Another Speaker',
-    company: 'Team Innovate',
-    image: '/images/speakers/another-speaker.jpg',
-    description:
-      'This experience helped us understand real business challenges and how to tackle them strategically.',
+    name: 'Khalid Wani',
+    company: 'Industry',
+    image: '/khalid-wani.jpg',
+    description: 'Khalid Wani — short bio/quote goes here.',
   },
-    {
-    name: 'Another Speaker',
-    company: 'Team Innovate',
-    image: '/images/speakers/another-speaker.jpg',
-    description:
-      'This experience helped us understand real business challenges and how to tackle them strategically.',
+  {
+    name: 'Manish Srivastava',
+    company: 'Company',
+    image: '/manish-srivastva-alpha-value.jpeg',
+    description: 'Manish Srivastava — short bio/quote goes here.',
   },
-    {
-    name: 'Another Speaker',
-    company: 'Team Innovate',
-    image: '/images/speakers/another-speaker.jpg',
-    description:
-      'This experience helped us understand real business challenges and how to tackle them strategically.',
+  {
+    name: 'Preteek Srivastava',
+    company: 'Company',
+    image: '/Preteek-sir.jpg',
+    description: 'Preteek Srivastava — short bio/quote goes here.',
   },
-    {
-    name: 'Another Speaker',
-    company: 'Team Innovate',
-    image: '/images/speakers/another-speaker.jpg',
-    description:
-      'This experience helped us understand real business challenges and how to tackle them strategically.',
+  {
+    name: 'Radha Krishnan',
+    company: 'Company',
+    image: '/RadhaKrishnan-Pillai-img.jpg',
+    description: 'Radha Krishnan — short bio/quote goes here.',
+  },
+  {
+    name: 'Rishabh Jain',
+    company: 'Company',
+    image: '/Rishabh-Jain-lla.webp',
+    description: 'Rishabh Jain — short bio/quote goes here.',
+  },
+  {
+    name: 'Suresh Narasi',
+    company: 'Company',
+    image: '/Suresh-Narasimha.jpg',
+    description: 'Suresh Narasi — short bio/quote goes here.',
   }
 ];
