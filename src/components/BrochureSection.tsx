@@ -6,7 +6,7 @@ function BrochureSection() {
          <div className=" text-center relative mt-18 flex items-center-safe justify-center-safe w-fit  text-white  text-4xl text-bold font-futuristic
         after:block after:content-[''] after:absolute after:left-0 after:right-0 after:bottom-0 after:h-[2px] after:bg-gray-500">Brochure </div>
 <div className="container mx-auto max-w-6xl">
-        <div className="flex flex-col sm:flex-row md:flex-row items-cente items-start justify-center gap-4 md:gap-4">
+        <div className="flex flex-col sm:flex-row md:flex-row items-center sm:items-start justify-center gap-4 md:gap-4">
           
           {/* Left Section: Image */}
           <div className="relative  w-5/6 p-8 sm:w-1/2 sm:h-full md:h-full md:w-1/3 flex-shrink-0">
@@ -19,7 +19,7 @@ function BrochureSection() {
           </div>
 
           {/* Right Section: Text Content */}
-          <div className="w-full font-montserrat p-8 sm:w-1/2 md:w-2/3  text-gray-300">
+          <div className="w-full font-montserrat p-8 sm:w-1/2 md:w-2/3  text-gray-500/100">
             <p className="text-base md:text-md leading-relaxed mb-6">
 The vision of First-ever E-Summit of IIIT Bhagalpur is to be a catalyst for entrepreneurial energy, bringing together the young innovators who will become the leaders and changemakers of tomorrow. Our summit creates a dynamic platform where students are encouraged to dream big, think boldly, and act fearlessly while discovering solutions that address real-world challenges.            </p>
             <p className="text-base md:text-md leading-relaxed mb-6">
