@@ -5,6 +5,7 @@ import AboutSection from '../components/AboutSection';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import BrochureSection from '../components/BrochureSection';
+import Speaker from '../components/Speaker';
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
         <AboutSection/>
         <GoldSponsors/>
         <BrochureSection/>
+        <Speaker/>
         <Footer/>
 
     </div>

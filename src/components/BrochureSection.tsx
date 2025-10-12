@@ -1,4 +1,3 @@
-import React from 'react'
 import BrochureCover from '../assets/BrochureCover.png'
 function BrochureSection() {
   return (

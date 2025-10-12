@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import image1 from '../../public/hero-bg.svg'
 function TeamCard({name='Test', image=image1, designation='Marketing & PR Lead', email='testEMail', phone='Test Phone'}) {
     const [copied, setCopied] = useState(false);

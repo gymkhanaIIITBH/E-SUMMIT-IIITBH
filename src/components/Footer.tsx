@@ -8,7 +8,7 @@ const Footer = () => {
         <div>
           <p className="text-lg font-medium mb-2">© 2025 E-Summit. All rights reserved.</p>
           <p className="mb-2 text-gray-300">A celebration of collaboration and innovation.</p>
-          <a href="#" className="mb-2 text-gray-300">For any query: <span className='underline'>Team</span></a>
+          <a href="/team" className="mb-2 text-gray-300">For any query: <span className='underline'>Team</span></a>
           <br />
           <a href="#" className="underline text-gray-300">Meet our Contributors</a>
         </div>

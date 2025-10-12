@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import { useRef } from 'react'
 import TeamCard from '../components/TeamCard'
 import { motion, useInView } from 'framer-motion';
 import { useEffect } from 'react';
