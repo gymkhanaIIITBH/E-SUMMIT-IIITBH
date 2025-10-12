@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import dividerLine from "../assets/L.svg";
 import summitLogo from "../assets/44.svg";
-import { InteractiveHoverButton } from "./InteractiveHoverButton";
+import { InteractiveHoverButton } from './InteractiveHoverButton ';
 
 type EventItem = {
   id: number;
@@ -102,17 +102,7 @@ export default function Events() {
 
                       {/* Register button: reveal on hover (desktop), always visible on mobile */}
                       <div className="mt-4">
-                        <div className="opacity-0 translate-y-2 transition-all duration-500 ease-out group-hover:opacity-100 group-hover:translate-y-0 group-focus-within:opacity-100 group-focus-within:translate-y-0 max-lg:opacity-100 max-lg:translate-y-0">
-                          <InteractiveHoverButton
-                            className="text-sm md:text-base"
-                            onClick={() => {
-                              const url = "#register";
-                              if (typeof window !== "undefined") window.location.hash = url;
-                            }}
-                          >
-                            Register here
-                          </InteractiveHoverButton>
-                        </div>
+                       <InteractiveHoverButton>Register</InteractiveHoverButton>
                       </div>
                     </div>
                   </div>
