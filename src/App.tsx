@@ -1,24 +1,23 @@
 import './App.css'
-import Herosection from './components/Herosection'
-import AboutSection from './components/AboutSection'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
-import Footer from './components/Footer'
-import GoldSponsors from './components/Sponsors'
+import Home from './pages/Home'
+import SponsorsPage from './components/SponsorsPage'
+import SponsorForm from './components/SponsorFormPage'
+import AboutSection from './components/AboutSection'
+
 
 function App() {
-
-
   return (
-    <>
-    <Navbar />
-      <Herosection/>
-      {/* <div className='h-96  w-full '> about</div> */}
-      
-      <AboutSection/>
-      <GoldSponsors/>
-      <Footer />
-      
-    </>
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<AboutSection />} />
+        <Route path="/sponsors" element={<SponsorsPage />} />
+        <Route path="/sponsorform" element={<SponsorForm />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 

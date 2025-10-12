@@ -9,7 +9,7 @@ const inView = useInView(ref, {once:true})
 
   return (
     <>
-    <section className="w-full bg-white py-40 flex flex-col items-center">
+    <section className="w-full bg-white py-40 flex flex-col items-center" id="about">
       <motion.div
        ref={ref} 
       

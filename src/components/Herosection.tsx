@@ -20,7 +20,7 @@ const inView = useInView(ref, {once:true})
     });
   };
   return (
-    <section className="relative h-screen w-full overflow-hidden">
+    <section className="relative h-screen w-full overflow-hidden" id="home">
       {/* Background image with orange overlay */}
       <div
         className="absolute inset-0 parallax"
