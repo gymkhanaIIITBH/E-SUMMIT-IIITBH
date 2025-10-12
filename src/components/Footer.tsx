@@ -22,7 +22,7 @@ const Footer = () => {
       </div>
       <hr className="my-6 border-gray-700" />
       <div className="flex justify-center">
-        <span className="text-[8vw] font-bold text-center bg-gradient-to-b from-gray-400 to-black bg-clip-text text-transparent tracking-tight select-none font-sans">E-SUMMIT</span>
+        <span className="text-[8vw] font-bold text-center bg-gradient-to-b from-gray-500 to-black bg-clip-text text-transparent tracking-tight select-none font-sans">E-SUMMIT</span>
       </div>
     </footer>
   )

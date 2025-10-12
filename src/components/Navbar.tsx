@@ -13,9 +13,7 @@ const Navbar = () => {
     { label: 'Home', to: '#home' },
     { label: 'About', to: '#about' },
     { label: 'Events', to: '/events' },
-    { label: 'Gallery', to: '/gallery' },
     { label: 'Sponsors', to: '/sponsors' },
-    { label: 'Contact', to: '#contact' },
     { label: 'Team', to: '/team' },
     { label: 'Speakers', to: '#speakers' },
   ];

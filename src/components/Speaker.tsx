@@ -12,7 +12,7 @@ const Speaker: React.FC = () => {
   const current: SpeakerData = speakers[index];
 
   return (
-    <section id="speakers"
+    <section id="speaker"
       style={{
         minHeight: '100vh',
         background:
