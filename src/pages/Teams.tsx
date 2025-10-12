@@ -1,11 +1,14 @@
 import React, { useRef } from 'react'
 import TeamCard from '../components/TeamCard'
 import { motion, useInView } from 'framer-motion';
-
+import { useEffect } from 'react';
 function Teams() {
       const ref = useRef(null)
 const inView = useInView(ref, {once:true})
-
+useEffect(() => {
+          // Scroll to top when this page loads
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }, []);
   return (
     <div className='flex flex-col items-center w-full h-full justify-center p-6'>
         <motion.div

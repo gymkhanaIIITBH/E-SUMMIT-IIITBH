@@ -16,6 +16,7 @@ const Navbar = () => {
     { label: 'Gallery', to: '/gallery' },
     { label: 'Sponsors', to: '/sponsors' },
     { label: 'Contact', to: '#contact' },
+    { label: 'Team', to: '/team' },
   ];
 
   const handleNavClick = (item: MenuItem) => {
