@@ -39,7 +39,7 @@ export const speakers: SpeakerData[] = [
   {
     name: 'Rishabh Jain',
     company: 'Company',
-    image: '/Rishabh-Jain-lla.webp',
+    image: '/Rishabh-Jain-lla.jpg',
     description: 'Rishabh Jain — short bio/quote goes here.',
   },
   {

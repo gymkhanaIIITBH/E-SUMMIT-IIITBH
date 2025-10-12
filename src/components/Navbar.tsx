@@ -17,6 +17,7 @@ const Navbar = () => {
     { label: 'Sponsors', to: '/sponsors' },
     { label: 'Contact', to: '#contact' },
     { label: 'Team', to: '/team' },
+    { label: 'Speakers', to: '#speakers' },
   ];
 
   const handleNavClick = (item: MenuItem) => {
