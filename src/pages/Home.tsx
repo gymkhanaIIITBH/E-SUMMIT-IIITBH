@@ -4,7 +4,8 @@ import GoldSponsors from '../components/Sponsors'
 import AboutSection from '../components/AboutSection';
 import BrochureSection from '../components/BrochureSection';
 import Speaker from '../components/Speaker';
-
+import Events
+ from '../components/Event';
 const Home = () => {
   return (
     <div>
@@ -12,6 +13,7 @@ const Home = () => {
         <Herosection/>
         <AboutSection/>
         <GoldSponsors/>
+        <Events />
         <BrochureSection/>
         <Speaker/>
 
