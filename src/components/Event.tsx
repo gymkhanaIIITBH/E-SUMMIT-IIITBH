@@ -24,38 +24,43 @@ const IdeaEvent = {
 const BitEvent = {
   title: "BITSTORM",
   description:
-    "Lorem ipsum dolor sit amet consectetur. Nec fames senectus quisque sed nulla nibh. Lacus et dolor suspendisse eleifend eu lorem turpis. Mus fusce vitae interdum purus id sodales elementum arcu. Purus nunc accumsan eros faucibus semper sagittis diam risus.",
+    "Gear up for BitStorm 1.0,Aspiring tech teams first submit ideas online, followed by an intense 36-hour offline coding sprint at IIIT Bhagalpur. Transform ideas into impactful prototypes with mentorship. Judges will evaluate innovation and execution. Prizes worth ₹1,75,000 awaits.",
+};
+const GamingEvent = {
+  title: "GAMING EVENT",
+  description:
+    "Gear up for the ultimate BGMI and VALORANT clash! Compete in intense battles to prove your team's dominance. Show off your skills and strategy in this high-stakes tournament. A total prize pool of ₹25,000 is up for grabs. Time to dominate the arena!",
 };
 
 const BullEvent = {
   title: "BULLRUN",
   description:
-    "Lorem ipsum dolor sit amet consectetur. Nec fames senectus quisque sed nulla nibh. Lacus et dolor suspendisse eleifend eu lorem turpis. Mus fusce vitae interdum purus id sodales elementum arcu. Purus nunc accumsan eros faucibus semper sagittis diam risus.",
+    "This challenge for strategists blends financial analysis. Phase 1 is an online financial reasoning quiz. Phase 2 features thrilling live market simulations and real-time trading choices based on company data. Winners, judged on market understanding and strategy, claim prizes worth ₹50,000.",
 };
-const DJEvent = {
-  title: "DJ NIGHT",
+const ViralVogue = {
+  title: "VIRAL VOGUE",
   description:
-    "Lorem ipsum dolor sit amet consectetur. Nec fames senectus quisque sed nulla nibh. Lacus et dolor suspendisse eleifend eu lorem turpis. Mus fusce vitae interdum purus id sodales elementum arcu. Purus nunc accumsan eros faucibus semper sagittis diam risus.",
+    "Unleash your marketing genius in the Viral Vogue Pitch, Reel & Win! challenge. Pitch quirky concepts like chai as an energy elixir or gourmet mess food in a thrilling 60-second Instagram reel. Submissions via tag/official link. With prizes worth ₹22,500, this is your chance to entertain, persuade, and go viral!",
 };
 
 const QuizEvent = {
   title: "E-SHIP QUIZ",
   description:
-    "Lorem ipsum dolor sit amet consectetur. Nec fames senectus quisque sed nulla nibh. Lacus et dolor suspendisse eleifend eu lorem turpis. Mus fusce vitae interdum purus id sodales elementum arcu. Purus nunc accumsan eros faucibus semper sagittis diam risus.",
+    "Test your Business and Tech IQ in the E-Ship Quiz! The challenge starts with a 25-question online quiz. The top contenders advance to a thrilling live buzzer round on Google Meet. This fast-paced event rewards quick thinking with a prize pool of ₹5,000.",
 };
 const StartupEvent = {
   title: "STARTUP EXPO",
   description:
-    "Lorem ipsum dolor sit amet consectetur. Nec fames senectus quisque sed nulla nibh. Lacus et dolor suspendisse eleifend eu lorem turpis. Mus fusce vitae interdum purus id sodales elementum arcu. Purus nunc accumsan eros faucibus semper sagittis diam risus.",
+    "The Startup Expo is a crucial event where entrepreneurs pitch innovative ideas directly to investors. It fosters valuable connections and promotes industry collaboration. This platform offers startups a vital opportunity to secure funding and achieve significant entrepreneurial success.",
 };
 const events: EventItem[] = [
-  { id: 1, day: "Friday", date: 14, month: "November", dividerLeft: dividerLine, dividerRight: dividerLine, ...BullEvent },
-  { id: 2, day: "Friday", date: 14, month: "November", dividerLeft: dividerLine, dividerRight: dividerLine, ...BitEvent },
-  { id: 3, day: "Friday", date: 14, month: "November", dividerLeft: dividerLine, dividerRight: dividerLine, ...StartupEvent },
-  { id: 4, day: "Saturday", date: 15, month: "November", dividerLeft: dividerLine, dividerRight: dividerLine, ...BitEvent },
+  { id: 1, day: "Friday", date: 14, month: "November", dividerLeft: dividerLine, dividerRight: dividerLine, ...BitEvent },
+  { id: 2, day: "Friday", date: 14, month: "November", dividerLeft: dividerLine, dividerRight: dividerLine, ... StartupEvent},
+  { id: 3, day: "Friday", date: 14, month: "November", dividerLeft: dividerLine, dividerRight: dividerLine, ...BullEvent },
+  { id: 4, day: "Saturday", date: 15, month: "November", dividerLeft: dividerLine, dividerRight: dividerLine, ...QuizEvent },
   { id: 5, day: "Saturday", date: 15, month: "November", dividerLeft: dividerLine, dividerRight: dividerLine, ...IdeaEvent },
-  { id: 6, day: "Saturday", date: 15, month: "November", dividerLeft: dividerLine, dividerRight: dividerLine, ...QuizEvent },
-  { id: 7, day: "Saturday", date: 15, month: "November", dividerLeft: dividerLine, dividerRight: dividerLine, ...DJEvent },
+  { id: 6, day: "Saturday", date: 15, month: "November", dividerLeft: dividerLine, dividerRight: dividerLine, ...GamingEvent },
+  { id: 7, day: "Saturday", date: 15, month: "November", dividerLeft: dividerLine, dividerRight: dividerLine, ...ViralVogue },
 ];
 
 export default function Events() {
