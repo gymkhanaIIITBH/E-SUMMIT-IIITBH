@@ -36,7 +36,7 @@ export const eventData: TimelineEventData[] = [
   {
     title: "BULLRUN",
     description: "This challenge for strategists blends financial analysis. Phase 1 is an online financial reasoning quiz. Phase 2 features thrilling live market simulations and real-time trading choices based on company data. Winners, judged on market understanding and strategy, claim prizes worth ₹50,000.",
-    image: "/bullrun.png",
+    image: "/bullrunposter.svg",
     details: {
       date: "14th November",
       prizePool: "₹50,000",
@@ -47,7 +47,7 @@ export const eventData: TimelineEventData[] = [
   {
     title: "E-SHIP QUIZ",
     description: "Test your Business and Tech IQ in the E-Ship Quiz! The challenge starts with a 25-question online quiz. The top contenders advance to a thrilling live buzzer round on Google Meet. This fast-paced event rewards quick thinking with a prize pool of ₹5,000.",
-    image: "/eship-quiz.png",
+    image: "/eshipposter.svg",
     details: {
       date: "15th November",
       prizePool: "₹5,000",
@@ -69,7 +69,7 @@ export const eventData: TimelineEventData[] = [
   {
     title: "GAMING EVENT",
     description: "Gear up for the ultimate BGMI and VALORANT clash! Compete in intense battles to prove your team's dominance. Show off your skills and strategy in this high-stakes tournament. A total prize pool of ₹25,000 is up for grabs. Time to dominate the arena!",
-    image: "/gaming-event.png",
+    image: "/gamingevent.png",
     details: {
       date: "15th November",
       prizePool: "₹25,000",
@@ -80,7 +80,7 @@ export const eventData: TimelineEventData[] = [
   {
     title: "VIRAL VOGUE",
     description: "Unleash your marketing genius in the Viral Vogue Pitch, Reel & Win! challenge. Pitch quirky concepts like chai as an energy elixir or gourmet mess food in a thrilling 60-second Instagram reel. Submissions via tag/official link. With prizes worth ₹22,500, this is your chance to entertain, persuade, and go viral!",
-    image: "/viral-vogue.png",
+    image: "/viralposter.png",
     details: {
       date: "15th November",
       prizePool: "₹22,500",
