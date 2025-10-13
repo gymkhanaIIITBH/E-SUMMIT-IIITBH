@@ -33,7 +33,7 @@ const GoldSponsors = () => {
           transition={{ delay: 0.2, duration: 0.6 }}
           className="text-[#ffe600] text-2xl font-bold tracking-widest mb-8 text-center font-sans"
         >
-          SPONSERS
+          SPONSORS
         </motion.h2>
 
         <motion.div
