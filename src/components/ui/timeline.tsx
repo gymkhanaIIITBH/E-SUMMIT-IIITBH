@@ -45,20 +45,20 @@ const TimelineItem: React.FC<{
     });
   }, [isActive]);
 
-  const activeTitleClasses = isHighlighted 
-    ? "text-yellow-400 dark:text-yellow-400 scale-[1.02] transform transition-colors duration-500" 
-    : "text-neutral-500 dark:text-neutral-500 scale-100 transition-colors duration-500";
+const activeTitleClasses = isHighlighted 
+  ? "bg-clip-text text-transparent bg-gradient-to-r from-lime-400 to-green-600 scale-[1.02] transform transition-colors duration-500" 
+  : "text-neutral-500 dark:text-neutral-500 scale-100 transition-colors duration-500";
     
-  const activeDotClasses = isHighlighted 
-    ? "bg-yellow-400 ring-4 ring-yellow-400/50 shadow-md shadow-yellow-500/30" 
-    : "bg-neutral-500 dark:bg-neutral-500 ring-2 ring-neutral-500/30";
+const activeDotClasses = isHighlighted 
+  ? "bg-gradient-to-br from-lime-400 to-green-600 ring-4 ring-lime-400/50 shadow-lg shadow-green-600/50" 
+  : "bg-neutral-500 dark:bg-neutral-500 ring-2 ring-neutral-500/30";
 
 
   return (
     <div
       ref={itemRef}
       key={index}
-      className="flex justify-start pt-10 md:pt-40 md:gap-10"
+      className="flex justify-start pt-10 md:pt-20 md:gap-10"
     >
       {/* Sticky Title and Dot Column */}
       <div className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">
@@ -141,7 +141,7 @@ export const Timeline = ({
               opacity: opacityTransform,
             }}
             // Changed gradient to match the yellow highlight color for better synergy
-            className="absolute inset-x-0 top-0 w-[2px] bg-gradient-to-t from-yellow-400/80 via-yellow-500 to-transparent rounded-full"
+            className="absolute inset-x-0 top-0 w-[2px] bg-gradient-to-t from-green-400/80 via-green-500 to-transparent rounded-full"
           />
         </div>
 

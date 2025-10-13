@@ -1,10 +1,10 @@
 <svg width="2586" height="3879" viewBox="0 0 2586 3879" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<rect width="1293" height="1293" fill="url(#pattern0_2221_75)" fill-opacity="0.12"/>
-<rect x="1293" width="1293" height="1293" fill="url(#pattern1_2221_75)" fill-opacity="0.12"/>
-<rect y="1293" width="1293" height="1293" fill="url(#pattern2_2221_75)" fill-opacity="0.12"/>
-<rect x="1293" y="1293" width="1293" height="1293" fill="url(#pattern3_2221_75)" fill-opacity="0.12"/>
-<rect y="2586" width="1293" height="1293" fill="url(#pattern4_2221_75)" fill-opacity="0.12"/>
-<rect x="1293" y="2586" width="1293" height="1293" fill="url(#pattern5_2221_75)" fill-opacity="0.12"/>
+<rect width="1293" height="1293" fill="url(#pattern0_2221_75)" fill-opacity="0.3"/>
+<rect x="1293" width="1293" height="1293" fill="url(#pattern1_2221_75)" fill-opacity="0.3"/>
+<rect y="1293" width="1293" height="1293" fill="url(#pattern2_2221_75)" fill-opacity="0.3"/>
+<rect x="1293" y="1293" width="1293" height="1293" fill="url(#pattern3_2221_75)" fill-opacity="0.3"/>
+<rect y="2586" width="1293" height="1293" fill="url(#pattern4_2221_75)" fill-opacity="0.3"/>
+<rect x="1293" y="2586" width="1293" height="1293" fill="url(#pattern5_2221_75)" fill-opacity="0.3"/>
 <defs>
 <pattern id="pattern0_2221_75" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0_2221_75" transform="scale(0.000662252)"/>
