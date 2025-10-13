@@ -2,11 +2,30 @@ import { useRef, useEffect } from 'react';
 import TeamCard from '../components/TeamCard';
 import { motion, useInView } from 'framer-motion';
 import heroImg from '../../public/hero-bg.svg'; // ✅ make sure the path is correct
+import pinak from '/team/Pinak.jpg'
+import rahul from '/team/Rahul.jpg'
+import suyash from '/team/suyash.jpg'
+import ayush from '/team/ayush.jpg'
+import param from '/team/Param.jpg'
+import rajat from '/team/Rajat.jpg'
+  const team=[
+    {name:'Pinak Halder', image:pinak, designation:'VP Gymkhana Student Council', email:'testEMail', phone:'Test Phone'},
+    {name:'Rahul Kumar', image:rahul, designation:'General Secretary, Technical board', email:'testEMail', phone:'Test Phone'},
+    {name:'Suyash Ranjan', image:suyash, designation:'Esummit Coordinator', email:'testEMail', phone:'Test Phone'},
+    {name:'Ayush Kumar Singh', image:ayush, designation:'Public Relations Lead', email:'testEMail', phone:'Test Phone'},
+    {name:'Param Preet Singh', image:param, designation:'Sponsorship Team Lead', email:'testEMail', phone:'Test Phone'},
+    {name:'Rajat Ranjan', image:rajat, designation:'Marketing Team Lead', email:'testEMail', phone:'Test Phone'},
 
+
+
+  ]
 function Teams() {
   // Single ref for triggering animations when in view
   const ref = useRef(null);
   const inView = useInView(ref, { once: true });
+
+
+
 
   useEffect(() => {
     // Scroll to top when this page loads
@@ -55,8 +74,8 @@ function Teams() {
           transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
           className="flex justify-center max-w-[70rem] gap-6 flex-wrap"
         >
-          {Array.from({ length: 9 }).map((_, i) => (
-            <TeamCard key={i} />
+          {team.map((t, index) => (
+            <TeamCard key={index} name={t.name} designation={t.designation} image={t.image} email={t.email} phone={t.phone} />
           ))}
         </motion.div>
       </div>

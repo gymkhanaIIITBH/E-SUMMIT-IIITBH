@@ -4,12 +4,16 @@ import Aaskshlogo from "/Akash-logo.png";
 import easemytrip from "/easemytrip.png";
 import monginis from "/monginis.png";
 import GfgLogo from "/gfg.png"
+import MahindraLogo from '/mahindra.png'
 const sponsors = [
-  { name: "Aasksh", logoSrc: Aaskshlogo, url: "https://aasksh.com" },
+  { name: "Aasksh", logoSrc: Aaskshlogo, url: "https://aakash.ac.in" },
   { name: "KFC", logoSrc: KfcLogo, url: "https://online.kfc.co.in" },
+  { name: "Mahindra", logoSrc: MahindraLogo, url: "https://mahindra.com" },
   { name: "EaseMyTrip", logoSrc: easemytrip, url: "https://easemytrip.com" },
   { name: "Monginis", logoSrc: monginis, url: "https://monginis.com" },
   { name: "GeekForGeeks", logoSrc: GfgLogo, url: "https://geeksforgeeks.org" },
+  
+
 ];
 
 const GoldSponsors = () => {
