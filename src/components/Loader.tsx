@@ -1,4 +1,4 @@
-import React from 'react'
+
 function Loading() {
   return (
     <div className='font-futuristic flex flex-col items-center justify-center text-white  inset-0 bg-gray-950 absolute z-40 text-2xl ' >
