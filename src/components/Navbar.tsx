@@ -10,12 +10,12 @@ const Navbar = () => {
   type MenuItem = { label: string; to: string };
 
   const menuItems: MenuItem[] = [
-    { label: 'Home', to: '#home' },
-    { label: 'About', to: '#about' },
-    { label: 'Events', to: '/events' },
-    { label: 'Sponsors', to: '/sponsors' },
-    { label: 'Team', to: '/team' },
-    { label: 'Speakers', to: '#speakers' },
+    { label: 'HOME', to: '#home' },
+    { label: 'ABOUT', to: '#about' },
+    { label: 'EVENTS', to: '/events' },
+    { label: 'SPONSORS', to: '/sponsors' },
+    { label: 'TEAM', to: '/team' },
+    { label: 'SPEAKERS', to: '#speakers' },
   ];
 
   const handleNavClick = (item: MenuItem) => {

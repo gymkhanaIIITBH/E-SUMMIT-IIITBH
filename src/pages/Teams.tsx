@@ -9,12 +9,12 @@ import ayush from '/team/ayush.jpg'
 import param from '/team/Param.jpg'
 import rajat from '/team/Rajat.jpg'
   const team=[
-    {name:'Pinak Halder', image:pinak, designation:'VP Gymkhana Student Council', email:'testEMail', phone:'Test Phone'},
-    {name:'Rahul Kumar', image:rahul, designation:'General Secretary, Technical board', email:'testEMail', phone:'Test Phone'},
-    {name:'Suyash Ranjan', image:suyash, designation:'Esummit Coordinator', email:'testEMail', phone:'Test Phone'},
-    {name:'Ayush K. Singh', image:ayush, designation:'Public Relations Lead', email:'testEMail', phone:'Test Phone'},
-    {name:'Param Preet Singh', image:param, designation:'Sponsorship Team Lead', email:'testEMail', phone:'Test Phone'},
-    {name:'Rajat Ranjan', image:rajat, designation:'Marketing Team Lead', email:'testEMail', phone:'Test Phone'},
+    {name:'Pinak Halder', image:pinak, designation:'VP Gymkhana Student Council', email:'vp.gymkhana@iiitbh.ac.in', phone:null, linkedIn: "https://www.linkedin.com/in/pinak14iiitbh26?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"},
+    {name:'Rahul Kumar', image:rahul, designation:'General Secretary, Technical board', email:'gs.technical@iiitbh.ac.in', phone:null, linkedIn:'https://www.linkedin.com/in/rahul-kumar-iiitbh?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'},
+    {name:'Suyash Ranjan', image:suyash, designation:'Esummit Coordinator', email:'testEMail', phone:'+91 7302381447', linkedIn:'https://www.linkedin.com/in/suyash-ranjan?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'},
+    {name:'Ayush K. Singh', image:ayush, designation:'Public Relations Lead', email:'testEMail', phone:'+91 9369640113', linkedIn:'http://linkedin.com/in/ayush-kumar-singh-98a369291'},
+    {name:'Param Preet Singh', image:param, designation:'Sponsorship Team Lead', email:'testEMail', phone:'+91 8299424445', linkedIn:'https://www.linkedin.com/in/parampreet-singh-252782298?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'},
+    {name:'Rajat Ranjan', image:rajat, designation:'Marketing Team Lead', email:'testEMail', phone:'+91 9324572394', linkedIn:'https://www.linkedin.com/in/rajat-ranjan-b20ab3204?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'},
 
 
 
@@ -75,7 +75,7 @@ function Teams() {
           className="flex justify-center max-w-[70rem] gap-6 flex-wrap"
         >
           {team.map((t, index) => (
-            <TeamCard key={index} name={t.name} designation={t.designation} image={t.image} email={t.email} phone={t.phone} />
+            <TeamCard key={index} name={t.name} designation={t.designation} image={t.image} email={t.email} phone={t.phone} linkedIn={t.linkedIn} />
           ))}
         </motion.div>
       </div>

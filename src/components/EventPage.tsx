@@ -108,10 +108,10 @@ const EventPage: React.FC = () => {
             
             {/* REGISTER BUTTON */}
             <div className="pt-3 border-t border-neutral-700/70">
-              <InteractiveHoverButton             
+              <InteractiveHoverButton 
                 onClick={() => handleRegister(event.registerLink)}>
-                  Register Here                
-              </InteractiveHoverButton>               
+                  Register Here 
+              </InteractiveHoverButton> 
             </div>
           </div>
         </div>
@@ -119,8 +119,8 @@ const EventPage: React.FC = () => {
     ),
   }));
 
-  return (    
-    <main className="min-h-screen w-full bg-neutral-950 pt-10">      
+  return ( 
+    <main className="min-h-screen w-full bg-neutral-950 pt-10"> 
       
       {/* Header Section */}
       <motion.div 
