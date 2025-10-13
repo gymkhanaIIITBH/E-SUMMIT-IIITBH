@@ -1,4 +1,4 @@
-import heroImg from '../../public/hero-bg.svg'
+import heroImg from '/hero-bg.svg'
 import heroContent from '../../public/hero content.png'
 import { InteractiveHoverButton } from './InteractiveHoverButton';
 import { motion, useInView } from 'framer-motion';
