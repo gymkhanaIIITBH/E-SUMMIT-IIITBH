@@ -12,7 +12,7 @@ import rajat from '/team/Rajat.jpg'
     {name:'Pinak Halder', image:pinak, designation:'VP Gymkhana Student Council', email:'testEMail', phone:'Test Phone'},
     {name:'Rahul Kumar', image:rahul, designation:'General Secretary, Technical board', email:'testEMail', phone:'Test Phone'},
     {name:'Suyash Ranjan', image:suyash, designation:'Esummit Coordinator', email:'testEMail', phone:'Test Phone'},
-    {name:'Ayush Kumar Singh', image:ayush, designation:'Public Relations Lead', email:'testEMail', phone:'Test Phone'},
+    {name:'Ayush K. Singh', image:ayush, designation:'Public Relations Lead', email:'testEMail', phone:'Test Phone'},
     {name:'Param Preet Singh', image:param, designation:'Sponsorship Team Lead', email:'testEMail', phone:'Test Phone'},
     {name:'Rajat Ranjan', image:rajat, designation:'Marketing Team Lead', email:'testEMail', phone:'Test Phone'},
 

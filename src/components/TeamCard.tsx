@@ -12,7 +12,7 @@ function TeamCard({name='Test', image=image1, designation='Marketing & PR Lead',
   };
   return (
     <>
-<div className="overflow-hidden group mt-4 mb-4 relative w-64 h-auto flex flex-col justify-between shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out bg-white text-black rounded-bl-3xl rounded-tr-3xl">
+<div className="overflow-hidden group mt-4 mb-4 relative w-64 h-auto flex flex-col  shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out bg-white text-black rounded-bl-3xl rounded-tr-3xl">
   <img
     src={image}
     className="object-cover bg-black rounded-tl-sm rounded-tr-3xl w-full h-60 group-hover:opacity-70 mb-2 transition-transform duration-300 ease-in-out hover:scale-105"
@@ -31,8 +31,8 @@ function TeamCard({name='Test', image=image1, designation='Marketing & PR Lead',
       {copied && <div className='block font-bold text-black absolute top-[60%] z-10'>Copied!</div>}
   </div>
 
-  <div className="text-center pb-2  font-newsreader">
-    <div className="text-3xl leading-tight text-wrap font-bold text-black mt-0">{name}</div>
+  <div className="text-center relative flex flex-col justify-start pb-2  font-newsreader">
+    <div className="text-3xl relative top-0 leading-tight text-wrap font-bold text-black/85 mt-0">{name}</div>
     <div className="text-lg font-semibold text-wrap text-black/80">{designation}</div>
   </div>
 </div>
