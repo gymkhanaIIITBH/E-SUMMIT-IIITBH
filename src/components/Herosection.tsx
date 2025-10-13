@@ -104,17 +104,18 @@ const inView = useInView(ref, {once:true})
       {/* Left vertical social icons */}
       <div className="absolute top-[80%] fade-in left-8 md:top-[70%] transform -translate-y-1/2 z-10 flex flex-col items-center">
         <div className="sm:hidden md:block hidden h-24 w-px bg-white/30 mb-6" />
+
+        <SocialIcon link='https://in.linkedin.com/company/entrepreneurship-club-iiit-bhagalpur' label="linkedin">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M4.98 3.5a2.5 2.5 0 11.02 0zM3 8.98h4v12H3zM8.5 8.98h3.8v1.64h.05c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.78 2.66 4.78 6.12v6.28h-4v-5.58c0-1.33-.02-3.05-1.86-3.05-1.86 0-2.14 1.45-2.14 2.95v5.68h-4z"/></svg>
+        </SocialIcon>
+        <SocialIcon link='https://www.instagram.com/esummit_iiitbh/' label="instagram">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm5 6.6A4.4 4.4 0 1016.4 13 4.4 4.4 0 0012 8.6zM18.4 7a1 1 0 11-1 1 1 1 0 011-1z"/></svg>
+        </SocialIcon>
         <SocialIcon link='https://x.com/IIITBhagalpur' label="x">
           
         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 24 24" fill='#ffffff'>
         <path d="M26.37,26l-8.795-12.822l0.015,0.012L25.52,4h-2.65l-6.46,7.48L11.28,4H4.33l8.211,11.971L12.54,15.97L3.88,26h2.65 l7.182-8.322L19.42,26H26.37z M10.23,6l12.34,18h-2.1L8.12,6H10.23z"></path>
         </svg>          
-        </SocialIcon>
-        <SocialIcon link='https://in.linkedin.com/company/entrepreneurship-club-iiit-bhagalpur' label="linkedin">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M4.98 3.5a2.5 2.5 0 11.02 0zM3 8.98h4v12H3zM8.5 8.98h3.8v1.64h.05c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.78 2.66 4.78 6.12v6.28h-4v-5.58c0-1.33-.02-3.05-1.86-3.05-1.86 0-2.14 1.45-2.14 2.95v5.68h-4z"/></svg>
-        </SocialIcon>
-        <SocialIcon link='https://www.instagram.com/ecell_iiitbh/' label="instagram">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm5 6.6A4.4 4.4 0 1016.4 13 4.4 4.4 0 0012 8.6zM18.4 7a1 1 0 11-1 1 1 1 0 011-1z"/></svg>
         </SocialIcon>
       </div>
 

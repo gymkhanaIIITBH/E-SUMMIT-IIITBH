@@ -1,5 +1,5 @@
 
-import { Github, Linkedin, Twitter } from 'lucide-react'
+import { Instagram, Linkedin, X } from 'lucide-react'
 
 const Footer = () => {
   return (
@@ -10,7 +10,7 @@ const Footer = () => {
           <p className="mb-2 text-gray-300">A celebration of collaboration and innovation.</p>
           <a href="/team" className="mb-2 text-gray-300">For any query: <span className='underline'>Team</span></a>
           <br />
-          <a href="#" className="underline text-gray-300">Meet our Contributors</a>
+          {/* <a href="#" className="underline text-gray-300">Meet our Contributors</a> */}
 
         </div>
         <div className="flex flex-col items-center gap-6 mt-6 md:mt-0">
@@ -23,10 +23,10 @@ const Footer = () => {
           </div>
 
           <div className='flex gap-6'> 
-          <img src="/Logo.png" alt="Logo" className="h-10 w-10 object-contain" />
-          <Twitter className="h-7 w-7 text-gray-300 hover:text-white transition" />
-          <Github className="h-7 w-7 text-gray-300 hover:text-white transition" />
-          <Linkedin className="h-7 w-7 text-gray-300 hover:text-white transition" />
+            <a href="/"><img src="/Logo.png" alt="Logo" className="h-10 w-10 object-contain" /></a> 
+          <a href="https://x.com/IIITBhagalpur"><X className="h-7 w-7 text-gray-300 hover:text-white transition" /></a>
+          <a href="https://www.instagram.com/esummit_iiitbh/"><Instagram className="h-7 w-7 text-gray-300 hover:text-white transition" /></a>
+          <a href="https://in.linkedin.com/company/entrepreneurship-club-iiit-bhagalpur"><Linkedin className="h-7 w-7 text-gray-300 hover:text-white transition" /></a>
           </div>
 
         </div>
