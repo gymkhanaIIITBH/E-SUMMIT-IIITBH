@@ -3,7 +3,7 @@ import KfcLogo from "/kfc.png";
 import Aaskshlogo from "/Akash-logo.png";
 import easemytrip from "/easemytrip.png";
 import monginis from "/monginis.png";
-import GfgLogo from "/images (2).png"
+import GfgLogo from "/gfg.png"
 const sponsors = [
   { name: "Aasksh", logoSrc: Aaskshlogo, url: "https://aasksh.com" },
   { name: "KFC", logoSrc: KfcLogo, url: "https://online.kfc.co.in" },
