@@ -1,18 +1,14 @@
 import { motion } from "framer-motion";
 import KfcLogo from "/kfc.png";
-import polygonLogo from "/Polygon_Logo.svg";
-import ethIndiaLogo from "/ethindia-White.svg";
-import solanaLogo from "/Devfolio_Logo.svg";
-import replitLogo from "/Polygon_Logo.svg";
-import filecoinLogo from "/ethindia-White.svg";
+import Aaskshlogo from "/Akash-logo.png";
+import easemytrip from "/easemytrip.png";
+
 
 const sponsors = [
+  { name: "Aasksh", logoSrc: Aaskshlogo, url: "https://aasksh.com" },
   { name: "KFC", logoSrc: KfcLogo, url: "https://online.kfc.co.in" },
-  { name: "Polygon", logoSrc: polygonLogo, url: "https://polygon.technology" },
-  { name: "ETHIndia", logoSrc: ethIndiaLogo, url: "https://ethindia.co" },
-  { name: "Solana", logoSrc: solanaLogo, url: "https://solana.com" },
-  { name: "Replit", logoSrc: replitLogo, url: "https://replit.com" },
-  { name: "Filecoin", logoSrc: filecoinLogo, url: "https://filecoin.io" },
+  { name: "EaseMyTrip", logoSrc: easemytrip, url: "https://easemytrip.com" },
+
 ];
 
 const GoldSponsors = () => {
