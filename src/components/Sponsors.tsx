@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import devfolioLogo from "/Devfolio_Logo.svg";
+import KfcLogo from "/kfc.png";
 import polygonLogo from "/Polygon_Logo.svg";
 import ethIndiaLogo from "/ethindia-White.svg";
 import solanaLogo from "/Devfolio_Logo.svg";
@@ -7,7 +7,7 @@ import replitLogo from "/Polygon_Logo.svg";
 import filecoinLogo from "/ethindia-White.svg";
 
 const sponsors = [
-  { name: "Devfolio", logoSrc: devfolioLogo, url: "https://devfolio.co" },
+  { name: "KFC", logoSrc: KfcLogo, url: "https://online.kfc.co.in" },
   { name: "Polygon", logoSrc: polygonLogo, url: "https://polygon.technology" },
   { name: "ETHIndia", logoSrc: ethIndiaLogo, url: "https://ethindia.co" },
   { name: "Solana", logoSrc: solanaLogo, url: "https://solana.com" },

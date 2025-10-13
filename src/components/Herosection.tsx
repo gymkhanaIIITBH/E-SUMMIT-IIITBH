@@ -108,7 +108,7 @@ const inView = useInView(ref, {once:true})
       </div>
 
       {/* Right vertical scroll indicator */}
-      <div className='top-[100%] block scrolldown absolute fade-in right-6 md:top-[80%]'>
+      <div className='top-[97%] block scrolldown absolute fade-in right-6 md:top-[80%]'>
       <div className=" absolute right-0 top-1/2  scroll-icon  z-10 flex   items-center text-white ">
         <span className="tracking-widest inline text-nowrap text-sm">SCROLL DOWN</span>
         <svg className='h-8 w-8 mx-2 inline text-white' viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M2 12.0701H22" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M16 5L21.16 10C21.4324 10.2571 21.6494 10.567 21.7977 10.9109C21.946 11.2548 22.0226 11.6255 22.0226 12C22.0226 12.3745 21.946 12.7452 21.7977 13.0891C21.6494 13.433 21.4324 13.7429 21.16 14L16 19" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>      </div>
