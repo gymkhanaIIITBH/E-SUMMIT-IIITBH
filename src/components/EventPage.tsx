@@ -1,12 +1,10 @@
 import React, { useEffect } from 'react';
 import { Timeline } from './ui/timeline';
-// FIX: Use 'type' keyword for importing the interface
-import { eventData, type TimelineEventData } from '../lib/eventData.ts'; 
+import { eventData, type TimelineEventData } from '../lib/eventData.ts';
 import { motion } from 'framer-motion';
 import { AiOutlineCalendar, AiOutlineTrophy, AiOutlineUsergroupAdd } from 'react-icons/ai';
 import { InteractiveHoverButton } from './InteractiveHoverButton';
 
-// [Existing container and item variants for header]
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
@@ -21,7 +19,6 @@ const itemVariants = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
 };
-// [End of existing variants]
 
 const EventPage: React.FC = () => {
   const handleRegister = (eventLink: string) => {
@@ -31,12 +28,10 @@ const EventPage: React.FC = () => {
   };
 
   useEffect(() => {
-    // Scroll to top when this page loads
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, []);
 
-  // Asserting the correct type of the imported eventData array for use
-  const typedEventData: TimelineEventData[] = eventData as TimelineEventData[]; 
+  const typedEventData: TimelineEventData[] = eventData as TimelineEventData[];
 
   const items = typedEventData.map(event => ({
     title: event.title,
@@ -47,30 +42,31 @@ const EventPage: React.FC = () => {
         viewport={{ once: true, amount: 0.1 }}
         transition={{ duration: 0.6 }}
         
-        // 🌟 Line Card Structure 🌟
         className="
-          relative z-10 
-          bg-transparent 
-          shadow-none 
-          rounded-2xl 
-          border border-neutral-800 hover:border-yellow-500/50 
-          p-6 md:p-10 
+          relative z-10
+          bg-transparent
+          shadow-none
+          rounded-2xl
+          border border-neutral-800 hover:border-yellow-500/50
+          p-6 md:p-10
           transition-colors duration-300 ease-in-out
-          group 
+          group
         "
       >
-        {/* Subtle Inner Glow/Border on Hover */}
         <div className="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-yellow-400/20 transition duration-300 pointer-events-none" />
         
         <div className="flex flex-col lg:flex-row gap-8 relative z-20">
           
-          {/* IMAGE SECTION */}
-          <div className="lg:w-2/5">
-            <img
-              src={event.image}
-              alt={event.title}
-              className="w-full h-64 md:h-80 object-cover rounded-xl border border-neutral-700/50"
-            />
+          {/* IMAGE SECTION - UPDATED FOR SQUARE ASPECT RATIO */}
+          <div className="lg:w-2/5 w-full"> {/* Ensure full width on small screens */}
+            <div className="relative w-full" style={{ paddingBottom: '100%' }}> {/* This creates the square aspect ratio */}
+              <img
+                src={event.image}
+                alt={event.title}
+                // Image now fills the square container
+                className="absolute inset-0 w-full h-full object-cover rounded-xl border border-neutral-700/50"
+              />
+            </div>
           </div>
 
           {/* CONTENT SECTION */}
@@ -79,7 +75,7 @@ const EventPage: React.FC = () => {
               {event.description}
             </p>
             
-            {/* DETAILS SECTION - This correctly uses the new 'details' object */}
+            {/* DETAILS SECTION */}
             <h3 className="text-xl font-semibold text-white mb-3 tracking-wide font-newsreader">
               <span className="text-yellow-400 pb-1">Key Details</span>
             </h3>
@@ -112,12 +108,10 @@ const EventPage: React.FC = () => {
             
             {/* REGISTER BUTTON */}
             <div className="pt-3 border-t border-neutral-700/70">
-
               <InteractiveHoverButton             
                 onClick={() => handleRegister(event.registerLink)}>
                   Register Here                
               </InteractiveHoverButton>               
-              
             </div>
           </div>
         </div>
@@ -162,8 +156,6 @@ const EventPage: React.FC = () => {
       </motion.div>
       {/* End of Header Section */}
       
-      ---
-
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <Timeline
           data={items}

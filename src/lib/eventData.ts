@@ -14,7 +14,7 @@ export const eventData: TimelineEventData[] = [
   {
     title: "BITSTORM",
     description: "Gear up for BitStorm 1.0,Aspiring tech teams first submit ideas online, followed by an intense 36-hour offline coding sprint at IIIT Bhagalpur. Transform ideas into impactful prototypes with mentorship. Judges will evaluate innovation and execution. Prizes worth ₹1,75,000 awaits.",
-    image: "/bitstorm.png",
+    image: "/bitstormposter.svg",
     details: {
       date: "14th November",
       prizePool: "₹1,75,000",
@@ -25,7 +25,7 @@ export const eventData: TimelineEventData[] = [
   {
     title: "STARTUP EXPO",
     description: "The Startup Expo is a crucial event where entrepreneurs pitch innovative ideas directly to investors. It fosters valuable connections and promotes industry collaboration. This platform offers startups a vital opportunity to secure funding and achieve significant entrepreneurial success.",
-    image: "/startup-expo.png",
+    image: "/startexpoposter.svg",
     details: {
       date: "14th November",
       prizePool: "N/A (Funding)",
