@@ -1,9 +1,15 @@
 // Events.tsx — Final Visually Perfected and Responsive Version
 import { motion } from "framer-motion";
 import dividerLine from "../assets/L.svg";
-import summitLogo from "../assets/44.svg";
+import ideastorm from "/44.svg";
+import eship from "/45.svg"
+import viralvogue from "/46.svg"
+import bullrun from "/47.svg"
+import bitstorm from "/48.svg"
+import gaming from "/49.png"
+import expo from "/50.svg"
 
-import { InteractiveHoverButton } from './InteractiveHoverButton';
+import { InteractiveHoverButton } from "./InteractiveHoverButton";
 
 type EventItem = {
   id: number;
@@ -14,12 +20,13 @@ type EventItem = {
   description: string;
   dividerLeft: string;
   dividerRight: string;
+  image: string;
 };
 
 const IdeaEvent = {
   title: "IDEA STORM",
   description:
-    "Lorem ipsum dolor sit amet consectetur. Nec fames senectus quisque sed nulla nibh. Lacus et dolor suspendisse eleifend eu lorem turpis. Mus fusce vitae interdum purus id sodales elementum arcu. Purus nunc accumsan eros faucibus semper sagittis diam risus.",
+    "Pitch your groundbreaking startup ideas to investors and experts! Phase 1 is an online idea screening. Top teams advance to an offline, high-stakes pitch at IIIT Bhagalpur. Win prizes worth ₹85,000, plus certificates and exclusive goodies.",
 };
 const BitEvent = {
   title: "BITSTORM",
@@ -53,14 +60,33 @@ const StartupEvent = {
   description:
     "The Startup Expo is a crucial event where entrepreneurs pitch innovative ideas directly to investors. It fosters valuable connections and promotes industry collaboration. This platform offers startups a vital opportunity to secure funding and achieve significant entrepreneurial success.",
 };
+
+const ideaStormImage = ideastorm;
+const bitStormImage = bitstorm;
+const gamingEventImage = gaming;
+const bullRunImage = bullrun;
+const viralVogueImage = viralvogue;
+const quizEventImage = eship;
+const startupExpoImage = expo;
+
+const eventImages = {
+  [IdeaEvent.title]: ideaStormImage,
+  [BitEvent.title]: bitStormImage,
+  [GamingEvent.title]: gamingEventImage,
+  [BullEvent.title]: bullRunImage,
+  [ViralVogue.title]: viralVogueImage,
+  [QuizEvent.title]: quizEventImage,
+  [StartupEvent.title]: startupExpoImage,
+} as const satisfies Record<string, string>;
+
 const events: EventItem[] = [
-  { id: 1, day: "Friday", date: 14, month: "November", dividerLeft: dividerLine, dividerRight: dividerLine, ...BitEvent },
-  { id: 2, day: "Friday", date: 14, month: "November", dividerLeft: dividerLine, dividerRight: dividerLine, ... StartupEvent},
-  { id: 3, day: "Friday", date: 14, month: "November", dividerLeft: dividerLine, dividerRight: dividerLine, ...BullEvent },
-  { id: 4, day: "Saturday", date: 15, month: "November", dividerLeft: dividerLine, dividerRight: dividerLine, ...QuizEvent },
-  { id: 5, day: "Saturday", date: 15, month: "November", dividerLeft: dividerLine, dividerRight: dividerLine, ...IdeaEvent },
-  { id: 6, day: "Saturday", date: 15, month: "November", dividerLeft: dividerLine, dividerRight: dividerLine, ...GamingEvent },
-  { id: 7, day: "Saturday", date: 15, month: "November", dividerLeft: dividerLine, dividerRight: dividerLine, ...ViralVogue },
+  { id: 1, day: "Friday", date: 14, month: "November", dividerLeft: dividerLine, dividerRight: dividerLine, image: eventImages[BitEvent.title], ...BitEvent },
+  { id: 2, day: "Friday", date: 14, month: "November", dividerLeft: dividerLine, dividerRight: dividerLine, image: eventImages[StartupEvent.title], ...StartupEvent },
+  { id: 3, day: "Friday", date: 14, month: "November", dividerLeft: dividerLine, dividerRight: dividerLine, image: eventImages[BullEvent.title], ...BullEvent },
+  { id: 4, day: "Saturday", date: 15, month: "November", dividerLeft: dividerLine, dividerRight: dividerLine, image: eventImages[QuizEvent.title], ...QuizEvent },
+  { id: 5, day: "Saturday", date: 15, month: "November", dividerLeft: dividerLine, dividerRight: dividerLine, image: eventImages[IdeaEvent.title], ...IdeaEvent },
+  { id: 6, day: "Saturday", date: 15, month: "November", dividerLeft: dividerLine, dividerRight: dividerLine, image: eventImages[GamingEvent.title], ...GamingEvent },
+  { id: 7, day: "Saturday", date: 15, month: "November", dividerLeft: dividerLine, dividerRight: dividerLine, image: eventImages[ViralVogue.title], ...ViralVogue },
 ];
 
 export default function Events() {
@@ -120,7 +146,11 @@ export default function Events() {
                   {/* Dividers + Logo + Details */}
                   <div className="flex items-center justify-center gap-2 max-lg:flex-wrap max-lg:justify-start">
                     <img src={ev.dividerLeft} alt="divider" className="h-48 w-auto shrink-0 max-lg:hidden opacity-60 transition-opacity duration-500 group-hover:opacity-90" />
-                    <img src={summitLogo} alt="E-summit logo" className="w-60 h-auto object-contain shrink-0 max-lg:w-32 max-lg:h-auto lg:pr-20 transition-transform duration-500 group-hover:scale-[1.03]" />
+                    <img
+                      src={ev.image}
+                      alt={`${ev.title} logo`}
+                      className="w-60 h-auto object-contain shrink-0 max-lg:w-32 max-lg:h-auto lg:pr-20 transition-transform duration-500 group-hover:scale-[1.03]"
+                    />
                     <img src={ev.dividerRight} alt="divider" className="h-48 w-auto shrink-0 max-lg:hidden opacity-60 transition-opacity duration-500 group-hover:opacity-90" />
 
                     {/* Details */}
