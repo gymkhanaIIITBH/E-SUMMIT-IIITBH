@@ -62,8 +62,8 @@ export default function Events() {
   return (
     <main className="bg-black text-white">
       <section id="schedule" className="relative mx-auto max-w-6xl py-14 md:py-16 px-4">
-        <div className="w-full flex justify-center mb-10 md:mb-12">
-          <h2 className="text-4xl font-bold text-yellow-400 text-center">List of Events</h2>
+        <div className="w-full flex justify-center mb-5 md:mb-6">
+          <h2 className="text-[#ffe600] text-2xl font-bold tracking-widest mb-8 text-center font-sans">LIST OF EVENTS</h2>
         </div>
 
         <ol className="relative z-[2] pt-10">

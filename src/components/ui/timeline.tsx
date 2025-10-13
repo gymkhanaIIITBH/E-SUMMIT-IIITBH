@@ -68,7 +68,7 @@ const TimelineItem: React.FC<{
         </div>
 
         {/* Title (Desktop) */}
-        <h3 className={`hidden md:block text-xl md:pl-20 md:text-5xl font-extrabold ${activeTitleClasses}`}>
+        <h3 className={`hidden md:block text-xl md:pl-20 md:text-4xl font-bold ${activeTitleClasses}`}>
           {item.title}
         </h3>
       </div>
