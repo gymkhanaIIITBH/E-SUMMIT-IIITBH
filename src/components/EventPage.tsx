@@ -107,13 +107,8 @@ const EventPage: React.FC = () => {
   }));
 
   return (    
-    <main className="min-h-screen w-full bg-neutral-950 pt-10">
-      <div
-        className="fixed inset-0 bg-no-repeat bg-cover bg-center opacity-100 mix-blend-multiply pointer-events-none"
-        style={{
-          backgroundImage: "url('/long-bg.svg')",
-        }}
-      />
+    <main className="min-h-screen w-full bg-neutral-950 pt-10">      
+      
       {/* Header Section */}
       <motion.div 
         className="w-full pt-20 text-center"
