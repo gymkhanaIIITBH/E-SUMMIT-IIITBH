@@ -21,7 +21,7 @@ export const eventData: TimelineEventData[] = [
       { time: "11:00", activity: "Mentorship Session" }
     ],
     registrationStatus: "Open",
-    registerLink: "/register/ideastorm"
+    registerLink: "https://tailwindcss.com/docs/colors"
   },
   {
     title: "Startup Summit",
@@ -81,7 +81,7 @@ export const eventData: TimelineEventData[] = [
       { time: "15:00", activity: "Deal Discussion" }
     ],
     registrationStatus: "Open",
-    registerLink: "/register/investor"
+    registerLink: "https://tailwindcss.com/docs/colors"
   },
   {
     title: "Hackathon",

@@ -57,7 +57,7 @@ const EventPage: React.FC = () => {
         {/* Subtle Inner Glow/Border on Hover */}
         <div className="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-yellow-400/20 transition duration-300 pointer-events-none" />
         
-        <h2 className="text-2xl font-bold text-white mb-3 relative z-20 transition-colors duration-300 group-hover:text-yellow-400">{event.title}</h2>
+        {/* <h2 className="text-2xl font-bold text-white mb-3 relative z-20 transition-colors duration-300 group-hover:text-yellow-400">{event.title}</h2> */}
         
         <div className="flex flex-col lg:flex-row gap-8 relative z-20">
           

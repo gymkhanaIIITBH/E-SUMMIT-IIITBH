@@ -30,7 +30,7 @@ const inView = useInView(ref, {once:true})
         style={{ backgroundImage: `url(${heroImg})`, minHeight: '500px' }}
         aria-hidden
       />
-      <div className="absolute inset-0 bg-[#4fbf44]  mix-blend-multiply" />
+      <div className="absolute inset-0" />
 
       {/* Top bar: logo left, menu right */}
       <header className="relative z-10 flex items-center justify-between p-8">
