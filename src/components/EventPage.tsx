@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Timeline } from './ui/timeline';
 import { eventData } from '../lib/eventData';
 import { RegisterButton } from './ui/register-button';
@@ -27,6 +27,11 @@ const EventPage: React.FC = () => {
     console.log('Registering for:', eventLink);
     // Add your registration logic here
   };
+
+  useEffect(() => {
+    // Scroll to top when this page loads
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
 
   const items = eventData.map(event => ({
     title: event.title, 
