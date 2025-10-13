@@ -7,7 +7,7 @@ import SponsorForm from './components/SponsorFormPage'
 import AboutSection from './components/AboutSection'
 import Teams from './pages/Teams'
 import Footer from './components/Footer'
-
+import EventPage from './components/EventPage'
 
 function App() {
   return (
@@ -19,6 +19,7 @@ function App() {
         <Route path="/sponsors" element={<SponsorsPage />} />
         <Route path="/sponsorform" element={<SponsorForm />} />
         <Route path="/team" element={<Teams />} />
+  <Route path="/events" element={<EventPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>

@@ -2,7 +2,8 @@
 import { motion } from "framer-motion";
 import dividerLine from "../assets/L.svg";
 import summitLogo from "../assets/44.svg";
-import { InteractiveHoverButton } from './InteractiveHoverButton ';
+import { InteractiveHoverButton } from './InteractiveHoverButton';
+
 
 type EventItem = {
   id: number;
