@@ -2,12 +2,13 @@ import { motion } from "framer-motion";
 import KfcLogo from "/kfc.png";
 import Aaskshlogo from "/Akash-logo.png";
 import easemytrip from "/easemytrip.png";
-
+import monginis from "/monginis.png";
 
 const sponsors = [
   { name: "Aasksh", logoSrc: Aaskshlogo, url: "https://aasksh.com" },
   { name: "KFC", logoSrc: KfcLogo, url: "https://online.kfc.co.in" },
   { name: "EaseMyTrip", logoSrc: easemytrip, url: "https://easemytrip.com" },
+  { name: "Monginis", logoSrc: monginis, url: "https://monginis.com" },
 
 ];
 
