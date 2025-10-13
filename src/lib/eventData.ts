@@ -2,109 +2,90 @@ export interface TimelineEventData {
   title: string;
   description: string;
   image: string;
-  schedule: {
-    time: string;
-    activity: string;
-  }[];
-  registrationStatus: 'Open' | 'Coming Soon' | 'Closed';
+  details: {
+    date: string; // e.g., "14th November"
+    prizePool: string; // e.g., "₹1,75,000"
+    numMembers: string; // e.g., "2-4"
+  };
   registerLink: string;
 }
 
 export const eventData: TimelineEventData[] = [
   {
-    title: "Ideastorm 4.0",
-    description: "48-hour innovation challenge where teams develop solutions to real-world problems. Get mentored by industry experts and win exciting prizes.",
-    image: "/ideastorm.png",
-    schedule: [
-      { time: "09:30", activity: "Registration & Team Formation" },
-      { time: "10:30", activity: "Problem Statement Release" },
-      { time: "11:00", activity: "Mentorship Session" }
-    ],
-    registrationStatus: "Open",
-    registerLink: "https://tailwindcss.com/docs/colors"
+    title: "BITSTORM",
+    description: "Gear up for BitStorm 1.0,Aspiring tech teams first submit ideas online, followed by an intense 36-hour offline coding sprint at IIIT Bhagalpur. Transform ideas into impactful prototypes with mentorship. Judges will evaluate innovation and execution. Prizes worth ₹1,75,000 awaits.",
+    image: "/bitstorm.png",
+    details: {
+      date: "14th November",
+      prizePool: "₹1,75,000",
+      numMembers: "2-4",
+    },
+    registerLink: "/register/bitstorm"
   },
   {
-    title: "Startup Summit",
-    description: "Connect with successful entrepreneurs, investors, and industry leaders. Learn about the latest trends in entrepreneurship and innovation.",
-    image: "/ideastorm.png",
-    schedule: [
-      { time: "10:00", activity: "Keynote Speech" },
-      { time: "11:30", activity: "Panel Discussion" },
-      { time: "14:00", activity: "Networking Session" }
-    ],
-    registrationStatus: "Open",
-    registerLink: "/register/summit"
+    title: "STARTUP EXPO",
+    description: "The Startup Expo is a crucial event where entrepreneurs pitch innovative ideas directly to investors. It fosters valuable connections and promotes industry collaboration. This platform offers startups a vital opportunity to secure funding and achieve significant entrepreneurial success.",
+    image: "/startup-expo.png",
+    details: {
+      date: "14th November",
+      prizePool: "N/A (Funding)",
+      numMembers: "1-5",
+    },
+    registerLink: "/register/startup-expo"
   },
   {
-    title: "Pitch Perfect",
-    description: "Present your startup idea to a panel of investors and industry experts. Get valuable feedback and a chance to win seed funding.",
-    image: "/ideastorm.png",
-    schedule: [
-      { time: "09:00", activity: "Pitch Preparation Workshop" },
-      { time: "13:00", activity: "Preliminary Rounds" },
-      { time: "16:00", activity: "Finals" }
-    ],
-    registrationStatus: "Open",
-    registerLink: "/register/pitch"
+    title: "BULLRUN",
+    description: "This challenge for strategists blends financial analysis. Phase 1 is an online financial reasoning quiz. Phase 2 features thrilling live market simulations and real-time trading choices based on company data. Winners, judged on market understanding and strategy, claim prizes worth ₹50,000.",
+    image: "/bullrun.png",
+    details: {
+      date: "14th November",
+      prizePool: "₹50,000",
+      numMembers: "1-2",
+    },
+    registerLink: "/register/bullrun"
   },
   {
-    title: "Tech Expo",
-    description: "Showcase of cutting-edge technology innovations. Experience live demos and interact with tech pioneers.",
-    image: "/ideastorm.png",
-    schedule: [
-      { time: "10:00", activity: "Exhibition Opens" },
-      { time: "12:00", activity: "Tech Demos" },
-      { time: "15:00", activity: "Innovation Awards" }
-    ],
-    registrationStatus: "Open",
-    registerLink: "/register/expo"
+    title: "E-SHIP QUIZ",
+    description: "Test your Business and Tech IQ in the E-Ship Quiz! The challenge starts with a 25-question online quiz. The top contenders advance to a thrilling live buzzer round on Google Meet. This fast-paced event rewards quick thinking with a prize pool of ₹5,000.",
+    image: "/eship-quiz.png",
+    details: {
+      date: "15th November",
+      prizePool: "₹5,000",
+      numMembers: "1",
+    },
+    registerLink: "/register/eship-quiz"
   },
   {
-    title: "Workshop Series",
-    description: "Hands-on workshops on emerging technologies, business strategies, and entrepreneurship fundamentals.",
+    title: "IDEA STORM",
+    description: "Pitch your groundbreaking startup ideas to investors and experts! Phase 1 is an online idea screening. Top teams advance to an offline, high-stakes pitch at IIIT Bhagalpur. Win prizes worth ₹85,000, plus certificates and exclusive goodies.",
     image: "/ideastorm.png",
-    schedule: [
-      { time: "09:30", activity: "AI & ML Workshop" },
-      { time: "11:30", activity: "Business Model Canvas" },
-      { time: "14:30", activity: "Digital Marketing" }
-    ],
-    registrationStatus: "Open",
-    registerLink: "/register/workshops"
+    details: {
+      date: "15th November",
+      prizePool: "₹85,000",
+      numMembers: "2-4",
+    },
+    registerLink: "/register/ideastorm"
   },
   {
-    title: "Investor Connect",
-    description: "One-on-one meetings with potential investors. Present your startup and explore funding opportunities.",
-    image: "/ideastorm.png",
-    schedule: [
-      { time: "10:00", activity: "Investor Presentations" },
-      { time: "12:00", activity: "One-on-One Meetings" },
-      { time: "15:00", activity: "Deal Discussion" }
-    ],
-    registrationStatus: "Open",
-    registerLink: "https://tailwindcss.com/docs/colors"
+    title: "GAMING EVENT",
+    description: "Gear up for the ultimate BGMI and VALORANT clash! Compete in intense battles to prove your team's dominance. Show off your skills and strategy in this high-stakes tournament. A total prize pool of ₹25,000 is up for grabs. Time to dominate the arena!",
+    image: "/gaming-event.png",
+    details: {
+      date: "15th November",
+      prizePool: "₹25,000",
+      numMembers: "4-6",
+    },
+    registerLink: "/register/gaming"
   },
   {
-    title: "Hackathon",
-    description: "24-hour coding challenge to build innovative solutions. Work with the latest technologies and win exciting prizes.",
-    image: "/ideastorm.png",
-    schedule: [
-      { time: "08:00", activity: "Opening Ceremony" },
-      { time: "09:00", activity: "Coding Begins" },
-      { time: "08:00", activity: "Project Submission" }
-    ],
-    registrationStatus: "Open",
-    registerLink: "/register/hackathon"
+    title: "VIRAL VOGUE",
+    description: "Unleash your marketing genius in the Viral Vogue Pitch, Reel & Win! challenge. Pitch quirky concepts like chai as an energy elixir or gourmet mess food in a thrilling 60-second Instagram reel. Submissions via tag/official link. With prizes worth ₹22,500, this is your chance to entertain, persuade, and go viral!",
+    image: "/viral-vogue.png",
+    details: {
+      date: "15th November",
+      prizePool: "₹22,500",
+      numMembers: "1-2",
+    },
+    registerLink: "/register/viral-vogue"
   },
-  {
-    title: "Closing Ceremony",
-    description: "Grand finale featuring award distribution, cultural performances, and networking dinner.",
-    image: "/ideastorm.png",
-    schedule: [
-      { time: "17:00", activity: "Award Ceremony" },
-      { time: "18:30", activity: "Cultural Show" },
-      { time: "20:00", activity: "Networking Dinner" }
-    ],
-    registrationStatus: "Open",
-    registerLink: "/register/closing"
-  }
 ];

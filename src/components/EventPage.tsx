@@ -1,10 +1,11 @@
 import React, { useEffect } from 'react';
 import { Timeline } from './ui/timeline';
-import { eventData } from '../lib/eventData';
-//import { RegisterButton } from './ui/register-button';
+// FIX: Use 'type' keyword for importing the interface
+import { eventData, type TimelineEventData } from '../lib/eventData.ts'; 
 import { motion } from 'framer-motion';
-import { AiOutlineClockCircle } from 'react-icons/ai'; 
+import { AiOutlineCalendar, AiOutlineTrophy, AiOutlineUsergroupAdd } from 'react-icons/ai';
 import { InteractiveHoverButton } from './InteractiveHoverButton';
+
 // [Existing container and item variants for header]
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -25,7 +26,8 @@ const itemVariants = {
 const EventPage: React.FC = () => {
   const handleRegister = (eventLink: string) => {
     console.log('Registering for:', eventLink);
-    // Add your registration logic here
+    // In a real application, you might use window.location.href or a routing method here
+    // window.location.href = eventLink;
   };
 
   useEffect(() => {
@@ -33,8 +35,11 @@ const EventPage: React.FC = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, []);
 
-  const items = eventData.map(event => ({
-    title: event.title, 
+  // Asserting the correct type of the imported eventData array for use
+  const typedEventData: TimelineEventData[] = eventData as TimelineEventData[]; 
+
+  const items = typedEventData.map(event => ({
+    title: event.title,
     content: (
       <motion.div
         initial={{ opacity: 0, y: 30 }}
@@ -57,49 +62,61 @@ const EventPage: React.FC = () => {
         {/* Subtle Inner Glow/Border on Hover */}
         <div className="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-yellow-400/20 transition duration-300 pointer-events-none" />
         
-        {/* <h2 className="text-2xl font-bold text-white mb-3 relative z-20 transition-colors duration-300 group-hover:text-yellow-400">{event.title}</h2> */}
-        
         <div className="flex flex-col lg:flex-row gap-8 relative z-20">
           
-          {/* IMAGE SECTION - Kept minimalist but defined */}
+          {/* IMAGE SECTION */}
           <div className="lg:w-2/5">
             <img
               src={event.image}
               alt={event.title}
-              // Removed heavy shadow, kept subtle border
               className="w-full h-64 md:h-80 object-cover rounded-xl border border-neutral-700/50"
             />
           </div>
 
           {/* CONTENT SECTION */}
           <div className="lg:w-3/5">
-            <p className="text-neutral-300 font-newsreader text-lg leading-relaxed mb-3 border-b border-neutral-700 pb-2">
+            <p className="text-neutral-300 font-newsreader text-lg leading-relaxed mb-6 border-b border-neutral-700 pb-2">
               {event.description}
             </p>
             
-            {/* SCHEDULE SECTION */}
+            {/* DETAILS SECTION - This correctly uses the new 'details' object */}
             <h3 className="text-xl font-semibold text-white mb-3 tracking-wide font-newsreader">
-                <span className="text-yellow-400 pb-1">Schedule Details</span>
+              <span className="text-yellow-400 pb-1">Key Details</span>
             </h3>
             <ul className="text-sm text-neutral-400 list-none space-y-3 mb-8 font-newsreader">
-              {event.schedule.map((item, index) => (
-                <li key={index} className="flex items-start">
-                  <AiOutlineClockCircle className="text-yellow-400 text-lg mr-2 flex-shrink-0 mt-0.5" /> 
-                  <span className="flex flex-col sm:flex-row">
-                    <strong className="text-white mr-2 font-medium">{item.time}</strong> 
-                    <span className="text-neutral-400">{item.activity}</span>
-                  </span>
-                </li>
-              ))}
+              {/* Date */}
+              <li className="flex items-start">
+                <AiOutlineCalendar className="text-yellow-400 text-lg mr-2 flex-shrink-0 mt-0.5" /> 
+                <span className="flex flex-col sm:flex-row">
+                  <strong className="text-white mr-2 font-medium">Date:</strong> 
+                  <span className="text-neutral-400">{event.details.date}</span>
+                </span>
+              </li>
+              {/* Prize Pool */}
+              <li className="flex items-start">
+                <AiOutlineTrophy className="text-yellow-400 text-lg mr-2 flex-shrink-0 mt-0.5" /> 
+                <span className="flex flex-col sm:flex-row">
+                  <strong className="text-white mr-2 font-medium">Prize Pool:</strong> 
+                  <span className="text-neutral-400">{event.details.prizePool}</span>
+                </span>
+              </li>
+              {/* Number of Members */}
+              <li className="flex items-start">
+                <AiOutlineUsergroupAdd className="text-yellow-400 text-lg mr-2 flex-shrink-0 mt-0.5" /> 
+                <span className="flex flex-col sm:flex-row">
+                  <strong className="text-white mr-2 font-medium">Team Size:</strong> 
+                  <span className="text-neutral-400">{event.details.numMembers}</span>
+                </span>
+              </li>
             </ul>
             
             {/* REGISTER BUTTON */}
             <div className="pt-3 border-t border-neutral-700/70">
 
-              <InteractiveHoverButton             
+              <InteractiveHoverButton             
                 onClick={() => handleRegister(event.registerLink)}>
-                  Register Here                
-              </InteractiveHoverButton>               
+                  Register Here                
+              </InteractiveHoverButton>               
               
             </div>
           </div>
@@ -108,8 +125,8 @@ const EventPage: React.FC = () => {
     ),
   }));
 
-  return (    
-    <main className="min-h-screen w-full bg-neutral-950 pt-10">      
+  return (    
+    <main className="min-h-screen w-full bg-neutral-950 pt-10">      
       
       {/* Header Section */}
       <motion.div 
@@ -132,7 +149,7 @@ const EventPage: React.FC = () => {
             animate={{ rotate: 0 }}
             transition={{ duration: 0.8, type: "spring", stiffness: 150 }}
           >
-             
+            
           </motion.span>
         </motion.h1>
         
@@ -144,6 +161,8 @@ const EventPage: React.FC = () => {
         </motion.p>
       </motion.div>
       {/* End of Header Section */}
+      
+      ---
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <Timeline
