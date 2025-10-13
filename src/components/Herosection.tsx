@@ -2,7 +2,8 @@ import heroImg from '/hero-bg.svg'
 import heroContent from '../../public/hero content.png'
 import { InteractiveHoverButton } from './InteractiveHoverButton';
 import { motion, useInView } from 'framer-motion';
-import { useRef } from 'react';
+import {  useEffect, useRef, useState } from 'react';
+import Loading from './Loader';
 const SocialIcon = ({ children, label, link }: { children: React.ReactNode; label: string, link:string }) => (
   <div onClick={()=>handleClick(link)} className="w-10 h-10 flex items-center justify-center bg-white/10 rounded-md mb-3 hover:bg-white/20 transition" aria-label={label}>
     {children}
@@ -22,14 +23,24 @@ const inView = useInView(ref, {once:true})
       behavior: 'smooth', // Smooth scrolling
     });
   };
+
+    const [isImageLoaded, setIsImageLoaded] = useState(false);
+    
+    useEffect(() => {
+    const img = new Image();
+    img.src = heroImg;
+    img.onload = () => setIsImageLoaded(true); 
+  }, []);
   return (
     <section className="relative h-screen w-full overflow-hidden" id="home">
       {/* Background image with orange overlay */}
-      <div
-        className="absolute inset-0 parallax"
-        style={{ backgroundImage: `url(${heroImg})`, minHeight: '500px' }}
-        aria-hidden
-      />
+        {!isImageLoaded && <Loading />}
+        <div
+          className="absolute inset-0 parallax"
+          style={{ backgroundImage: `url(${heroImg})`, minHeight: '500px' }}
+          aria-hidden
+        />
+    
       <div className="absolute inset-0" />
 
       {/* Top bar: logo left, menu right */}
