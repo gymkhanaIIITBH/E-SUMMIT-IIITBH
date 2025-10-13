@@ -20,8 +20,8 @@ const Speaker: React.FC = () => {
       }}
       className="w-full flex flex-col items-center justify-center py-20"
     >
-      <h2 className="text-[#ffffff] text-3xl md:text-5xl font-bold tracking-widest mb-10 text-center font-montserrat">
-        SPEAKER
+      <h2 className="text-[#ffe600] text-2xl font-bold tracking-widest mb-8 text-center font-sans">
+        SPEAKERS
       </h2>
 
       <div className="relative flex items-center justify-center w-[92%] md:w-[80%] lg:w-[75%] bg-[#0f0f0f] rounded-3xl p-4 md:p-10 shadow-2xl text-white h-auto border border-[#2a2a2a]">
@@ -59,7 +59,7 @@ const Speaker: React.FC = () => {
             "
           >
             <div>
-              <Quote className="text-white mb-4 mx-auto md:mx-0" size={28} />
+              <Quote className="text-white mb-4 mx-auto md:mx-0 rotate-180" size={28} />
               <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold">
                 {current.name}
               </h2>
@@ -69,7 +69,7 @@ const Speaker: React.FC = () => {
               </p>
             </div>
             <div className="flex justify-center md:justify-end">
-              <Quote className="text-white rotate-180" size={28} />
+              <Quote className="text-white " size={28} />
             </div>
           </div>
         </div>
