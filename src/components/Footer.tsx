@@ -9,7 +9,7 @@ const Footer = () => {
         <div>
           <p className="text-lg font-medium mb-1">© 2025 E-Summit. All rights reserved.</p>
           <p className="mb-3 text-gray-300">A celebration of collaboration and innovation.</p>
-          <a href="/team" className="mb-2 text-gray-300 flex gap-2">For any query: <span className=' flex gap-1 items-center underline'> <Phone color='#0080c0' height={20}/> Team </span></a>
+          <a href="/team" className="mb-2 text-gray-300 flex gap-2">For any query: <span className=' flex gap-1 items-center underline'> <Phone color='#0080c0' height={20}/> Contact </span></a>
           
           {/* <a href="#" className="underline text-gray-300">Meet our Contributors</a> */}
           <p className='mt-4'>Follow us: </p>
@@ -41,7 +41,7 @@ const Footer = () => {
       </div>
       <hr className="my-6 border-gray-700" />
       <div className="flex justify-center">
-        <span className="text-[8vw] font-bold text-center bg-gradient-to-b from-gray-500 to-black bg-clip-text text-transparent tracking-tight select-none font-sans">E-SUMMIT</span>
+        <span className="text-[8vw] font-bold text-center bg-gradient-to-b from-gray-500 to-black bg-clip-text text-transparent tracking-tight select-none  font-sans">E-SUMMIT</span>
       </div>
     </footer>
   )
