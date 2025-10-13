@@ -1,5 +1,5 @@
 
-import { Instagram, Linkedin, X } from 'lucide-react'
+import { Instagram, Linkedin, MapPinIcon, Phone, X } from 'lucide-react'
 import Logo from '/logo.svg'
 import CollegeLogo from '/CollegeLogo.png'
 const Footer = () => {
@@ -7,12 +7,12 @@ const Footer = () => {
     <footer className="bg-black text-white py-8 px-6 w-full">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between">
         <div>
-          <p className="text-lg font-medium mb-2">© 2025 E-Summit. All rights reserved.</p>
-          <p className="mb-1 text-gray-300">A celebration of collaboration and innovation.</p>
-          <a href="/team" className="mb-2 text-gray-300">For any query: <span className='underline'>Team</span></a>
+          <p className="text-lg font-medium mb-1">© 2025 E-Summit. All rights reserved.</p>
+          <p className="mb-3 text-gray-300">A celebration of collaboration and innovation.</p>
+          <a href="/team" className="mb-2 text-gray-300 flex gap-2">For any query: <span className=' flex gap-1 items-center underline'> <Phone color='#0080c0' height={20}/> Team </span></a>
           
           {/* <a href="#" className="underline text-gray-300">Meet our Contributors</a> */}
-          <p className='mt-6'>Follow us: </p>
+          <p className='mt-4'>Follow us: </p>
           <div className='flex gap-6 mt-1'> 
             <a href="/"><img src="/Logo.png" alt="Logo" className="h-10 w-10 object-contain" /></a> 
           <a href="https://x.com/IIITBhagalpur" className='flex items-center'><X className="h-7 w-7 text-gray-300 hover:text-white transition object-cover" /></a>
@@ -30,9 +30,9 @@ const Footer = () => {
           </div>
           <div>
           <p className='mt-0 text-xl font-medium'> Reach us</p>
-          <p className='text-gray-300'> IIIT Bhagalpur, Zero Mile, Sabour</p>
-          <p className='text-gray-300'>Bhagalpur, Bihar.</p>
-          <a className='mt-2 underline text-gray-300' href="https://maps.app.goo.gl/GJdt7mKqEQqzW8er7">Map Link!</a>
+          <p className='text-gray-300'> Indian Institute of Information Technology Bhagalpur,</p>
+          <p className='text-gray-300'>Bhagalpur - 813210, Bihar, India.</p>
+          <a className='mt-2 underline flex gap-2 text-gray-300' href="https://maps.app.goo.gl/GJdt7mKqEQqzW8er7"> <MapPinIcon color='#80ff80'/> Address</a>
           </div>
 
 
