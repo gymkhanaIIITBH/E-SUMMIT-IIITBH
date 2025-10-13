@@ -1,33 +1,41 @@
 
 import { Instagram, Linkedin, X } from 'lucide-react'
-
+import Logo from '/logo.svg'
+import CollegeLogo from '/CollegeLogo.png'
 const Footer = () => {
   return (
     <footer className="bg-black text-white py-8 px-6 w-full">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between">
         <div>
           <p className="text-lg font-medium mb-2">© 2025 E-Summit. All rights reserved.</p>
-          <p className="mb-2 text-gray-300">A celebration of collaboration and innovation.</p>
+          <p className="mb-1 text-gray-300">A celebration of collaboration and innovation.</p>
           <a href="/team" className="mb-2 text-gray-300">For any query: <span className='underline'>Team</span></a>
-          <br />
+          
           {/* <a href="#" className="underline text-gray-300">Meet our Contributors</a> */}
+          <p className='mt-6'>Follow us: </p>
+          <div className='flex gap-6 mt-1'> 
+            <a href="/"><img src="/Logo.png" alt="Logo" className="h-10 w-10 object-contain" /></a> 
+          <a href="https://x.com/IIITBhagalpur" className='flex items-center'><X className="h-7 w-7 text-gray-300 hover:text-white transition object-cover" /></a>
+          <a href="https://www.instagram.com/esummit_iiitbh/" className='flex items-center'><Instagram className="h-7 w-7 text-gray-300 hover:text-white transition" /></a>
+          <a href="https://in.linkedin.com/company/entrepreneurship-club-iiit-bhagalpur" className='flex items-center'><Linkedin className="h-7 w-7 text-gray-300 hover:text-white transition" /></a>
+          </div>
 
         </div>
-        <div className="flex flex-col items-center gap-6 mt-6 md:mt-0">
+        <div className="flex flex-col items-start gap-2 mt-6 md:mt-0">
           {/* Replace with your logo if needed */}
+          <div className='flex leading-10 items-center justify-start '>
+            <img src={Logo} height={48} width={48} alt="Esummit" />
+            <div className=" h-8 w-[2px] bg-white/30 mr-3 ml-2 " />
+            <img src={CollegeLogo} height={48} width={48} alt="IITBH" />
+          </div>
           <div>
-          <p className='mt-4 text-xl font-medium'> Reach us</p>
+          <p className='mt-0 text-xl font-medium'> Reach us</p>
           <p className='text-gray-300'> IIIT Bhagalpur, Zero Mile, Sabour</p>
           <p className='text-gray-300'>Bhagalpur, Bihar.</p>
           <a className='mt-2 underline text-gray-300' href="https://maps.app.goo.gl/GJdt7mKqEQqzW8er7">Map Link!</a>
           </div>
 
-          <div className='flex gap-6'> 
-            <a href="/"><img src="/Logo.png" alt="Logo" className="h-10 w-10 object-contain" /></a> 
-          <a href="https://x.com/IIITBhagalpur"><X className="h-7 w-7 text-gray-300 hover:text-white transition" /></a>
-          <a href="https://www.instagram.com/esummit_iiitbh/"><Instagram className="h-7 w-7 text-gray-300 hover:text-white transition" /></a>
-          <a href="https://in.linkedin.com/company/entrepreneurship-club-iiit-bhagalpur"><Linkedin className="h-7 w-7 text-gray-300 hover:text-white transition" /></a>
-          </div>
+
 
         </div>
       </div>
