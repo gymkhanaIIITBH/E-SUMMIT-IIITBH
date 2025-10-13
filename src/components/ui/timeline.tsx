@@ -45,13 +45,13 @@ const TimelineItem: React.FC<{
     });
   }, [isActive]);
 
-const activeTitleClasses = isHighlighted 
-  ? "bg-clip-text text-transparent bg-gradient-to-r from-lime-400 to-green-600 scale-[1.02] transform transition-colors duration-500" 
-  : "text-neutral-500 dark:text-neutral-500 scale-100 transition-colors duration-500";
+  const activeTitleClasses = isHighlighted 
+    ? "text-green-600 dark:text-green-600 scale-[1.02] transform transition-colors duration-500" 
+    : "text-neutral-500 dark:text-neutral-500 scale-100 transition-colors duration-500";
     
-const activeDotClasses = isHighlighted 
-  ? "bg-gradient-to-br from-lime-400 to-green-600 ring-4 ring-lime-400/50 shadow-lg shadow-green-600/50" 
-  : "bg-neutral-500 dark:bg-neutral-500 ring-2 ring-neutral-500/30";
+  const activeDotClasses = isHighlighted 
+    ? "bg-green-500 ring-4 ring-green-500/50 shadow-md shadow-green-500/30" 
+    : "bg-neutral-500 dark:bg-neutral-500 ring-2 ring-neutral-500/30";
 
 
   return (

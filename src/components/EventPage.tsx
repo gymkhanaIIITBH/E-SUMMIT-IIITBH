@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import { Timeline } from './ui/timeline';
 import { eventData } from '../lib/eventData';
-import { RegisterButton } from './ui/register-button';
+//import { RegisterButton } from './ui/register-button';
 import { motion } from 'framer-motion';
 import { AiOutlineClockCircle } from 'react-icons/ai'; 
-
+import { InteractiveHoverButton } from './InteractiveHoverButton';
 // [Existing container and item variants for header]
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -57,7 +57,7 @@ const EventPage: React.FC = () => {
         {/* Subtle Inner Glow/Border on Hover */}
         <div className="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-yellow-400/20 transition duration-300 pointer-events-none" />
         
-        <h2 className="text-3xl font-bold text-yellow-400 mb-6 relative z-20 transition-colors duration-300 group-hover:text-white">{event.title}</h2>
+        <h2 className="text-2xl font-bold text-white mb-3 relative z-20 transition-colors duration-300 group-hover:text-yellow-400">{event.title}</h2>
         
         <div className="flex flex-col lg:flex-row gap-8 relative z-20">
           
@@ -73,15 +73,15 @@ const EventPage: React.FC = () => {
 
           {/* CONTENT SECTION */}
           <div className="lg:w-3/5">
-            <p className="text-neutral-300 text-lg leading-relaxed mb-6 border-b border-neutral-700 pb-4">
+            <p className="text-neutral-300 font-newsreader text-lg leading-relaxed mb-3 border-b border-neutral-700 pb-2">
               {event.description}
             </p>
             
             {/* SCHEDULE SECTION */}
-            <h3 className="text-xl font-semibold text-white mb-3 tracking-wide">
-                <span className="border-b border-yellow-400 pb-1">Schedule Details</span>
+            <h3 className="text-xl font-semibold text-white mb-3 tracking-wide font-newsreader">
+                <span className="text-yellow-400 pb-1">Schedule Details</span>
             </h3>
-            <ul className="text-sm text-neutral-400 list-none space-y-3 mb-8">
+            <ul className="text-sm text-neutral-400 list-none space-y-3 mb-8 font-newsreader">
               {event.schedule.map((item, index) => (
                 <li key={index} className="flex items-start">
                   <AiOutlineClockCircle className="text-yellow-400 text-lg mr-2 flex-shrink-0 mt-0.5" /> 
@@ -94,11 +94,13 @@ const EventPage: React.FC = () => {
             </ul>
             
             {/* REGISTER BUTTON */}
-            <div className="pt-6 border-t border-neutral-700/70">
-              <RegisterButton
-                status={event.registrationStatus}
-                onClick={() => handleRegister(event.registerLink)}
-              />
+            <div className="pt-3 border-t border-neutral-700/70">
+
+              <InteractiveHoverButton             
+                onClick={() => handleRegister(event.registerLink)}>
+                  Register Here                
+              </InteractiveHoverButton>               
+              
             </div>
           </div>
         </div>
@@ -111,7 +113,7 @@ const EventPage: React.FC = () => {
       
       {/* Header Section */}
       <motion.div 
-        className="w-full pt-20 text-center"
+        className="w-full pt-10 text-center"
         variants={containerVariants}
         initial="hidden"
         animate="visible"

@@ -44,7 +44,7 @@ export const eventData: TimelineEventData[] = [
       { time: "13:00", activity: "Preliminary Rounds" },
       { time: "16:00", activity: "Finals" }
     ],
-    registrationStatus: "Coming Soon",
+    registrationStatus: "Open",
     registerLink: "/register/pitch"
   },
   {
@@ -80,7 +80,7 @@ export const eventData: TimelineEventData[] = [
       { time: "12:00", activity: "One-on-One Meetings" },
       { time: "15:00", activity: "Deal Discussion" }
     ],
-    registrationStatus: "Coming Soon",
+    registrationStatus: "Open",
     registerLink: "/register/investor"
   },
   {
@@ -92,7 +92,7 @@ export const eventData: TimelineEventData[] = [
       { time: "09:00", activity: "Coding Begins" },
       { time: "08:00", activity: "Project Submission" }
     ],
-    registrationStatus: "Coming Soon",
+    registrationStatus: "Open",
     registerLink: "/register/hackathon"
   },
   {

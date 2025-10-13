@@ -11,7 +11,7 @@ export const RegisterButton = ({ status, onClick }: RegisterButtonProps) => {
       case 'Open':
         return 'bg-purple-600 hover:bg-purple-700 cursor-pointer';
       case 'Coming Soon':
-        return 'bg-yellow-500 hover:bg-yellow-600 cursor-wait';
+        return 'bg-yellow-500 hover:bg-yellow-600';
       case 'Closed':
         return 'bg-gray-500 cursor-not-allowed';
     }
