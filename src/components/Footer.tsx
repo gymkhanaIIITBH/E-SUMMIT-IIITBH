@@ -11,13 +11,24 @@ const Footer = () => {
           <a href="/team" className="mb-2 text-gray-300">For any query: <span className='underline'>Team</span></a>
           <br />
           <a href="#" className="underline text-gray-300">Meet our Contributors</a>
+
         </div>
-        <div className="flex items-center gap-6 mt-6 md:mt-0">
+        <div className="flex flex-col items-center gap-6 mt-6 md:mt-0">
           {/* Replace with your logo if needed */}
+          <div>
+          <p className='mt-4 text-xl font-medium'> Reach us</p>
+          <p className='text-gray-300'> IIIT Bhagalpur, Zero Mile, Sabour</p>
+          <p className='text-gray-300'>Bhagalpur, Bihar.</p>
+          <a className='mt-2 underline text-gray-300' href="https://maps.app.goo.gl/GJdt7mKqEQqzW8er7">Map Link!</a>
+          </div>
+
+          <div className='flex gap-6'> 
           <img src="/Logo.png" alt="Logo" className="h-10 w-10 object-contain" />
           <Twitter className="h-7 w-7 text-gray-300 hover:text-white transition" />
           <Github className="h-7 w-7 text-gray-300 hover:text-white transition" />
           <Linkedin className="h-7 w-7 text-gray-300 hover:text-white transition" />
+          </div>
+
         </div>
       </div>
       <hr className="my-6 border-gray-700" />
