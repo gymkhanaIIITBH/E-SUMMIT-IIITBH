@@ -16,20 +16,46 @@ type EventItem = {
   dividerRight: string;
 };
 
-const baseEvent = {
+const IdeaEvent = {
   title: "IDEA STORM",
   description:
     "Lorem ipsum dolor sit amet consectetur. Nec fames senectus quisque sed nulla nibh. Lacus et dolor suspendisse eleifend eu lorem turpis. Mus fusce vitae interdum purus id sodales elementum arcu. Purus nunc accumsan eros faucibus semper sagittis diam risus.",
 };
+const BitEvent = {
+  title: "BITSTORM",
+  description:
+    "Lorem ipsum dolor sit amet consectetur. Nec fames senectus quisque sed nulla nibh. Lacus et dolor suspendisse eleifend eu lorem turpis. Mus fusce vitae interdum purus id sodales elementum arcu. Purus nunc accumsan eros faucibus semper sagittis diam risus.",
+};
 
+const BullEvent = {
+  title: "BULLRUN",
+  description:
+    "Lorem ipsum dolor sit amet consectetur. Nec fames senectus quisque sed nulla nibh. Lacus et dolor suspendisse eleifend eu lorem turpis. Mus fusce vitae interdum purus id sodales elementum arcu. Purus nunc accumsan eros faucibus semper sagittis diam risus.",
+};
+const DJEvent = {
+  title: "DJ NIGHT",
+  description:
+    "Lorem ipsum dolor sit amet consectetur. Nec fames senectus quisque sed nulla nibh. Lacus et dolor suspendisse eleifend eu lorem turpis. Mus fusce vitae interdum purus id sodales elementum arcu. Purus nunc accumsan eros faucibus semper sagittis diam risus.",
+};
+
+const QuizEvent = {
+  title: "E-SHIP QUIZ",
+  description:
+    "Lorem ipsum dolor sit amet consectetur. Nec fames senectus quisque sed nulla nibh. Lacus et dolor suspendisse eleifend eu lorem turpis. Mus fusce vitae interdum purus id sodales elementum arcu. Purus nunc accumsan eros faucibus semper sagittis diam risus.",
+};
+const StartupEvent = {
+  title: "STARTUP EXPO",
+  description:
+    "Lorem ipsum dolor sit amet consectetur. Nec fames senectus quisque sed nulla nibh. Lacus et dolor suspendisse eleifend eu lorem turpis. Mus fusce vitae interdum purus id sodales elementum arcu. Purus nunc accumsan eros faucibus semper sagittis diam risus.",
+};
 const events: EventItem[] = [
-  { id: 1, day: "Friday", date: 14, month: "November", dividerLeft: dividerLine, dividerRight: dividerLine, ...baseEvent },
-  { id: 2, day: "Friday", date: 14, month: "November", dividerLeft: dividerLine, dividerRight: dividerLine, ...baseEvent },
-  { id: 3, day: "Friday", date: 14, month: "November", dividerLeft: dividerLine, dividerRight: dividerLine, ...baseEvent },
-  { id: 4, day: "Saturday", date: 15, month: "November", dividerLeft: dividerLine, dividerRight: dividerLine, ...baseEvent },
-  { id: 5, day: "Saturday", date: 15, month: "November", dividerLeft: dividerLine, dividerRight: dividerLine, ...baseEvent },
-  { id: 6, day: "Saturday", date: 15, month: "November", dividerLeft: dividerLine, dividerRight: dividerLine, ...baseEvent },
-  { id: 7, day: "Saturday", date: 15, month: "November", dividerLeft: dividerLine, dividerRight: dividerLine, ...baseEvent },
+  { id: 1, day: "Friday", date: 14, month: "November", dividerLeft: dividerLine, dividerRight: dividerLine, ...BullEvent },
+  { id: 2, day: "Friday", date: 14, month: "November", dividerLeft: dividerLine, dividerRight: dividerLine, ...BitsEvent },
+  { id: 3, day: "Friday", date: 14, month: "November", dividerLeft: dividerLine, dividerRight: dividerLine, ...StartupEvent },
+  { id: 4, day: "Saturday", date: 15, month: "November", dividerLeft: dividerLine, dividerRight: dividerLine, ...BitEvent },
+  { id: 5, day: "Saturday", date: 15, month: "November", dividerLeft: dividerLine, dividerRight: dividerLine, ...IdeaEvent },
+  { id: 6, day: "Saturday", date: 15, month: "November", dividerLeft: dividerLine, dividerRight: dividerLine, ...QuizEvent },
+  { id: 7, day: "Saturday", date: 15, month: "November", dividerLeft: dividerLine, dividerRight: dividerLine, ...DJEvent },
 ];
 
 export default function Events() {
