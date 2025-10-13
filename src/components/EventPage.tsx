@@ -119,7 +119,7 @@ const EventPage: React.FC = () => {
         animate="visible"
       >
         <motion.h1 
-          className="text-5xl md:text-7xl font-extrabold tracking-tight mb-4"
+          className="text-2xl md:text-4xl font-extrabold tracking-tight mb-4"
           variants={itemVariants}
         >
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-amber-600">
