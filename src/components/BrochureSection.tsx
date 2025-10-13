@@ -18,7 +18,7 @@ function BrochureSection() {
           </div>
 
           {/* Right Section: Text Content */}
-          <div className="w-full font-montserrat p-8 sm:w-1/2 md:w-2/3  text-gray-500/100">
+          <div className="w-full font-montserrat text-center p-8 sm:w-1/2 md:w-2/3  text-gray-200">
             <p className="text-base md:text-md leading-relaxed mb-6">
               The vision of First-ever E-Summit of IIIT Bhagalpur is to be a catalyst for entrepreneurial energy, bringing together the young innovators who will become the leaders and changemakers of tomorrow. Our summit creates a dynamic platform where students are encouraged to dream big, think boldly, and act fearlessly while discovering solutions that address real-world challenges.            </p>
             <p className="text-base md:text-md leading-relaxed mb-6">
