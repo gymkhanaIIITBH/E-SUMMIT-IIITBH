@@ -1,5 +1,5 @@
 "use client";
-import { useScroll, useTransform, motion, MotionValue } from "framer-motion";
+import { useScroll, useTransform, motion } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
 
 interface TimelineEntry {
@@ -19,7 +19,7 @@ const TimelineItem: React.FC<{
     index: number; 
     isFirst: boolean;
     isLast: boolean;
-}> = ({ item, index, isFirst, isLast }) => {
+}> = ({ item, index }) => {
   const itemRef = useRef<HTMLDivElement>(null);
   
   // Use scrollYProgress for the item's visibility

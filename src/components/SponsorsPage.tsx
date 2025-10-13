@@ -4,6 +4,7 @@ import { sponsorData } from './Sponsordata';
 import { useNavigate } from 'react-router-dom';
 import { InteractiveHoverButton } from './InteractiveHoverButton';
 
+
 const SponsorsPage = () => {
   const navigate = useNavigate();
 

@@ -16,7 +16,7 @@ export const InteractiveHoverButton = React.forwardRef<
         // base noir button shell
         "group relative w-auto cursor-pointer overflow-hidden rounded-full border bg-black/80 p-2 px-6 text-center font-semibold transition-colors duration-200 backdrop-blur-sm",
         // subtle border + invert on hover
-        "border-white/20 hover:bg-white hover:border-white/30 group-hover:bg-white group-hover:border-white/30",
+        "border-white/80 hover:bg-white hover:border-white/30 group-hover:bg-white group-hover:border-white/30",
         className,
       )}
       {...props}
