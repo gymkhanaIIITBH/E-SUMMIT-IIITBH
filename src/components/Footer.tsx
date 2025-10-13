@@ -14,7 +14,7 @@ const Footer = () => {
         </div>
         <div className="flex items-center gap-6 mt-6 md:mt-0">
           {/* Replace with your logo if needed */}
-          <img src="/public/Logo.png" alt="Logo" className="h-10 w-10 object-contain" />
+          <img src="/Logo.png" alt="Logo" className="h-10 w-10 object-contain" />
           <Twitter className="h-7 w-7 text-gray-300 hover:text-white transition" />
           <Github className="h-7 w-7 text-gray-300 hover:text-white transition" />
           <Linkedin className="h-7 w-7 text-gray-300 hover:text-white transition" />
