@@ -105,7 +105,7 @@ const inView = useInView(ref, {once:true})
       <div className="absolute top-[80%] fade-in left-8 md:top-[70%] transform -translate-y-1/2 z-10 flex flex-col items-center">
         <div className="sm:hidden md:block hidden h-24 w-px bg-white/30 mb-6" />
 
-        <SocialIcon link='https://in.linkedin.com/company/entrepreneurship-club-iiit-bhagalpur' label="linkedin">
+        <SocialIcon link='https://www.linkedin.com/showcase/e-summit-iiit-bhagalpur' label="linkedin">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M4.98 3.5a2.5 2.5 0 11.02 0zM3 8.98h4v12H3zM8.5 8.98h3.8v1.64h.05c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.78 2.66 4.78 6.12v6.28h-4v-5.58c0-1.33-.02-3.05-1.86-3.05-1.86 0-2.14 1.45-2.14 2.95v5.68h-4z"/></svg>
         </SocialIcon>
         <SocialIcon link='https://www.instagram.com/esummit_iiitbh/' label="instagram">

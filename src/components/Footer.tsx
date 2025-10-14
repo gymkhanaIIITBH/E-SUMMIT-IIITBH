@@ -20,9 +20,13 @@ const Footer = () => {
           <p className='mt-4 hidden md:block'>Follow us: </p>
           <div className='hidden md:flex gap-6 mt-1'> 
             <a href="/"><img src="/Logo.png" alt="Logo" className="h-10 w-10 object-contain" /></a> 
-          <a href="https://x.com/IIITBhagalpur" className='flex items-center'><X className="h-7 w-7 text-gray-300 hover:text-white transition object-cover" /></a>
+          <a href="https://x.com/IIITBhagalpur" className='flex items-center'>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="28" height="28" viewBox="0 0 24 24" fill='#ffffff'>
+              <path d="M26.37,26l-8.795-12.822l0.015,0.012L25.52,4h-2.65l-6.46,7.48L11.28,4H4.33l8.211,11.971L12.54,15.97L3.88,26h2.65 l7.182-8.322L19.42,26H26.37z M10.23,6l12.34,18h-2.1L8.12,6H10.23z"></path>
+            </svg>    
+          </a>
           <a href="https://www.instagram.com/esummit_iiitbh/" className='flex items-center'><Instagram className="h-7 w-7 text-gray-300 hover:text-white transition" /></a>
-          <a href="https://in.linkedin.com/company/entrepreneurship-club-iiit-bhagalpur" className='flex items-center'><Linkedin className="h-7 w-7 text-gray-300 hover:text-white transition" /></a>
+          <a href="https://www.linkedin.com/showcase/e-summit-iiit-bhagalpur" className='flex items-center'><Linkedin className="h-7 w-7 text-gray-300 hover:text-white transition" /></a>
           </div>
 
         </div>
@@ -42,9 +46,13 @@ const Footer = () => {
           <p className='mt-4 block md:hidden'>Follow us: </p>
           <div className='flex md:hidden gap-6 mt-1'> 
             <a href="/"><img src="/Logo.png" alt="Logo" className="h-10 w-10 object-contain" /></a> 
-          <a href="https://x.com/IIITBhagalpur" className='flex items-center'><X className="h-7 w-7 text-gray-300 hover:text-white transition object-cover" /></a>
+          <a href="https://x.com/IIITBhagalpur" className='flex items-center'>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="28" height="28" viewBox="0 0 24 24" fill='#ffffff'>
+              <path d="M26.37,26l-8.795-12.822l0.015,0.012L25.52,4h-2.65l-6.46,7.48L11.28,4H4.33l8.211,11.971L12.54,15.97L3.88,26h2.65 l7.182-8.322L19.42,26H26.37z M10.23,6l12.34,18h-2.1L8.12,6H10.23z"></path>
+            </svg>    
+          </a>
           <a href="https://www.instagram.com/esummit_iiitbh/" className='flex items-center'><Instagram className="h-7 w-7 text-gray-300 hover:text-white transition" /></a>
-          <a href="https://in.linkedin.com/company/entrepreneurship-club-iiit-bhagalpur" className='flex items-center'><Linkedin className="h-7 w-7 text-gray-300 hover:text-white transition" /></a>
+          <a href="https://www.linkedin.com/showcase/e-summit-iiit-bhagalpur" className='flex items-center'><Linkedin className="h-7 w-7 text-gray-300 hover:text-white transition" /></a>
           </div>
 
 

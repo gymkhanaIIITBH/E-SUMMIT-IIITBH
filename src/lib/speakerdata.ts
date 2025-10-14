@@ -7,7 +7,7 @@ export interface SpeakerData {
 
 export const speakers: SpeakerData[] = [
   {
-    name: 'Coming Soon',
+    name: 'Coming soon',
     company: 'Coming soon',
     image: '/hero-content.svg',
     description:
