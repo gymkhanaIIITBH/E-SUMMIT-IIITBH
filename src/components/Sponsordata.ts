@@ -14,9 +14,11 @@ export interface SponsorSection {
 
 // import titleLogo from '/title1.svg';
 // import platinum1 from '/title1.svg';
-import gold1 from '/easemytrip.png';
-import silver1 from '/monginis.png';
-import silver2 from '/gfg.png';
+// import gold1 from '/easemytrip.png';
+// import silver1 from '/monginis.png';
+// import silver2 from '/gfg.png';
+
+import ComingSoon from '/coming.png'
 
 export const sponsorData: SponsorSection[] = [
   // {
@@ -39,7 +41,7 @@ export const sponsorData: SponsorSection[] = [
     title: 'Gold Sponsors',
     color: 'text-yellow-300',
     sponsors: [
-      { name: 'EASE MY TRIP', logo: gold1, url:'https://www.easemytrip.com' },
+      { name: 'Coming Soon', logo: ComingSoon, url:'https://esummit.iiitbh.ac.in' },
       // Add more...
     ],
   },
@@ -47,8 +49,8 @@ export const sponsorData: SponsorSection[] = [
     title: 'Silver Sponsors',
     color: 'text-gray-400',
     sponsors: [
-      { name: 'Monginis', logo: silver1, url:'https://www.monginis.net' },
-      { name: 'GeeksForGeeks', logo: silver2 ,url:'https://www.geeksforgeeks.org'},
+      { name: 'Coming Soon', logo: ComingSoon, url:'https://esummit.iiitbh.ac.in' },
+      { name: 'Coming Soon', logo: ComingSoon,url:'https://esummit.iiitbh.ac.in'},
       // Add more...
     ],
   },

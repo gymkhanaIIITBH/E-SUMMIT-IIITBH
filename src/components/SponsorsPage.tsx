@@ -37,7 +37,7 @@ const SponsorsPage = () => {
           <h1 className="text-5xl font-extrabold uppercase tracking-wide mb-4">
             Our Sponsors
           </h1>
-          <p className="text-lg text-gray-200 max-w-2xl mx-auto">
+          <p className="text-md text-gray-400 max-w-2xl mx-auto">
             We are grateful to our amazing sponsors for their generous support.
           </p>
         </div>
@@ -56,7 +56,7 @@ const SponsorsPage = () => {
                   key={sponsor.name}
                   src={sponsor.logo}
                   alt={sponsor.name}
-                  className="w-40 h-20 object-contain hover:scale-105 transition-transform duration-300"
+                  className="w-40 h-20 object-contain rounded-3xl hover:scale-105 transition-transform duration-300"
                 />
                 </a>
               ))}
