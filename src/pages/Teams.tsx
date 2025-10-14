@@ -22,7 +22,7 @@ import yug from '/yug.jpg'
   ]
   const Contributors=[
     {name:'Tushar Patel', image:tushar, designation:'Web Developer', email:'tushar.230101145@iiitbh.ac.in', phone:'+91 8840000304', linkedIn:'https://in.linkedin.com/in/tusharpatel10954'},
-    {name:'Yug Sharma', image:yug, designation:'Web Developer', email:'param.230102042@iiitbh.ac.in', phone:'+91 8962901245', linkedIn:'https://www.linkedin.com/in/yug-s-538a8a321'},
+    {name:'Yug Sharma', image:yug, designation:'Web Developer', email:'yug.240103135@iiitbh.ac.in', phone:'+91 8962901245', linkedIn:'https://www.linkedin.com/in/yug-s-538a8a321'},
     {name:'Shivam Gautam', image:shivam, designation:'Web Developer', email:'shivam1.23010120@iiitbh.ac.in', phone:'+91 8181026317', linkedIn:'https://in.linkedin.com/in/shivam-gautam-b20220295'},
 
 
