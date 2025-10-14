@@ -1,5 +1,5 @@
 
-import { Instagram, Linkedin, MapPinIcon, X } from 'lucide-react'
+import { Instagram, Linkedin, MapPinIcon } from 'lucide-react'
 import Logo from '/logo.svg'
 import CollegeLogo from '/CollegeLogo.png'
 const Footer = () => {
