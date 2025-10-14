@@ -9,25 +9,27 @@ function TitleSponsorCard() {
       console.log('err in opening site')
     }
   };
-  const url='https://www.mahindra.com'
+  const url='https://esummit.iiitbh.ac.in'
 
-
+  // const dummy=[
+  //   {name: 'Coming Soon', address:"Coming Soon", url:'https://esummit.iiitbh.ac.in', img:'/coming.png'}
+  // ]
   return (
     <>
-    <div className='text-4xl font-bold font-montserrat  text-[#e2696c]'>Our Title Sponsor</div>
+    <div className='text-4xl font-bold font-montserrat  text-[#008000]'>Our Title Sponsor</div>
     <ProfileCard
         showBehindGradient= {true}
-        name="Mahindra"
+        name="Coming Soon"
+        innerGradient='linear-gradient(145deg, #5F2A63 0%, #B17EB3 100%)'
+        title="Coming Soon"
 
-        title="Tilkamanji, Bhagalpur"
-
-        handle="Mahindra"
+        handle="Coming Soon"
 
         status="Title Sponsor"
 
         contactText="Contact us"
 
-        avatarUrl="/mahindra.png"
+        avatarUrl="/coming.png"
 
         showUserInfo={true}
 

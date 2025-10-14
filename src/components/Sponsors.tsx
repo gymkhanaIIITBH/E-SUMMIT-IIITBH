@@ -1,23 +1,34 @@
 import { motion } from "framer-motion";
-import KfcLogo from "/kfc.png";
-import Aaskshlogo from "/Akash-logo.png";
-import easemytrip from "/easemytrip.png";
-import monginis from "/monginis.png";
-import GfgLogo from "/gfg.png"
-import MahindraLogo from '/mahindra.png'
-const sponsors = [
-  { name: "Aasksh", logoSrc: Aaskshlogo, url: "https://aakash.ac.in" },
-  { name: "KFC", logoSrc: KfcLogo, url: "https://online.kfc.co.in" },
-  { name: "Mahindra", logoSrc: MahindraLogo, url: "https://mahindra.com" },
-  { name: "EaseMyTrip", logoSrc: easemytrip, url: "https://easemytrip.com" },
-  { name: "Monginis", logoSrc: monginis, url: "https://monginis.com" },
-  { name: "GeekForGeeks", logoSrc: GfgLogo, url: "https://geeksforgeeks.org" },
+// import KfcLogo from "/kfc.png";
+// import Aaskshlogo from "/Akash-logo.png";
+// import easemytrip from "/easemytrip.png";
+// import monginis from "/monginis.png";
+// import GfgLogo from "/gfg.png"
+// import MahindraLogo from '/mahindra.png'
+import ComingSoon from '/coming.png'
+// const sponsors = [
+//   { name: "Aasksh", logoSrc: Aaskshlogo, url: "https://aakash.ac.in" },
+//   { name: "KFC", logoSrc: KfcLogo, url: "https://online.kfc.co.in" },
+//   { name: "Mahindra", logoSrc: MahindraLogo, url: "https://mahindra.com" },
+//   { name: "EaseMyTrip", logoSrc: easemytrip, url: "https://easemytrip.com" },
+//   { name: "Monginis", logoSrc: monginis, url: "https://monginis.com" },
+//   { name: "GeekForGeeks", logoSrc: GfgLogo, url: "https://geeksforgeeks.org" },
   
 
-];
+// ];
+const dummySponsors=[
+  {name: "Coming Soon", logoSrc:ComingSoon, url:'https://esummit.iiitbh.ac.in' },
+  {name: "Coming Soon", logoSrc:ComingSoon, url:'https://esummit.iiitbh.ac.in' },
+  {name: "Coming Soon", logoSrc:ComingSoon, url:'https://esummit.iiitbh.ac.in' },
+  {name: "Coming Soon", logoSrc:ComingSoon, url:'https://esummit.iiitbh.ac.in' },
+  {name: "Coming Soon", logoSrc:ComingSoon, url:'https://esummit.iiitbh.ac.in' },
+  {name: "Coming Soon", logoSrc:ComingSoon, url:'https://esummit.iiitbh.ac.in' },
+
+
+]
 
 const GoldSponsors = () => {
-  const scrollingSponsors = [...sponsors, ...sponsors]; // duplicate for smooth loop
+  const scrollingSponsors = [...dummySponsors, ...dummySponsors]; // duplicate for smooth loop
 
   return (
     <section className="bg-black overflow-hidden">

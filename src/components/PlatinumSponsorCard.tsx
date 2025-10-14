@@ -1,6 +1,7 @@
 // import React from 'react'
-import GlareHover from './GlareHover.tsx'
-import Card from './card-05.tsx'
+// import GlareHover from './GlareHover.tsx'
+import ProfileCard from './ProfileCard.tsx';
+// import Card from './card-05.tsx'
 function PlatinumSponsorCard() {
       const handleClick = (url: string, ) => {
    
@@ -10,45 +11,50 @@ function PlatinumSponsorCard() {
       console.log('err in opening site')
     }
   };
-  const url='https://online.kfc.co.in'
+  // const url='https://online.kfc.co.in'
   
-  const PlatSponsor=[
-    {name:'Aakash Institute', url: 'https://aakash.ac.in', bgCo:'#0a1f43', img: '/Akash-logo.png'},
-    {name:'KFC', url: 'https://online.kfc.co.in', bgCo: '#762527' , img: '/kfc.png'}
+  // const PlatSponsor=[
+  //   {name:'Aakash Institute',address:'Adamgarh, Bhagalpur,Bihar',banner:'/aakashBanner.jpeg', url: 'https://aakash.ac.in', bgCo:'#0a1f43', img: '/Akash-logo.png'},
+  //   {name:'KFC', url: 'https://online.kfc.co.in',address:'Tilkamanji Chowk, Bhagalpur',banner:"/kfcBanner.jpg", bgCo: '#762527' , img: '/kfc.png'}
+  // ]
+  const dummy=[
+    {name: 'Coming Soon', address:"Coming Soon", url:'https://esummit.iiitbh.ac.in', img:'/coming.png'}
   ]
 
   return (
     <div >
         <div className='text-4xl text-[#94bce9] text-center mb-4'>Platinum Sponsors</div>
         <div className='flex items-center justify-center flex-wrap'>
-        {PlatSponsor.map((s)=>(
+        {dummy.map((s)=>(
                 
-    <div onClick={()=>handleClick(s.url)}>
-          <GlareHover
-            
-            glareColor="#c0c0c0"
-            
-            glareOpacity={0.3}
-            className='max-w-md mx-6 my-6 h-full p-2'
-            glareAngle={-30}
+      <ProfileCard
+        showBehindGradient= {true}
+        name={s.name}
+        className='text-white mx-6 my-6'
+        
+        
+        title={s.address}
+        
+        handle={s.name}
 
-            glareSize={300}
+        status="Platinum Sponsor"
 
-            transitionDuration={800}
+        contactText="Visit Site"
 
-            playOnce={false}
+        // avatarUrl={s.banner}
+        miniAvatarUrl={s.img}
+        showUserInfo={true}
 
-        >
+        enableTilt={false}
 
-            <h2 onClick={()=>handleClick(url)} className='bg-[] h-full '  style={{ fontSize: '3rem', fontWeight: '900', color: '#333', margin: 0 }}>
-                <Card name={s.name} image={s.img} bgC={s.bgCo} site={s.url}/>
-                
+        enableMobileTilt={false}
+          
 
-            </h2>
-
-        </GlareHover>
-
-    </div>))}
+        
+        onContactClick={() => handleClick(s.url)}
+      />
+      
+      ))}
     </div>
     </div>
   )
