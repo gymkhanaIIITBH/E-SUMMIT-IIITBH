@@ -106,9 +106,39 @@
     blinkCursor 0.5s step-end infinite alternate;
   margin-top: 1.5em;
 }
-
-/*laoder v1 here*/
+/*loader v3 here*/
+/* From Uiverse.io by Shoh2008 */ 
 .loader {
+  width: 8px;
+  height: 8px;
+  position: relative;
+  border-radius: 50%;
+  background: #fff;
+  animation: wave_14 1s ease-in infinite;
+}
+
+@keyframes wave_14 {
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 183, 95,  1),
+  0 0 0 20px rgba(0, 183, 95, 0.8),
+  0 0 0 40px rgba(0, 183, 95,  0.6),
+  0 0 0 60px rgba(0, 183, 95, 0.4),
+  0 0 0 80px rgba(0, 183, 95,  0.2)
+  }
+
+  100% {
+    box-shadow: 0 0 0 80px rgba(0, 183, 95,  0),
+    0 0 0 60px rgba(0, 183, 95,  0.2),
+    0 0 0 40px rgba(0, 183, 95,  0.4),
+    0 0 0 20px rgba(0, 183, 95,  0.6),
+    0 0 0 0px rgba(0, 183, 95,  1)
+  }
+}
+
+
+  
+/*laoder v1 here*/
+/* .loader {
  position: relative;
  width: 2.5em;
  height: 2.5em;
@@ -181,7 +211,7 @@
  position: absolute;
  top: calc(50% - 1.25em);
  left: calc(50% - 1.25em);
-}
+} */
 @keyframes moving {
   50% {
     width: 100%;

@@ -3,7 +3,7 @@ import heroContent from '../../public/hero content.png'
 import { InteractiveHoverButton } from './InteractiveHoverButton';
 import { motion, useInView } from 'framer-motion';
 import {  useEffect, useRef, useState } from 'react';
-import Loading from './LoaderV2';
+import Loading from './LoaderV3';
 const SocialIcon = ({ children, label, link }: { children: React.ReactNode; label: string, link:string }) => (
   <div onClick={()=>handleClick(link)} className="w-10 h-10 flex items-center justify-center bg-white/10 rounded-md mb-3 hover:bg-white/20 transition" aria-label={label}>
     {children}
