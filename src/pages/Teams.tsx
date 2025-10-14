@@ -1,4 +1,22 @@
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
+// Simple Toast component
+function CopyToast({ message, visible }: { message: string; visible: boolean }) {
+  return (
+    <div
+      style={{
+        position: 'fixed',
+        top: 32,
+        left: '50%',
+        transform: 'translateX(-50%)',
+        zIndex: 1000,
+        pointerEvents: 'none',
+      }}
+      className={`transition-all duration-300 ${visible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'} bg-zinc-900 text-white px-6 py-3 rounded-xl shadow-lg font-regular font-monteserrat text-base`}
+    >
+      {message}
+    </div>
+  );
+}
 import TeamCard from '../components/TeamCard';
 import { motion, useInView } from 'framer-motion';
 import heroImg from '../../public/hero-bg.svg';
@@ -28,6 +46,15 @@ import yug from '/yug.jpg'
 
   ]
 function Teams() {
+  const [toastVisible, setToastVisible] = useState(false);
+  const [toastMessage, setToastMessage] = useState('');
+
+  // Handler for copy action
+  const handleCopy = (type: 'email' | 'phone') => {
+    setToastMessage(type === 'email' ? 'Email copied!' : 'Phone number copied!');
+    setToastVisible(true);
+    setTimeout(() => setToastVisible(false), 1500);
+  };
   // Single ref for triggering animations when in view
   const ref = useRef(null);
   const inView = useInView(ref, { once: true });
@@ -42,6 +69,8 @@ function Teams() {
 
   return (
     <section className="relative min-h-screen w-full flex flex-col items-center justify-center overflow-hidden p-6">
+      {/* Toast for copy action */}
+      <CopyToast message={toastMessage} visible={toastVisible} />
       {/* Background image with overlay */}
       <div
         className="absolute inset-0 bg-cover bg-center"
@@ -83,11 +112,20 @@ function Teams() {
           className="flex justify-center max-w-[70rem] gap-6 flex-wrap"
         >
           {team.map((t, index) => (
-            <TeamCard key={index} name={t.name} designation={t.designation} image={t.image} email={t.email} phone={t.phone} linkedIn={t.linkedIn} />
+            <TeamCard
+              key={index}
+              name={t.name}
+              designation={t.designation}
+              image={t.image}
+              email={t.email}
+              phone={t.phone}
+              linkedIn={t.linkedIn}
+              onCopy={handleCopy}
+            />
           ))}
         </motion.div>
 
-        <div className='text-4xl text-white mt-8 font-bold font-montserrat'>Contributors</div>
+        <div className='text-4xl text-white mt-12 mb-12 font-bold font-montserrat'>Contributors</div>
         {/* Contributors cards */}
         <motion.div
           id="Contributors"
@@ -97,10 +135,19 @@ function Teams() {
             y: inView ? 0 : 100,
           }}
           transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
-          className="flex justify-center max-w-[70rem] gap-6 flex-wrap"
+          className="flex justify-center max-w-[70rem] gap-6 flex-wrap pb-16"
         >
           {Contributors.map((t, index) => (
-            <TeamCard key={index} name={t.name} designation={t.designation} image={t.image} email={t.email} phone={t.phone} linkedIn={t.linkedIn} />
+            <TeamCard
+              key={index}
+              name={t.name}
+              designation={t.designation}
+              image={t.image}
+              email={t.email}
+              phone={t.phone}
+              linkedIn={t.linkedIn}
+              onCopy={handleCopy}
+            />
           ))}
         </motion.div>
 
