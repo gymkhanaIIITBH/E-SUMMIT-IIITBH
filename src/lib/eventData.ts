@@ -18,7 +18,7 @@ export const eventData: TimelineEventData[] = [
     details: {
       date: "14th November",
       prizePool: "₹1,75,000",
-      numMembers: "2-4",
+      numMembers: "5",
     },
     registerLink: "/register/bitstorm"
   },
@@ -29,7 +29,7 @@ export const eventData: TimelineEventData[] = [
     details: {
       date: "14th November",
       prizePool: "N/A (Funding)",
-      numMembers: "1-5",
+      numMembers: "1",
     },
     registerLink: "/register/startup-expo"
   },
@@ -62,7 +62,7 @@ export const eventData: TimelineEventData[] = [
     details: {
       date: "15th November",
       prizePool: "₹85,000",
-      numMembers: "2-4",
+      numMembers: "4",
     },
     registerLink: "/register/ideastorm"
   },
@@ -84,7 +84,7 @@ export const eventData: TimelineEventData[] = [
     details: {
       date: "15th November",
       prizePool: "₹10,000",
-      numMembers: "4",
+      numMembers: "4-5",
     },
     registerLink: "/register/gaming"
   },
