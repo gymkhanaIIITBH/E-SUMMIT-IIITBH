@@ -1,10 +1,8 @@
 import { useEffect } from 'react';
 import heroImg from '../../public/hero-bg.svg';
-import { sponsorData } from './Sponsordata';
+import { sponsorData } from '../components/Sponsordata';
 import { useNavigate } from 'react-router-dom';
-import { InteractiveHoverButton } from './InteractiveHoverButton';
-// import TitleSponsorCard from './TitleSponsorCard';
-// import PlatinumSponsorCard from './PlatinumSponsorCard';
+import { InteractiveHoverButton } from '../components/InteractiveHoverButton';
 
 
 const SponsorsPage = () => {
@@ -41,8 +39,7 @@ const SponsorsPage = () => {
             We are grateful to our amazing sponsors for their generous support.
           </p>
         </div>
-        {/* <TitleSponsorCard/>
-        <PlatinumSponsorCard/> */}
+
         {/* Sponsor Sections */}
         {sponsorData.map((section) => (
           <div key={section.title} className="w-full text-center">

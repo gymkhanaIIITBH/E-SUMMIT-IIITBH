@@ -44,14 +44,14 @@ const Speaker: React.FC = () => {
             <img
               src={current.image}
               alt={current.name}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-contain"
             />
           </div>
 
           {/* 🔹 Quote Section */}
           <div
             className="
-              flex-1 flex flex-col justify-between
+              flex-1 flex flex-col w-full justify-between
               bg-[#071a33] border border-[#0e3b6b]
               rounded-2xl p-5 sm:p-6 md:p-8
               h-auto md:h-[360px] lg:h-[380px]
