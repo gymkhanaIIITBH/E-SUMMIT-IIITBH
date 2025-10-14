@@ -3,8 +3,8 @@ import heroImg from '../../public/hero-bg.svg';
 import { sponsorData } from './Sponsordata';
 import { useNavigate } from 'react-router-dom';
 import { InteractiveHoverButton } from './InteractiveHoverButton';
-// import TitleSponsorCard from './TitleSponsorCard';
-// import PlatinumSponsorCard from './PlatinumSponsorCard';
+import TitleSponsorCard from './TitleSponsorCard';
+import PlatinumSponsorCard from './PlatinumSponsorCard';
 
 
 const SponsorsPage = () => {
@@ -41,8 +41,8 @@ const SponsorsPage = () => {
             We are grateful to our amazing sponsors for their generous support.
           </p>
         </div>
-        {/* <TitleSponsorCard/>
-        <PlatinumSponsorCard/> */}
+        <TitleSponsorCard/>
+        <PlatinumSponsorCard/>
         {/* Sponsor Sections */}
         {sponsorData.map((section) => (
           <div key={section.title} className="w-full text-center">
@@ -51,12 +51,14 @@ const SponsorsPage = () => {
             </h2>
             <div className="flex flex-wrap justify-center gap-8">
               {section.sponsors.map((sponsor) => (
+                <a href={sponsor.url}>
                 <img
                   key={sponsor.name}
                   src={sponsor.logo}
                   alt={sponsor.name}
                   className="w-40 h-20 object-contain hover:scale-105 transition-transform duration-300"
                 />
+                </a>
               ))}
             </div>
           </div>

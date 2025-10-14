@@ -6,7 +6,7 @@ import BrochureSection from '../components/BrochureSection';
 import Speaker from '../components/Speaker';
 import Events from '../components/Event';
 import { lazy, Suspense } from 'react';
-import Loading from '@/components/Loader';
+import Loading from '@/components/LoaderV2';
 const Herosection = lazy(() => import('../components/Herosection'));
 const Home = () => {
   return (

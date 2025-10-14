@@ -1,5 +1,5 @@
 
-import { Instagram, Linkedin, MapPinIcon, Phone, X } from 'lucide-react'
+import { Instagram, Linkedin, MapPinIcon, X } from 'lucide-react'
 import Logo from '/logo.svg'
 import CollegeLogo from '/CollegeLogo.png'
 const Footer = () => {
@@ -14,7 +14,7 @@ const Footer = () => {
         <div>
           <p className="text-lg font-medium mb-1">© 2025 E-Summit. All rights reserved.</p>
           <p className="mb-3 text-gray-300">A celebration of collaboration and innovation.</p>
-          <a href="/team" className="mb-2 text-gray-300 flex gap-2">For any query: <span className=' flex gap-1 items-center underline'> <Phone color='#0080c0' height={20}/> Contact </span></a>
+          <a href="/team" className="mb-2 text-gray-300 flex gap-2">For any query: <span className=' flex gap-1 items-center underline'> Contact </span></a>
           
           {/* <a href="#" className="underline text-gray-300">Meet our Contributors</a> */}
           <p className='mt-4 hidden md:block'>Follow us: </p>
@@ -37,7 +37,7 @@ const Footer = () => {
           <p className='mt-0 text-xl font-medium'> Reach us</p>
           <p className='text-gray-300'> Indian Institute of Information Technology Bhagalpur,</p>
           <p className='text-gray-300'>Bhagalpur - 813210, Bihar, India.</p>
-          <a className='mt-2 underline flex gap-2 text-gray-300' href="https://maps.app.goo.gl/GJdt7mKqEQqzW8er7"> <MapPinIcon color='#80ff80'/> Address</a>
+          <a className='mt-2 underline flex gap-2 text-gray-300' href="https://maps.app.goo.gl/GJdt7mKqEQqzW8er7"> <MapPinIcon color='#ffffff'/> Address</a>
           </div>
           <p className='mt-4 block md:hidden'>Follow us: </p>
           <div className='flex md:hidden gap-6 mt-1'> 

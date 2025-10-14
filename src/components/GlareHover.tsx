@@ -1,6 +1,22 @@
 import './GlareHover.css';
+interface GlareHoverProps {
+  width?: string;
+  height?: string;
+  background?: string;
+  borderRadius?: string;
+  borderColor?: string;
+  children?: React.ReactNode; // <-- Type for children
+  glareColor?: string;
+  glareOpacity?: number;
+  glareAngle?: number;
+  glareSize?: number;
+  transitionDuration?: number;
+  playOnce?: boolean;
+  className?: string;
+  style?: React.CSSProperties;
+}
 
-const GlareHover = ({
+const GlareHover: React.FC<GlareHoverProps> = ({
   width = '500px',
   height = '500px',
   background = '#000',
@@ -45,7 +61,7 @@ const GlareHover = ({
   return (
     <div
       className={`glare-hover ${playOnce ? 'glare-hover--play-once' : ''} ${className}`}
-      style={{ ...vars, ...style }}
+      style={{ ...vars, ...style }as React.CSSProperties} 
     >
       {children}
     </div>

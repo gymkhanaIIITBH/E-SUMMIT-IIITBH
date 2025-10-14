@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardDescription, CardTitle, CardFooter } from '@/components/ui/card'
 
-const PlatCard = ({image='', name='', site=''}) => {
+const PlatCard = ({image='', name='', site='', bgC =''}) => {
     
 
   const handleClick = (url: string, e: React.MouseEvent) => {
@@ -13,21 +13,21 @@ const PlatCard = ({image='', name='', site=''}) => {
     }
   };
   return (
-    <Card className='bg-[#762527] max-w-md pt-0'>
-      <CardContent className='px-4 py-2'>
+    <Card className='h-full flex flex-col justify-end max-w-md pt-0' style={{backgroundColor: bgC}}>
+      <CardContent className='px-4 flex items-center  py-2'>
         <img
           src={image}
           alt='Platinum Sponsor'
-          className='aspect-video h-70 py-2 rounded-t-xl object-cover'
+          className='aspect-video h-70 py-2 rounded-t-xl object-contain'
         />
       </CardContent>
-      <CardHeader className='text-white text-center'>
-        <CardTitle>{name}</CardTitle>
-        <CardDescription>Platinum Sponsor</CardDescription>
+      <CardHeader className='text-white flex justify-end h-36  sm:h-36 bg-black text-center'>
+        <CardTitle className='font-montserrat text-lg sm:text-2xl font-bold '>{name}</CardTitle>
+        <CardDescription className='text-gray-400'>Platinum Sponsor</CardDescription>
       </CardHeader>
-      <CardFooter className='gap-3 max-sm:flex-col max-sm:items-stretch w-full'>
+      <CardFooter className='gap-3 bg-black max-sm:flex-col max-sm:items-stretch w-full'>
         
-        <Button className='w-full h-15 hover:bg-[#9d3157] text-white' onClick={(e)=> handleClick(site, e)} variant={'outline'}>Visit Site</Button>
+        <Button className='w-full h-15 bg-gray-800 hover:bg-[#9d3157] text-white' onClick={(e)=> handleClick(site, e)} variant={'outline'}>Visit Site</Button>
       </CardFooter>
     </Card>
   )

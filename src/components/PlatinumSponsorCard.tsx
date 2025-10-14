@@ -1,47 +1,57 @@
-// // import React from 'react'
-// import GlareHover from './GlareHover.jsx'
-// import Card from './card-05.tsx'
-// function PlatinumSponsorCard() {
-//       const handleClick = (url: string, ) => {
+// import React from 'react'
+import GlareHover from './GlareHover.tsx'
+import Card from './card-05.tsx'
+function PlatinumSponsorCard() {
+      const handleClick = (url: string, ) => {
    
-//     if (url) {
-//       window.open(url, '_blank');  
-//     } else {
-//       console.log('err in opening site')
-//     }
-//   };
-//   const url='https://online.kfc.co.in'
-//   return (
-//     <div >
-//         <div className='text-4xl text-[#94bce9] text-center mb-4'>Platinum Sponsors</div>
-//     <div onClick={()=>handleClick(url)}>
-//           <GlareHover
-//             onClick={()=> handleClick(url)}
-//             glareColor="#c9e0fa"
+    if (url) {
+      window.open(url, '_blank');  
+    } else {
+      console.log('err in opening site')
+    }
+  };
+  const url='https://online.kfc.co.in'
+  
+  const PlatSponsor=[
+    {name:'Aakash Institute', url: 'https://aakash.ac.in', bgCo:'#0a1f43', img: '/Akash-logo.png'},
+    {name:'KFC', url: 'https://online.kfc.co.in', bgCo: '#762527' , img: '/kfc.png'}
+  ]
+
+  return (
+    <div >
+        <div className='text-4xl text-[#94bce9] text-center mb-4'>Platinum Sponsors</div>
+        <div className='flex items-center justify-center flex-wrap'>
+        {PlatSponsor.map((s)=>(
+                
+    <div onClick={()=>handleClick(s.url)}>
+          <GlareHover
             
-//             glareOpacity={0.3}
-//             className='max-w-md p-2'
-//             glareAngle={-30}
+            glareColor="#c0c0c0"
+            
+            glareOpacity={0.3}
+            className='max-w-md mx-6 my-6 h-full p-2'
+            glareAngle={-30}
 
-//             glareSize={300}
+            glareSize={300}
 
-//             transitionDuration={800}
+            transitionDuration={800}
 
-//             playOnce={false}
+            playOnce={false}
 
-//         >
+        >
 
-//             <h2 onClick={()=>handleClick(url)} className='bg-[]'  style={{ fontSize: '3rem', fontWeight: '900', color: '#333', margin: 0 }}>
-//                 <Card name='KFC' image='/kfc.png' site='www.online.kfc.co.in'/>
+            <h2 onClick={()=>handleClick(url)} className='bg-[] h-full '  style={{ fontSize: '3rem', fontWeight: '900', color: '#333', margin: 0 }}>
+                <Card name={s.name} image={s.img} bgC={s.bgCo} site={s.url}/>
                 
 
-//             </h2>
+            </h2>
 
-//         </GlareHover>
+        </GlareHover>
 
-//     </div>
-//     </div>
-//   )
-// }
+    </div>))}
+    </div>
+    </div>
+  )
+}
 
-// export default PlatinumSponsorCard
+export default PlatinumSponsorCard

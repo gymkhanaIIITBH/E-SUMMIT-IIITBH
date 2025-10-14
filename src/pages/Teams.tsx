@@ -1,13 +1,17 @@
 import { useRef, useEffect } from 'react';
 import TeamCard from '../components/TeamCard';
 import { motion, useInView } from 'framer-motion';
-import heroImg from '../../public/hero-bg.svg'; // ✅ make sure the path is correct
+import heroImg from '../../public/hero-bg.svg';
 import pinak from '/team/Pinak.jpg'
 import rahul from '/team/Rahul.jpg'
 import suyash from '/team/suyash.jpg'
 import ayush from '/team/ayush.jpg'
 import param from '/team/Param.jpg'
 import rajat from '/team/Rajat.jpg'
+
+import shivam from '/shivam.jpg'
+import tushar from '/tushar.jpg'
+import yug from '/yug.jpg'
   const team=[
     {name:'Pinak Halder', image:pinak, designation:'VP Gymkhana Student Council', email:'vp.gymkhana@iiitbh.ac.in', phone:null, linkedIn: "https://www.linkedin.com/in/pinak14iiitbh26?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"},
     {name:'Rahul Kumar', image:rahul, designation:'General Secretary, Technical board', email:'gs.technical@iiitbh.ac.in', phone:null, linkedIn:'https://www.linkedin.com/in/rahul-kumar-iiitbh?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'},
@@ -15,7 +19,11 @@ import rajat from '/team/Rajat.jpg'
     {name:'Ayush K. Singh', image:ayush, designation:'Public Relations Lead', email:'ayush8.230103010@iiitbh.ac.in', phone:'+91 9369640113', linkedIn:'http://linkedin.com/in/ayush-kumar-singh-98a369291'},
     {name:'Param Preet Singh', image:param, designation:'Sponsorship Team Lead', email:'param.230102042@iiitbh.ac.in', phone:'+91 8299424445', linkedIn:'https://www.linkedin.com/in/parampreet-singh-252782298?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'},
     {name:'Rajat Ranjan', image:rajat, designation:'Marketing Team Lead', email:'testEMail', phone:'+91 9324572394', linkedIn:'https://www.linkedin.com/in/rajat-ranjan-b20ab3204?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'},
-
+  ]
+  const Contributors=[
+    {name:'Tushar Patel', image:tushar, designation:'Web Developer', email:'tushar.230101145@iiitbh.ac.in', phone:'+91 8840000304', linkedIn:'https://in.linkedin.com/in/tusharpatel10954'},
+    {name:'Yug Sharma', image:yug, designation:'Web Developer', email:'param.230102042@iiitbh.ac.in', phone:'+91 8962901245', linkedIn:'https://www.linkedin.com/in/yug-s-538a8a321'},
+    {name:'Shivam Gautam', image:shivam, designation:'Web Developer', email:'shivam1.23010120@iiitbh.ac.in', phone:'+91 8181026317', linkedIn:'https://in.linkedin.com/in/shivam-gautam-b20220295'},
 
 
   ]
@@ -78,6 +86,24 @@ function Teams() {
             <TeamCard key={index} name={t.name} designation={t.designation} image={t.image} email={t.email} phone={t.phone} linkedIn={t.linkedIn} />
           ))}
         </motion.div>
+
+        <div className='text-4xl text-white mt-8 font-bold font-montserrat'>Contributors</div>
+        {/* Contributors cards */}
+        <motion.div
+          id="Contributors"
+          initial={{ opacity: 0, y: 100 }}
+          animate={{
+            opacity: inView ? 1 : 0,
+            y: inView ? 0 : 100,
+          }}
+          transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
+          className="flex justify-center max-w-[70rem] gap-6 flex-wrap"
+        >
+          {Contributors.map((t, index) => (
+            <TeamCard key={index} name={t.name} designation={t.designation} image={t.image} email={t.email} phone={t.phone} linkedIn={t.linkedIn} />
+          ))}
+        </motion.div>
+
       </div>
     </section>
   );
