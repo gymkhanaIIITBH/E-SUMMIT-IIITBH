@@ -109,32 +109,50 @@
 /*loader v3 here*/
 /* From Uiverse.io by Shoh2008 */ 
 .loader {
-  width: 8px;
-  height: 8px;
+  /* Retain base dimensions */
+  width: 10px; 
+  height: 10px;
   position: relative;
   border-radius: 50%;
-  background: #fff;
-  animation: wave_14 1s ease-in infinite;
+  /* Retain original color base */
+  background: rgb(2, 105, 35); 
+  /* Adjusted duration for a smoother, longer fade */
+  animation: slow_pulse_same_color 2.5s ease-out infinite; 
 }
 
-@keyframes wave_14 {
+.loader {
+  /* Increased initial size */
+  width: 14px; 
+  height: 14px;
+  position: relative;
+  border-radius: 50%;
+  /* Retain original color base */
+  background: rgb(94, 179, 25); 
+  /* Retain animation settings */
+  animation: slow_pulse_same_color 2.5s ease-out infinite; 
+}
+
+@keyframes slow_pulse_same_color {
   0% {
-    box-shadow: 0 0 0 0px rgba(0, 183, 95,  1),
-  0 0 0 20px rgba(0, 183, 95, 0.8),
-  0 0 0 40px rgba(0, 183, 95,  0.6),
-  0 0 0 60px rgba(0, 183, 95, 0.4),
-  0 0 0 80px rgba(0, 183, 95,  0.2)
+    /* Initial state: Just the base dot, ready to expand */
+    box-shadow: 
+      0 0 0 0px rgba(0, 183, 95, 1);
+  }
+
+  50% {
+    /* Midpoint: Three distinct rings, with the last ring now slightly visible */
+    box-shadow: 
+      0 0 0 10px rgba(0, 183, 95, 0.7), 
+      0 0 0 25px rgba(0, 183, 95, 0.5), 
+      0 0 0 40px rgba(0, 183, 95, 0.3); /* Increased visibility (from 0.0 to 0.1) */
   }
 
   100% {
-    box-shadow: 0 0 0 80px rgba(0, 183, 95,  0),
-    0 0 0 60px rgba(0, 183, 95,  0.2),
-    0 0 0 40px rgba(0, 183, 95,  0.4),
-    0 0 0 20px rgba(0, 183, 95,  0.6),
-    0 0 0 0px rgba(0, 183, 95,  1)
+    /* Return to initial state: The rings have fully faded and collapsed */
+    box-shadow: 
+      0 0 0 0px rgba(0, 183, 95, 0.2);
   }
 }
-
 
   
 /*laoder v1 here*/

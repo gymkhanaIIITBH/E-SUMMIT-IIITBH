@@ -22,7 +22,7 @@ import { motion, useInView } from 'framer-motion';
 import heroImg from '../../public/hero-bg.svg';
 import pinak from '/team/Pinak.jpg'
 import rahul from '/team/Rahul.jpg'
-import suyash from '/team/suyash.jpg'
+import suyash from '/team/suyash.png'
 import ayush from '/team/ayush.jpg'
 import param from '/team/Param.jpg'
 import rajat from '/team/Rajat.jpg'
