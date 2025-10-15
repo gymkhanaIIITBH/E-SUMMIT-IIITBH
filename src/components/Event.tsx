@@ -105,7 +105,7 @@ export default function Events() {
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
-              transition={{ duration: 0.7, delay: idx * 0.12, ease: [0.36, 0.66, 0.04, 1] }}
+              transition={{ duration: 0.2, delay: idx * 0.06, ease: [0.36, 0.66, 0.04, 1] }}
             >
               {/* Noir hover background: subtle gradient + vignette */}
               <div className="pointer-events-none absolute inset-0 -z-10 rounded-xl opacity-0 transition-all duration-500 group-hover:opacity-100 group-focus-within:opacity-100">

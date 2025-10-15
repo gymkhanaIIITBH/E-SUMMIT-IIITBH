@@ -73,7 +73,7 @@ function Teams() {
       <CopyToast message={toastMessage} visible={toastVisible} />
       {/* Background image with overlay */}
       <div
-        className="absolute inset-0 bg-cover bg-center"
+        className="absolute inset-0 bg-cover bg-center parallax"
         style={{ backgroundImage: `url(${heroImg})` }}
         aria-hidden
       />

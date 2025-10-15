@@ -113,7 +113,7 @@
   width: 10px; 
   height: 10px;
   position: relative;
-  border-radius: 50%;
+  border-radius: 100%;
   /* Retain original color base */
   background: rgb(2, 105, 35); 
   /* Adjusted duration for a smoother, longer fade */
@@ -122,13 +122,11 @@
 
 .loader {
   /* Increased initial size */
-  width: 14px; 
-  height: 14px;
+  width: 10px; 
+  height: 10px;
   position: relative;
   border-radius: 50%;
-  /* Retain original color base */
   background: rgb(94, 179, 25); 
-  /* Retain animation settings */
   animation: slow_pulse_same_color 2.5s ease-out infinite; 
 }
 
@@ -136,21 +134,21 @@
   0% {
     /* Initial state: Just the base dot, ready to expand */
     box-shadow: 
-      0 0 0 0px rgba(0, 183, 95, 1);
+      0 0 0 10px rgba(0, 183, 95, 0.1);
   }
 
   50% {
     /* Midpoint: Three distinct rings, with the last ring now slightly visible */
     box-shadow: 
-      0 0 0 10px rgba(0, 183, 95, 0.7), 
-      0 0 0 25px rgba(0, 183, 95, 0.5), 
-      0 0 0 40px rgba(0, 183, 95, 0.3); /* Increased visibility (from 0.0 to 0.1) */
+      0 0 0 15px rgba(0, 183, 95, 0.4), 
+      0 0 0 20px rgba(0, 183, 95, 0.3), 
+      0 0 0 25px rgba(0, 183, 95, 0.2); /* Increased visibility (from 0.0 to 0.1) */
   }
 
   100% {
     /* Return to initial state: The rings have fully faded and collapsed */
     box-shadow: 
-      0 0 0 0px rgba(0, 183, 95, 0.2);
+      0 0 0 0px rgba(0, 183, 95, 1);
   }
 }
 
