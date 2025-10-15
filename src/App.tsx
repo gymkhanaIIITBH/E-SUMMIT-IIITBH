@@ -7,7 +7,7 @@ import SponsorForm from './components/SponsorFormPage'
 import AboutSection from './components/AboutSection'
 import Teams from './pages/Teams'
 import Footer from './components/Footer'
-import EventPage from './components/EventPage'
+import EventPage from './pages/EventPage'
 import Loading from './components/LoaderV3'
 import { useEffect, useState } from 'react'
 

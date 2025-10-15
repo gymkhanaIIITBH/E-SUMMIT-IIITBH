@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
-import { Timeline } from './ui/timeline';
+import { Timeline } from '@/components/ui/timeline.tsx';
 import { eventData, type TimelineEventData } from '../lib/eventData.ts';
 import { motion } from 'framer-motion';
 import { AiOutlineCalendar, AiOutlineTrophy, AiOutlineUsergroupAdd } from 'react-icons/ai';
-import { InteractiveHoverButton } from './InteractiveHoverButton';
+import { InteractiveHoverButton } from '@/components/InteractiveHoverButton.tsx';
 
 const containerVariants = {
   hidden: { opacity: 0 },

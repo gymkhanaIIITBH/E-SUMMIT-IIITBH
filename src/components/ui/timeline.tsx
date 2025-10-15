@@ -45,12 +45,13 @@ const TimelineItem: React.FC<{
     });
   }, [isActive]);
 
-  const activeTitleClasses = isHighlighted 
-    ? "text-green-600 dark:text-green-600 scale-[1.02] transform transition-colors duration-500" 
-    : "text-neutral-500 dark:text-neutral-500 scale-100 transition-colors duration-500";
-    
-  const activeDotClasses = isHighlighted 
-    ? "bg-green-500 ring-4 ring-green-500/50 shadow-md shadow-green-500/30" 
+  // Title classes: when inactive show stroked outline (transparent fill + stroke matching bg),
+  // when active show gradient-filled text with a subtle drop shadow.
+  const inactiveTitleClasses = "text-transparent stroke-text stroke-1 decoration-transparent scale-100 transition-all duration-500";
+  const activeTitleClasses = "bg-clip-text text-transparent scale-[1.02] transform transition-all duration-500 drop-shadow-md";
+
+  const activeDotClasses = isHighlighted
+    ? "bg-gradient-to-tr from-green-400 to-green-600 ring-4 ring-green-500/30 shadow-md shadow-green-500/20"
     : "bg-neutral-500 dark:bg-neutral-500 ring-2 ring-neutral-500/30";
 
 
@@ -68,7 +69,20 @@ const TimelineItem: React.FC<{
         </div>
 
         {/* Title (Desktop) */}
-        <h3 className={`hidden md:block text-xl md:pl-20 md:text-4xl font-bold ${activeTitleClasses}`}>
+        {/* Desktop Title: use CSS trick to show outline (stroke) when inactive and gradient fill when active */}
+        <h3
+          className={`hidden md:block text-xl md:pl-20 md:text-4xl font-bold ${isHighlighted ? activeTitleClasses : inactiveTitleClasses}`}
+          // Inline style for gradient when active and for stroked outline when inactive
+          style={isHighlighted ? {
+            backgroundImage: 'linear-gradient(90deg, #4ade80 0%, #16a34a 50%, #059669 100%)',
+            WebkitBackgroundClip: 'text',
+            backgroundClip: 'text',
+          } : {
+            color: 'transparent',
+            WebkitTextStroke: '1px rgba(255,255,255,0.06)',
+            textShadow: '0 0 0 rgba(0,0,0,0)',
+          }}
+        >
           {item.title}
         </h3>
       </div>
@@ -76,7 +90,18 @@ const TimelineItem: React.FC<{
       {/* Content Card */}
       <div className="relative pl-20 pr-4 md:pl-4 w-full">
         {/* Title (Mobile) */}
-        <h3 className={`md:hidden block text-2xl mb-4 text-left font-extrabold ${activeTitleClasses}`}>
+        {/* Mobile Title */}
+        <h3
+          className={`md:hidden block text-2xl mb-4 text-left font-extrabold ${isHighlighted ? activeTitleClasses : inactiveTitleClasses}`}
+          style={isHighlighted ? {
+            backgroundImage: 'linear-gradient(90deg, #4ade80 0%, #16a34a 50%, #059669 100%)',
+            WebkitBackgroundClip: 'text',
+            backgroundClip: 'text',
+          } : {
+            color: 'transparent',
+            WebkitTextStroke: '1px rgba(255,255,255,0.06)'
+          }}
+        >
           {item.title}
         </h3>
         {item.content}
@@ -113,12 +138,12 @@ export const Timeline = ({
 
   return (
     <div
-      className="w-full  font-sans md:px-10" // Removed white background for consistency
+      className="w-full  font-montserrat tracking-tighter md:px-10" // Removed white background for consistency
       ref={containerRef}
     >
       {/* Title/Description Section */}
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-10">
-        <h2 className="text-3xl md:text-4xl mb-4 text-white max-w-4xl font-extrabold">
+        <h2 className="text-3xl md:text-4xl mb-4 text-white max-w-4xl font-bold">
           {title}
         </h2>
         <p className="text-neutral-400 text-sm md:text-base max-w-sm">

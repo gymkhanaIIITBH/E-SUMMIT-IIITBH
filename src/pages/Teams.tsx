@@ -68,7 +68,7 @@ function Teams() {
   }, []);
 
   return (
-    <section className="relative min-h-screen w-full flex flex-col items-center justify-center overflow-hidden p-6">
+    <section className="relative min-h-screen w-full flex flex-col items-center justify-center overflow-hidden p-6 py-16">
       {/* Toast for copy action */}
       <CopyToast message={toastMessage} visible={toastVisible} />
       {/* Background image with overlay */}
@@ -125,7 +125,7 @@ function Teams() {
           ))}
         </motion.div>
 
-        <div className='text-4xl text-white mt-12 mb-12 font-bold font-montserrat'>Contributors</div>
+        <div className='text-4xl text-white mt-12 mb-12 font-bold font-montserrat'>Developers</div>
         {/* Contributors cards */}
         <motion.div
           id="Contributors"
