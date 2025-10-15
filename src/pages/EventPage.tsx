@@ -42,18 +42,20 @@ const EventPage: React.FC = () => {
         viewport={{ once: true, amount: 0.1 }}
         transition={{ duration: 0.6 }}
         
-        className="
-          relative z-10
-          bg-transparent
-          shadow-none
+        className={
+          `relative z-10
+          bg-neutral-900/60
+          backdrop-blur-sm
+          shadow-lg
           rounded-2xl
-          border border-neutral-800 hover:border-yellow-500/50
+          border border-neutral-800 hover:border-green-400/50
           p-6 md:p-10
           transition-colors duration-300 ease-in-out
-          group
-        "
+          overflow-hidden
+          group`
+        }
       >
-        <div className="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-yellow-400/20 transition duration-300 pointer-events-none" />
+        <div className="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-green-500/20 transition duration-300 pointer-events-none" />
         
         <div className="flex flex-col lg:flex-row gap-8 relative z-20">
           
@@ -63,8 +65,8 @@ const EventPage: React.FC = () => {
               <img
                 src={event.image}
                 alt={event.title}
-                // Image now fills the square container
-                className="absolute inset-0 w-full h-full object-cover rounded-xl border border-neutral-700/50"
+                // Image now fills the square container and is contained by the card
+                className="absolute inset-0 w-full h-full object-cover"
               />
             </div>
           </div>
@@ -120,7 +122,30 @@ const EventPage: React.FC = () => {
   }));
 
   return ( 
-    <main className="min-h-screen w-full bg-neutral-950 pt-10"> 
+    <main
+      className="relative min-h-screen w-full bg-neutral-950 pt-10"
+      style={{
+        // Use the texture as the base background and keep it repeating.
+        // We'll layer an SVG header on top visually by using an absolutely positioned img.
+        backgroundImage: `url('/texture-bg.jpg')`,
+        backgroundRepeat: 'repeat',
+        backgroundSize: 'auto',
+      }}
+    > 
+      {/* Top SVG header overlay (placed above the texture but behind content) */}
+      <div className="pointer-events-none absolute inset-x-0 top-0 z-0 overflow-hidden">
+        <img
+          src="/bg-header.svg"
+          alt="header decorative"
+          className="w-full object-cover"
+          style={{
+            display: 'block',
+          }}
+        />
+      </div>
+
+  {/* Keep a higher stacking context for page content */}
+  <div className="relative z-10">
       
       {/* Header Section */}
       <motion.div 
@@ -130,11 +155,11 @@ const EventPage: React.FC = () => {
         animate="visible"
       >
         <motion.h1 
-          className="text-2xl md:text-4xl font-extrabold tracking-tight mb-4"
+          className="text-2xl md:text-4xl font-extrabold mb-4"
           variants={itemVariants}
         >
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-amber-600">
-            Upcoming Events
+          <span className="bg-clip-text text-transparent bg-white">
+            Our Events
           </span> 
           <motion.span 
             variants={itemVariants} 
@@ -161,6 +186,7 @@ const EventPage: React.FC = () => {
           data={items}
           
         />
+      </div>
       </div>
     </main>
   );

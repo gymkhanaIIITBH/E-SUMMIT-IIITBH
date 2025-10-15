@@ -45,9 +45,7 @@ const TimelineItem: React.FC<{
     });
   }, [isActive]);
 
-  // Title classes: when inactive show stroked outline (transparent fill + stroke matching bg),
-  // when active show gradient-filled text with a subtle drop shadow.
-  const inactiveTitleClasses = "text-transparent stroke-text stroke-1 decoration-transparent scale-100 transition-all duration-500";
+  const inactiveTitleClasses = "stroke-text stroke-1 decoration-transparent scale-100 transition-all duration-500";
   const activeTitleClasses = "bg-clip-text text-transparent scale-[1.02] transform transition-all duration-500 drop-shadow-md";
 
   const activeDotClasses = isHighlighted
@@ -68,8 +66,7 @@ const TimelineItem: React.FC<{
           <div className={`h-4 w-4 rounded-full transition-all duration-300 ${activeDotClasses}`} />
         </div>
 
-        {/* Title (Desktop) */}
-        {/* Desktop Title: use CSS trick to show outline (stroke) when inactive and gradient fill when active */}
+        {/* Title (Desktop) */}        
         <h3
           className={`hidden md:block text-xl md:pl-20 md:text-4xl font-bold ${isHighlighted ? activeTitleClasses : inactiveTitleClasses}`}
           // Inline style for gradient when active and for stroked outline when inactive
@@ -77,10 +74,10 @@ const TimelineItem: React.FC<{
             backgroundImage: 'linear-gradient(90deg, #4ade80 0%, #16a34a 50%, #059669 100%)',
             WebkitBackgroundClip: 'text',
             backgroundClip: 'text',
+            // Warm green glow for emphasis
+            textShadow: '0 0 14px rgba(74, 222, 128, 0.35), 0 0 24px rgba(250, 204, 21, 0.08)'
           } : {
-            color: 'transparent',
-            WebkitTextStroke: '1px rgba(255,255,255,0.06)',
-            textShadow: '0 0 0 rgba(0,0,0,0)',
+            color: 'rgba(110, 110, 110, 0.32)'
           }}
         >
           {item.title}
@@ -94,12 +91,13 @@ const TimelineItem: React.FC<{
         <h3
           className={`md:hidden block text-2xl mb-4 text-left font-extrabold ${isHighlighted ? activeTitleClasses : inactiveTitleClasses}`}
           style={isHighlighted ? {
-            backgroundImage: 'linear-gradient(90deg, #4ade80 0%, #16a34a 50%, #059669 100%)',
+            backgroundImage: 'linear-gradient(90deg, #4ade80 0%, #16a34a 50%, #0d3428ff 100%)',
             WebkitBackgroundClip: 'text',
             backgroundClip: 'text',
+            // Slight glow for mobile title as well
+            textShadow: '0 0 12px rgba(74, 222, 128, 0.32), 0 0 18px rgba(250, 204, 21, 0.06)'
           } : {
-            color: 'transparent',
-            WebkitTextStroke: '1px rgba(255,255,255,0.06)'
+            color: ' rgba(255,255,255,0.06)'
           }}
         >
           {item.title}
@@ -126,11 +124,9 @@ export const Timeline = ({
     }
   }, [ref, data]);
 
-  // Hook for scroll-based line animation
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    // Start animation when container is 10% from the top, end when it's 50% from the bottom
-    offset: ["start 10%", "end 50%"],
+    offset: ["start 20%", "end 60%"],
   });
 
   const heightTransform = useTransform(scrollYProgress, [0, 1], [0, height]);
@@ -143,7 +139,7 @@ export const Timeline = ({
     >
       {/* Title/Description Section */}
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-10">
-        <h2 className="text-3xl md:text-4xl mb-4 text-white max-w-4xl font-bold">
+        <h2 className="text-2xl md:text-3xl mb-4 text-white max-w-4xl font-bold" style={{ textShadow: '0 0 10px rgba(250,204,21,0.08), 0 0 6px rgba(255,255,255,0.02)'}}>
           {title}
         </h2>
         <p className="text-neutral-400 text-sm md:text-base max-w-sm">
@@ -165,7 +161,7 @@ export const Timeline = ({
               height: heightTransform,
               opacity: opacityTransform,
             }}
-            // Changed gradient to match the yellow highlight color for better synergy
+            
             className="absolute inset-x-0 top-0 w-[2px] bg-gradient-to-t from-green-400/80 via-green-500 to-transparent rounded-full"
           />
         </div>
