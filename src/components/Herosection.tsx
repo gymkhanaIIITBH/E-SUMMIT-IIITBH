@@ -111,7 +111,7 @@ const inView = useInView(ref, {once:true})
         <SocialIcon link='https://www.instagram.com/esummit_iiitbh/' label="instagram">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm5 6.6A4.4 4.4 0 1016.4 13 4.4 4.4 0 0012 8.6zM18.4 7a1 1 0 11-1 1 1 1 0 011-1z"/></svg>
         </SocialIcon>
-        <SocialIcon link='https://x.com/IIITBhagalpur' label="x">
+        <SocialIcon link='https://x.com/esummit_iiitbh?t=qt7FlHSeAIEEwXZBxNImyA&s=08' label="x">
           
         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 24 24" fill='#ffffff'>
         <path d="M26.37,26l-8.795-12.822l0.015,0.012L25.52,4h-2.65l-6.46,7.48L11.28,4H4.33l8.211,11.971L12.54,15.97L3.88,26h2.65 l7.182-8.322L19.42,26H26.37z M10.23,6l12.34,18h-2.1L8.12,6H10.23z"></path>
