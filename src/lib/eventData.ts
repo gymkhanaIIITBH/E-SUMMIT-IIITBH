@@ -25,7 +25,7 @@ export const eventData: TimelineEventData[] = [
   {
     title: "STARTUP EXPO",
     description: "The Startup Expo is a crucial event where entrepreneurs pitch innovative ideas directly to investors. It fosters valuable connections and promotes industry collaboration. This platform offers startups a vital opportunity to secure funding and achieve significant entrepreneurial success.",
-    image: "/startexpoposter.svg",
+    image: "/startupExpoPoster.jpg",
     details: {
       date: "14th November",
       prizePool: "N/A (Funding)",
