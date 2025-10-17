@@ -1,5 +1,12 @@
 import BrochureCover from '../assets/BrochureCover.png'
 function BrochureSection() {
+  function openBrochure() {
+    
+    // iit will open brochure in new tab 
+    window.open("https://heyzine.com/flip-book/4565cbe5ac.html", '_blank');
+  
+  }
+
   return (
     <div className='relative bg-black h-auto flex flex-col justify-center items-center w-full'>
       <div className="text-[#ffe600] text-2xl font-bold tracking-widest mb-8 text-center font-sans">BROCHURE</div>
@@ -27,7 +34,7 @@ function BrochureSection() {
             </p>
 
             {/* Read Echo Button */}
-            <button className="px-10 py-3 border border-gray-400 text-gray-200 rounded-md text-sm font-semibold tracking-wider hover:bg-gray-500 hover:border-gray-200 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 focus:ring-gray-400 font-montserrat">
+            <button onClick={()=>{openBrochure()}} className="px-10 py-3 border border-gray-400 text-gray-200 rounded-md text-sm font-semibold tracking-wider hover:bg-gray-500 hover:border-gray-200 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 focus:ring-gray-400 font-montserrat">
               Learn more
             </button>
           </div>

@@ -59,6 +59,8 @@ function Teams() {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true });
 
+  const ref2 = useRef(null);
+  const inView2 = useInView(ref2, { once: true });
 
 
 
@@ -103,6 +105,7 @@ function Teams() {
         {/* Team cards */}
         <motion.div
           id="Coordinators"
+          ref={ref}
           initial={{ opacity: 0, y: 100 }}
           animate={{
             opacity: inView ? 1 : 0,
@@ -129,10 +132,11 @@ function Teams() {
         {/* Contributors cards */}
         <motion.div
           id="Contributors"
+          ref={ref2}
           initial={{ opacity: 0, y: 100 }}
           animate={{
-            opacity: inView ? 1 : 0,
-            y: inView ? 0 : 100,
+            opacity: inView2 ? 1 : 0,
+            y: inView2 ? 0 : 100,
           }}
           transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
           className="flex justify-center max-w-[70rem] gap-6 flex-wrap pb-16"
