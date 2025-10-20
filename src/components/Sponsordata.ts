@@ -17,7 +17,7 @@ export interface SponsorSection {
 // import gold1 from '/easemytrip.png';
 // import silver1 from '/monginis.png';
 // import silver2 from '/gfg.png';
-
+    import unstop from '/unstop.png'
 import ComingSoon from '/coming.png'
 
 export const sponsorData: SponsorSection[] = [
@@ -41,7 +41,7 @@ export const sponsorData: SponsorSection[] = [
     title: 'Gold Sponsors',
     color: 'text-yellow-300',
     sponsors: [
-      { name: 'Coming Soon', logo: ComingSoon, url:'https://esummit.iiitbh.ac.in' },
+      { name: 'Unstop', logo: unstop, url:'https://unstop.com' },
       // Add more...
     ],
   },

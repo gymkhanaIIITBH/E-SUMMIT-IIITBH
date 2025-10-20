@@ -5,7 +5,8 @@ import { motion } from "framer-motion";
 // import monginis from "/monginis.png";
 // import GfgLogo from "/gfg.png"
 // import MahindraLogo from '/mahindra.png'
-import ComingSoon from '/coming.png'
+// import ComingSoon from '/coming.png'
+import unstopLogo from '/unstop.png'
 // const sponsors = [
 //   { name: "Aasksh", logoSrc: Aaskshlogo, url: "https://aakash.ac.in" },
 //   { name: "KFC", logoSrc: KfcLogo, url: "https://online.kfc.co.in" },
@@ -17,19 +18,24 @@ import ComingSoon from '/coming.png'
 
 // ];
 const dummySponsors=[
-  {name: "Coming Soon", logoSrc:ComingSoon, url:'https://esummit.iiitbh.ac.in' },
-  {name: "Coming Soon", logoSrc:ComingSoon, url:'https://esummit.iiitbh.ac.in' },
-  {name: "Coming Soon", logoSrc:ComingSoon, url:'https://esummit.iiitbh.ac.in' },
-  {name: "Coming Soon", logoSrc:ComingSoon, url:'https://esummit.iiitbh.ac.in' },
-  {name: "Coming Soon", logoSrc:ComingSoon, url:'https://esummit.iiitbh.ac.in' },
-  {name: "Coming Soon", logoSrc:ComingSoon, url:'https://esummit.iiitbh.ac.in' },
+  {name: "Unstop", logoSrc:unstopLogo, url:'https://unstop.com' },
+  // {name: "Unstop", logoSrc:unstopLogo, url:'https://unstop.com' },
+  // {name: "Unstop", logoSrc:unstopLogo, url:'https://unstop.com' },
+  // {name: "Unstop", logoSrc:unstopLogo, url:'https://unstop.com' },
+  // {name: "Unstop", logoSrc:unstopLogo, url:'https://unstop.com' },
+
+  // {name: "Coming Soon", logoSrc:ComingSoon, url:'https://esummit.iiitbh.ac.in' },
+  // {name: "Coming Soon", logoSrc:ComingSoon, url:'https://esummit.iiitbh.ac.in' },
+  // {name: "Coming Soon", logoSrc:ComingSoon, url:'https://esummit.iiitbh.ac.in' },
+  // {name: "Coming Soon", logoSrc:ComingSoon, url:'https://esummit.iiitbh.ac.in' },
+  // {name: "Coming Soon", logoSrc:ComingSoon, url:'https://esummit.iiitbh.ac.in' },
 
 
 ]
 
 const GoldSponsors = () => {
-  const scrollingSponsors = [...dummySponsors, ...dummySponsors]; // duplicate for smooth loop
-
+  // const scrollingSponsors = [...dummySponsors, ...dummySponsors]; // duplicate for smooth loop, but make it single as low sponsors
+  const scrollingSponsors = [...dummySponsors];
   return (
     <section className="bg-black overflow-hidden">
       <motion.div
@@ -63,8 +69,8 @@ const GoldSponsors = () => {
             className="pointer-events-none absolute right-0 top-0 h-full w-16 z-10"
             style={{ background: "linear-gradient(to left, #000 80%, transparent)" }}
           />
-
-          <div className="flex animate-marquee-left items-center">
+          {/* temporarily removed marquee-left animation as less sponsors  */}
+          <div className="flex animate-marquee-lef justify-center items-center">
             {scrollingSponsors.map((sponsor, i) => (
               <motion.a
                 key={`${sponsor.name}-${i}`}

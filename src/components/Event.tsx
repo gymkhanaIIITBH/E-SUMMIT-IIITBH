@@ -58,7 +58,7 @@ const QuizEvent = {
 const StartupEvent = {
   title: "STARTUP EXPO",
   description:
-    "The Startup Expo is a crucial event where entrepreneurs pitch innovative ideas directly to investors. It fosters valuable connections and promotes industry collaboration. This platform offers startups a vital opportunity to secure funding and achieve significant entrepreneurial success.",
+"The Startup Expo is a crucial event where entrepreneurs pitch innovative ideas directly to investors, fostering valuable connections and promoting industry collaboration. It offers startups a vital opportunity to secure funding and achieve significant entrepreneurial success. A nominal registration fee of ₹5,000 applies for participation.",
 };
 
 const ideaStormImage = ideastorm;
