@@ -21,12 +21,12 @@ const itemVariants = {
 };
 
 const EventPage: React.FC = () => {
-  const handleRegister = (eventLink: string) => {
-    console.log('Registering for:', eventLink);
-    // In a real application, you might use window.location.href or a routing method here
-    // window.location.href = eventLink;
-  };
-
+  function registerEvent(url: string) {
+    
+    // iit will open registration page in new tab 
+    window.open(url, '_blank');
+  
+  }
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, []);
@@ -111,7 +111,7 @@ const EventPage: React.FC = () => {
             {/* REGISTER BUTTON */}
             <div className="pt-3 border-t border-neutral-700/70">
               <InteractiveHoverButton 
-                onClick={() => handleRegister(event.registerLink)}>
+                onClick={() => registerEvent(event.registerLink)}>
                   Register Here 
               </InteractiveHoverButton> 
             </div>

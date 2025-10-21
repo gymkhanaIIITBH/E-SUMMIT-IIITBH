@@ -21,44 +21,52 @@ type EventItem = {
   dividerLeft: string;
   dividerRight: string;
   image: string;
+  url: string;
 };
 
 const IdeaEvent = {
   title: "IDEA STORM",
   description:
     "Pitch your groundbreaking startup ideas to investors and experts! Phase 1 is an online idea screening. Top teams advance to an offline, high-stakes pitch at IIIT Bhagalpur. Win prizes worth ₹85,000, plus certificates and exclusive goodies.",
-};
+  url:"https://unstop.com/p/e-summit-25-iiit-bhagalpur-idea-storm-pitch-the-future-duplicate-indian-institute-of-information-technology-iiit-bhaga-1577531"
+  };
 const BitEvent = {
   title: "BITSTORM",
   description:
     "Gear up for BitStorm 1.0,Aspiring tech teams first submit ideas online, followed by an intense 36-hour offline coding sprint at IIIT Bhagalpur. Transform ideas into impactful prototypes with mentorship. Judges will evaluate innovation and execution. Prizes worth ₹1,75,000 awaits.",
-};
+    url:"https://unstop.com/hackathons/e-summit-25-iiit-bhagalpurbit-storm-10-hack-the-future-indian-institute-of-information-technology-iiit-bhagal-1577295"
+  };
 const GamingEvent = {
   title: "GAMING EVENT",
   description:
     "Gear up for the ultimate BGMI and VALORANT clash! Compete in intense battles to prove your team's dominance. Show off your skills and strategy in this high-stakes tournament. A total prize pool of ₹25,000 is up for grabs. Time to dominate the arena!",
-};
+  url:"https://unstop.com/events/e-summit-25-iiit-bhagalpur-gaming-showdown-valorant-champions-cup-indian-institute-of-information-technology-iiit-1577253"
+  };
 
 const BullEvent = {
   title: "BULLRUN",
   description:
     "This challenge for strategists blends financial analysis. Phase 1 is an online financial reasoning quiz. Phase 2 features thrilling live market simulations and real-time trading choices based on company data. Winners, judged on market understanding and strategy, claim prizes worth ₹50,000.",
-};
+  url: "https://unstop.com/hackathons/e-summit-25-iiit-bhagalpur-idea-storm-pitch-the-future-indian-institute-of-information-technology-iiit-bhagal-1577209"
+  };
 const ViralVogue = {
   title: "VIRAL VOGUE",
   description:
     "Unleash your marketing genius in the Viral Vogue Pitch, Reel & Win! challenge. Pitch quirky concepts like chai as an energy elixir or gourmet mess food in a thrilling 60-second Instagram reel. Submissions via tag/official link. With prizes worth ₹22,500, this is your chance to entertain, persuade, and go viral!",
-};
+  url:"https://unstop.com/events/e-summit-25-iiit-bhagalpur-viral-vogue-pitch-reel-win-indian-institute-of-information-technology-iiit-bhagalpur-1577240"
+  };
 
 const QuizEvent = {
   title: "E-SHIP QUIZ",
   description:
     "Test your Business and Tech IQ in the E-Ship Quiz! The challenge starts with a 25-question online quiz. The top contenders advance to a thrilling live buzzer round on Google Meet. This fast-paced event rewards quick thinking with a prize pool of ₹5,000.",
-};
+  url:"https://unstop.com/quiz/e-summit-25-iiit-bhagalpure-ship-quiz-decode-business-dominate-tech-indian-institute-of-information-technology-iiit-1577230"
+  };
 const StartupEvent = {
   title: "STARTUP EXPO",
   description:
 "The Startup Expo is a crucial event where entrepreneurs pitch innovative ideas directly to investors, fostering valuable connections and promoting industry collaboration. It offers startups a vital opportunity to secure funding and achieve significant entrepreneurial success. A nominal registration fee of ₹5,000 applies for participation.",
+  url:"https://unstop.com/o/j8PEMtI?lb=6EzDYbpx&utm_medium=Share&utm_source=esummcom22762&utm_campaign=Workshops"
 };
 
 const ideaStormImage = ideastorm;
@@ -88,7 +96,12 @@ const events: EventItem[] = [
   { id: 6, day: "Saturday", date: 15, month: "November", dividerLeft: dividerLine, dividerRight: dividerLine, image: eventImages[GamingEvent.title], ...GamingEvent },
   { id: 7, day: "Saturday", date: 15, month: "November", dividerLeft: dividerLine, dividerRight: dividerLine, image: eventImages[ViralVogue.title], ...ViralVogue },
 ];
-
+  function registerEvent(url: string) {
+    
+    // iit will open registration page in new tab 
+    window.open(url, '_blank');
+  
+  }
 export default function Events() {
   return (
     <main className="bg-black text-white">
@@ -163,7 +176,7 @@ export default function Events() {
                       </p>
 
                       {/* Register button: reveal on hover (desktop), always visible on mobile */}
-                      <div className="mt-4">
+                      <div onClick={()=>registerEvent(ev.url)} className="mt-4">
                        <InteractiveHoverButton>Register</InteractiveHoverButton>
                       </div>
                     </div>

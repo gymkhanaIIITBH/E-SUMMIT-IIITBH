@@ -20,7 +20,7 @@ export const eventData: TimelineEventData[] = [
       prizePool: "₹1,75,000",
       numMembers: "5",
     },
-    registerLink: "/register/bitstorm"
+    registerLink: "https://unstop.com/hackathons/e-summit-25-iiit-bhagalpurbit-storm-10-hack-the-future-indian-institute-of-information-technology-iiit-bhagal-1577295"
   },
   {
     title: "STARTUP EXPO",
@@ -31,7 +31,7 @@ export const eventData: TimelineEventData[] = [
       prizePool: "N/A (Funding)",
       numMembers: "1",
     },
-    registerLink: "/register/startup-expo"
+    registerLink: "https://unstop.com/o/j8PEMtI?lb=6EzDYbpx&utm_medium=Share&utm_source=esummcom22762&utm_campaign=Workshops"
   },
   {
     title: "BULLRUN",
@@ -42,7 +42,7 @@ export const eventData: TimelineEventData[] = [
       prizePool: "₹50,000",
       numMembers: "1-2",
     },
-    registerLink: "/register/bullrun"
+    registerLink: "https://unstop.com/hackathons/e-summit-25-iiit-bhagalpur-idea-storm-pitch-the-future-indian-institute-of-information-technology-iiit-bhagal-1577209"
   },
   {
     title: "E-SHIP QUIZ",
@@ -53,7 +53,7 @@ export const eventData: TimelineEventData[] = [
       prizePool: "₹5,000",
       numMembers: "1",
     },
-    registerLink: "/register/eship-quiz"
+    registerLink: "https://unstop.com/quiz/e-summit-25-iiit-bhagalpure-ship-quiz-decode-business-dominate-tech-indian-institute-of-information-technology-iiit-1577230"
   },
   {
     title: "IDEA STORM",
@@ -64,7 +64,7 @@ export const eventData: TimelineEventData[] = [
       prizePool: "₹85,000",
       numMembers: "4",
     },
-    registerLink: "/register/ideastorm"
+    registerLink: "https://unstop.com/p/e-summit-25-iiit-bhagalpur-idea-storm-pitch-the-future-duplicate-indian-institute-of-information-technology-iiit-bhaga-1577531"
   },
   {
     title: "GAMING EVENT- Valorant",
@@ -75,7 +75,7 @@ export const eventData: TimelineEventData[] = [
       prizePool: "₹15,000",
       numMembers: "5",
     },
-    registerLink: "/register/gaming"
+    registerLink: "https://unstop.com/events/e-summit-25-iiit-bhagalpur-gaming-showdown-valorant-champions-cup-indian-institute-of-information-technology-iiit-1577253"
   },
     {
     title: "GAMING EVENT- BGMI",
@@ -86,7 +86,7 @@ export const eventData: TimelineEventData[] = [
       prizePool: "₹10,000",
       numMembers: "4-5",
     },
-    registerLink: "/register/gaming"
+    registerLink: "https://unstop.com/events/e-summit-25-iiit-bhagalpur-gaming-showdown-bgmi-cup-indian-institute-of-information-technology-iiit-bhagalpur-1577235"
   },
   {
     title: "VIRAL VOGUE",
@@ -97,6 +97,6 @@ export const eventData: TimelineEventData[] = [
       prizePool: "₹22,500",
       numMembers: "1-2",
     },
-    registerLink: "/register/viral-vogue"
+    registerLink: "https://unstop.com/events/e-summit-25-iiit-bhagalpur-viral-vogue-pitch-reel-win-indian-institute-of-information-technology-iiit-bhagalpur-1577240"
   },
 ];
