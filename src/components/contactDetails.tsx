@@ -21,7 +21,7 @@ import { InteractiveHoverButton } from "./InteractiveHoverButton"
     {name:'Suyash Ranjan',  designation:'E-Cell Coordinator', email:'suyash.2201227ec@iiitbh.ac.in', phone:'+91 7302381447', linkedIn:'https://www.linkedin.com/in/suyash-ranjan?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'},
     {name:'Ayush K. Singh',  designation:'Public Relations Lead', email:'ayush8.230103010@iiitbh.ac.in', phone:'+91 9369640113', linkedIn:'http://linkedin.com/in/ayush-kumar-singh-98a369291'},
     {name:'Param Preet Singh',  designation:'Sponsorship Team Lead', email:'param.230102042@iiitbh.ac.in', phone:'+91 8299424445', linkedIn:'https://www.linkedin.com/in/parampreet-singh-252782298?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'},
-    {name:'Rajat Ranjan',  designation:'Marketing Team Lead', email:'param.230102042@iiitbh.ac.in', phone:'+91 9324572394', linkedIn:'https://www.linkedin.com/in/rajat-ranjan-b20ab3204?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'},
+    {name:'Krish Shukla',  designation:'Sponsorship Team Associate', email:'krish.240101017@iiitbh.ac.in', phone:'+91 9455140904', linkedIn:'https://www.linkedin.com/in/rajat-ranjan-b20ab3204?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'},
 
 
   ]
