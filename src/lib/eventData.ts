@@ -18,7 +18,7 @@ export const eventData: TimelineEventData[] = [
     details: {
       date: "14th November",
       prizePool: "₹1,75,000",
-      numMembers: "5",
+      numMembers: "5-6",
     },
     registerLink: "https://unstop.com/hackathons/e-summit-25-iiit-bhagalpurbit-storm-10-hack-the-future-indian-institute-of-information-technology-iiit-bhagal-1577295"
   },

@@ -6,9 +6,10 @@ import eship from "/45.svg"
 import viralvogue from "/46.svg"
 import bullrun from "/47.svg"
 import bitstorm from "/48.svg"
-import gaming from "/49.png"
+// import gaming from "/49.png"
 import expo from "/50.svg"
-
+import valo from "/eventCovers/Valo.png"
+import bgmi from "/eventCovers/BGMI.png"
 import { InteractiveHoverButton } from "./InteractiveHoverButton";
 
 type EventItem = {
@@ -36,11 +37,15 @@ const BitEvent = {
     "Gear up for BitStorm 1.0,Aspiring tech teams first submit ideas online, followed by an intense 36-hour offline coding sprint at IIIT Bhagalpur. Transform ideas into impactful prototypes with mentorship. Judges will evaluate innovation and execution. Prizes worth ₹1,75,000 awaits.",
     url:"https://unstop.com/hackathons/e-summit-25-iiit-bhagalpurbit-storm-10-hack-the-future-indian-institute-of-information-technology-iiit-bhagal-1577295"
   };
-const GamingEvent = {
-  title: "GAMING EVENT",
-  description:
-    "Gear up for the ultimate BGMI and VALORANT clash! Compete in intense battles to prove your team's dominance. Show off your skills and strategy in this high-stakes tournament. A total prize pool of ₹25,000 is up for grabs. Time to dominate the arena!",
-  url:"https://unstop.com/events/e-summit-25-iiit-bhagalpur-gaming-showdown-valorant-champions-cup-indian-institute-of-information-technology-iiit-1577253"
+const Valorant =  {
+    title: "GAMING EVENT- Valorant",
+    description: "Get ready to step into the Arena, Agents! It's time for the ultimate VALORANT showdown! Fight tooth and nail in intense, high-stakes matches to claim victory and prove your team's dominance. Sharpen your aim, strategize with your squad, and outplay your opponents to take home the glory. With a prize pool of ₹15,000 up for grabs, every round counts. Suit up, it’s time to dominate the competition!",
+    url: "https://unstop.com/events/e-summit-25-iiit-bhagalpur-gaming-showdown-valorant-champions-cup-indian-institute-of-information-technology-iiit-1577253"
+  };
+  const BGMI=  {
+    title: "GAMING EVENT- BGMI",
+    description: "Gear up for the ultimate VALORANT clash! Compete in intense battles to prove your team's dominance. Show off your skills and strategy in this high-stakes tournament. A total prize pool of ₹10,000 is up for grabs. Time to dominate the arena!",
+    url: "https://unstop.com/events/e-summit-25-iiit-bhagalpur-gaming-showdown-bgmi-cup-indian-institute-of-information-technology-iiit-bhagalpur-1577235"
   };
 
 const BullEvent = {
@@ -71,7 +76,8 @@ const StartupEvent = {
 
 const ideaStormImage = ideastorm;
 const bitStormImage = bitstorm;
-const gamingEventImage = gaming;
+const bgmiImage = bgmi;
+const valoImage = valo;
 const bullRunImage = bullrun;
 const viralVogueImage = viralvogue;
 const quizEventImage = eship;
@@ -80,7 +86,9 @@ const startupExpoImage = expo;
 const eventImages = {
   [IdeaEvent.title]: ideaStormImage,
   [BitEvent.title]: bitStormImage,
-  [GamingEvent.title]: gamingEventImage,
+  [BGMI.title]: bgmiImage,
+  [Valorant.title]: valoImage,
+
   [BullEvent.title]: bullRunImage,
   [ViralVogue.title]: viralVogueImage,
   [QuizEvent.title]: quizEventImage,
@@ -93,8 +101,9 @@ const events: EventItem[] = [
   { id: 3, day: "Friday", date: 14, month: "November", dividerLeft: dividerLine, dividerRight: dividerLine, image: eventImages[BullEvent.title], ...BullEvent },
   { id: 4, day: "Saturday", date: 15, month: "November", dividerLeft: dividerLine, dividerRight: dividerLine, image: eventImages[QuizEvent.title], ...QuizEvent },
   { id: 5, day: "Saturday", date: 15, month: "November", dividerLeft: dividerLine, dividerRight: dividerLine, image: eventImages[IdeaEvent.title], ...IdeaEvent },
-  { id: 6, day: "Saturday", date: 15, month: "November", dividerLeft: dividerLine, dividerRight: dividerLine, image: eventImages[GamingEvent.title], ...GamingEvent },
-  { id: 7, day: "Saturday", date: 15, month: "November", dividerLeft: dividerLine, dividerRight: dividerLine, image: eventImages[ViralVogue.title], ...ViralVogue },
+  { id: 6, day: "Saturday", date: 15, month: "November", dividerLeft: dividerLine, dividerRight: dividerLine, image: eventImages[BGMI.title], ...BGMI },
+  { id: 7, day: "Saturday", date: 15, month: "November", dividerLeft: dividerLine, dividerRight: dividerLine, image: eventImages[Valorant.title], ...Valorant },
+  { id: 8, day: "Saturday", date: 15, month: "November", dividerLeft: dividerLine, dividerRight: dividerLine, image: eventImages[ViralVogue.title], ...ViralVogue },
 ];
   function registerEvent(url: string) {
     

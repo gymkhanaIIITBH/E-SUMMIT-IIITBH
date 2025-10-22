@@ -8,7 +8,7 @@ function BrochureSection() {
   }
 
   return (
-    <div className='relative bg-black h-auto flex flex-col justify-center items-center w-full'>
+    <div className='relative bg-black h-auto pt-4 flex flex-col justify-center items-center w-full'>
       <div className="text-[#ffe600] text-2xl font-bold tracking-widest mb-8 text-center font-sans">BROCHURE</div>
       <div className="container mx-auto max-w-6xl">
         <div className="flex flex-col sm:flex-row md:flex-row items-center sm:items-start justify-center gap-4 md:gap-4">

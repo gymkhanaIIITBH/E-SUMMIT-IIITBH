@@ -1,6 +1,7 @@
 import heroImg from '../../public/hero-bg.svg'
 import { Check } from 'lucide-react'
-import { InteractiveHoverButton } from './InteractiveHoverButton';
+// import { InteractiveHoverButton } from './InteractiveHoverButton';
+import ContactDetails from './contactDetails'
 import { useEffect } from 'react';
 const tiers = [
   "Poster Mention",
@@ -35,9 +36,9 @@ const sponsorships = {
 }
 
 const SponsorForm = () => {
-    const sponsorhandler = () => {
-        window.location.href = 'https://google.co.in';
-      }
+    // const sponsorhandler = () => {
+    //     window.location.href = 'https://google.co.in';
+    //   }
        useEffect(() => {
           // Scroll to top when this page loads
           window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -121,8 +122,9 @@ const SponsorForm = () => {
             
           </div>
         </div>
-        <div className="flex justify-center mt-10">
-            <InteractiveHoverButton onClick={sponsorhandler}>Sponsor Us</InteractiveHoverButton>
+        <div id='contact-us' className="flex justify-center mt-10">
+            {/* <InteractiveHoverButton onClick={sponsorhandler}>Sponsor Us</InteractiveHoverButton> */}
+            <ContactDetails />
         </div>
       </div>
       
