@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 // import MahindraLogo from '/mahindra.png'
 // import ComingSoon from '/coming.png'
 import unstopLogo from '/unstop.png'
+import herodyLogo from '/herody.jpg'
 // const sponsors = [
 //   { name: "Aasksh", logoSrc: Aaskshlogo, url: "https://aakash.ac.in" },
 //   { name: "KFC", logoSrc: KfcLogo, url: "https://online.kfc.co.in" },
@@ -19,6 +20,8 @@ import unstopLogo from '/unstop.png'
 // ];
 const dummySponsors=[
   {name: "Unstop", logoSrc:unstopLogo, url:'https://unstop.com' },
+  {name: "HERODY", logoSrc:herodyLogo, url:'https://herody.in/' },
+
   // {name: "Unstop", logoSrc:unstopLogo, url:'https://unstop.com' },
   // {name: "Unstop", logoSrc:unstopLogo, url:'https://unstop.com' },
   // {name: "Unstop", logoSrc:unstopLogo, url:'https://unstop.com' },
@@ -34,8 +37,8 @@ const dummySponsors=[
 ]
 
 const GoldSponsors = () => {
-  // const scrollingSponsors = [...dummySponsors, ...dummySponsors]; // duplicate for smooth loop, but make it single as low sponsors
-  const scrollingSponsors = [...dummySponsors];
+  const scrollingSponsors = [...dummySponsors, ...dummySponsors]; // duplicate for smooth loop, but make it single as low sponsors
+  // const scrollingSponsors = [...dummySponsors];
   return (
     <section className="bg-black overflow-hidden">
       <motion.div
@@ -70,7 +73,7 @@ const GoldSponsors = () => {
             style={{ background: "linear-gradient(to left, #000 80%, transparent)" }}
           />
           {/* temporarily removed marquee-left animation as less sponsors  */}
-          <div className="flex animate-marquee-lef justify-center items-center">
+          <div className="flex animate-marquee-left justify-center items-center">
             {scrollingSponsors.map((sponsor, i) => (
               <motion.a
                 key={`${sponsor.name}-${i}`}

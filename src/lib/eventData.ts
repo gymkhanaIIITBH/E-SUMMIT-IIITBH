@@ -67,7 +67,7 @@ export const eventData: TimelineEventData[] = [
     registerLink: "https://unstop.com/p/e-summit-25-iiit-bhagalpur-idea-storm-pitch-the-future-duplicate-indian-institute-of-information-technology-iiit-bhaga-1577531"
   },
   {
-    title: "GAMING EVENT- Valorant",
+    title: "SUMMIT CLUTCH - VALORant",
     description: "Get ready to step into the Arena, Agents! It's time for the ultimate VALORANT showdown! Fight tooth and nail in intense, high-stakes matches to claim victory and prove your team's dominance. Sharpen your aim, strategize with your squad, and outplay your opponents to take home the glory. With a prize pool of ₹15,000 up for grabs, every round counts. Suit up, it’s time to dominate the competition!",
     image: "/eventCovers/Valo.png",
     details: {
@@ -78,7 +78,7 @@ export const eventData: TimelineEventData[] = [
     registerLink: "https://unstop.com/events/e-summit-25-iiit-bhagalpur-gaming-showdown-valorant-champions-cup-indian-institute-of-information-technology-iiit-1577253"
   },
     {
-    title: "GAMING EVENT- BGMI",
+    title: "BATTLE GROUND - BGMI",
     description: "Gear up for the ultimate VALORANT clash! Compete in intense battles to prove your team's dominance. Show off your skills and strategy in this high-stakes tournament. A total prize pool of ₹10,000 is up for grabs. Time to dominate the arena!",
     image: "/eventCovers/BGMI.png",
     details: {

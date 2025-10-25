@@ -38,12 +38,12 @@ const BitEvent = {
     url:"https://unstop.com/hackathons/e-summit-25-iiit-bhagalpurbit-storm-10-hack-the-future-indian-institute-of-information-technology-iiit-bhagal-1577295"
   };
 const Valorant =  {
-    title: "GAMING EVENT- Valorant",
+    title: "SUMMIT CLUTCH - VALORant",
     description: "Get ready to step into the Arena, Agents! It's time for the ultimate VALORANT showdown! Fight tooth and nail in intense, high-stakes matches to claim victory and prove your team's dominance. Sharpen your aim, strategize with your squad, and outplay your opponents to take home the glory. With a prize pool of ₹15,000 up for grabs, every round counts. Suit up, it’s time to dominate the competition!",
     url: "https://unstop.com/events/e-summit-25-iiit-bhagalpur-gaming-showdown-valorant-champions-cup-indian-institute-of-information-technology-iiit-1577253"
   };
   const BGMI=  {
-    title: "GAMING EVENT- BGMI",
+    title: "BATTLE GROUND- BGMI",
     description: "Gear up for the ultimate VALORANT clash! Compete in intense battles to prove your team's dominance. Show off your skills and strategy in this high-stakes tournament. A total prize pool of ₹10,000 is up for grabs. Time to dominate the arena!",
     url: "https://unstop.com/events/e-summit-25-iiit-bhagalpur-gaming-showdown-bgmi-cup-indian-institute-of-information-technology-iiit-bhagalpur-1577235"
   };
